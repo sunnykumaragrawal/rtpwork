@@ -1,0 +1,2897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>RAF'S FORM</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="icon" href="assest/img/logo.png" type="image/png" sizes="16x16">
+  <!-- Bootstrap core CSS -->
+  <link href="assest/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="assest/css/mdb.min.css"> 
+  <link rel="stylesheet" href="assest/css/register.css">
+  <link href="assest/css/progress.css" rel="stylesheet">
+  <link href="assest/css/typography.css" rel="stylesheet">
+  <link href="assest/css/signature/jquery.signaturepad.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======================= new patient form ================================  -->
+  <section class="" id="registration-section">
+    <!-- ======================= container ================================  -->
+    <div class="container" id="form-container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h1 class="section-heading">Telehealth Audio and Video Annual Wellness Assessment</h1>
+        </div>
+      </div>
+      <!-- ======================= content ================================  -->
+      <div class="card">
+        <div class="card-body">
+          <form class="floating-labels" method="post" enctype="multipart/form-data" role="form">
+
+            <div class="row">
+
+              <div class="col-xl-12">
+                <!-- Stepers Wrapper -->
+                <ul class="stepper stepper-vertical">
+                  <!-- First Step -->
+                  <li class="form-step active" id="first-step">
+                    <a>
+                      <span class="circle" id="step-one-cirle">1</span>
+                      <span class="label">Patient Information</span>
+                    </a>
+
+                    <div class="step-content container pr-5">
+                      <div class="row">
+
+                                  <div class="col-xl-12">
+                                   <fieldset class="fieldset-outer">
+                                    <legend class="custom-legend">General Information</legend>
+                                    <div class="row inner-row">
+                                     <div class="col-xl-4">
+                                      <div class="form-group">
+                                       <label for="s1q1" class="float-label">Patient Name</label>
+                                       <input type="text" class="form-control required" id="s1q1" name="s1q1">
+                                     </div>
+                                   </div>
+                                   <div class="col-xl-4">
+                                    <div class="form-group">
+                                     <label for="s1q2" class="float-label">Patient ID</label>
+                                     <input type="text" class="form-control required" id="s1q2" name="s1q2">
+                                   </div>
+                                 </div>
+                                 <div class="col-xl-4">
+                                  <div class="form-group">
+                                   <label for="s1q3" class="float-label">PCP Name</label>
+                                   <input type="text" class="form-control required" id="s1q3" name="s1q3">
+                                 </div>
+                               </div>
+                               <div class="col-xl-4">
+                                <div class="form-group">
+                                 <label for="s1q4" class="float-label">Date</label>
+                                 <input type="text" class="form-control required datepicker" id="s1q4" name="s1q4">
+                               </div>
+                             </div>
+                             <div class="col-xl-4">
+                              <div class="form-group">
+                               <label for="s1q4.1" class="float-label">Date of Birth</label>
+                               <input type="text" class="form-control required datepicker" id="s1q4.1" name="s1q4.1">
+                             </div>
+                           </div>
+                             <div class="col-xl-4">
+                              <fieldset>
+                               <legend class="font-weight-bold">Gender</legend> 
+                               <div class="form-checkbox">
+                                 <input class="checkbox" type="radio" name="s1q5n1" id="s1q5o1" value="Male">
+                                 <label class="checklabel required-label" for="s1q5o1">Male</label>
+                               </div>
+                               <div class="form-checkbox">
+                                 <input class="checkbox" type="radio" name="s1q5n1" id="s1q5o2" value="Female">
+                                 <label class="checklabel required-label" for="s1q5o2">Female</label>
+                               </div>
+                             </fieldset>
+                           </div>
+                         </div> 
+                        </fieldset> 
+                                  </div> 
+
+                                  <div class="col-xl-12">
+                                    <fieldset class="fieldset-outer">
+                                                  <legend class="custom-legend">VITAL SIGNS</legend>
+                                                  <div class="row inner-row">
+                                                    <div class="col-xl-3">
+                                                      <div class="form-group">
+                                                      <label for="s1q6" class="float-label">Allergies</label>
+                                                      <input type="text" class="form-control required" id="s1q6" name="s1q6">
+                                                    </div>
+                                                  </div>
+                                                        <div class="col-xl-3">
+                                                          <div class="form-group">
+                                                          <label for="s1q7" class="float-label">Height</label>
+                                                          <input type="text" class="form-control required" id="s1q7" name="s1q7">
+                                                        </div>
+                                                      </div> 
+                                                      <div class="col-xl-3">
+                                                        <div class="form-group">
+                                                        <label for="s1q7.1" class="float-label">Weight</label>
+                                                        <input type="text" class="form-control required" id="s1q7.1" name="s1q7.1">
+                                                      </div>
+                                                    </div> 
+                                                    <div class="col-xl-3">
+                                                      <div class="form-group">
+                                                      <label for="s1q7.2" class="float-label">BMI</label>
+                                                      <input type="text" class="form-control required" id="s1q7.2" name="s1q7.2">
+                                                    </div>
+                                                  </div> 
+                                                  <div class="col-xl-3">
+                                                    <div class="form-group">
+                                                    <label for="s1q7.3" class="float-label">GFR</label>
+                                                    <input type="text" class="form-control required" id="s1q7.3" name="s1q7.3">
+                                                  </div>
+                                                </div>
+                                                  <div class="col-xl-4">
+                                                    <div class="form-group">
+                                                    <label for="s1q7.3" class="float-label">O2 Sat</label>
+                                                    <input type="text" class="form-control required" id="s1q7.3" name="s1q7.3">
+                                                  </div>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                <fieldset>
+                                                  <legend class="font-weight-bold">Oxygen Use</legend> 
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q7.4" id="s1q7.4" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q7.4">Yes</label>
+                                                  </div>
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q7.5" id="s1q7.5" value="No">
+                                                    <label class="checklabel required-label" for="s1q7.5">No</label>
+                                                  </div>
+                                                </fieldset>
+                                              </div>
+                                              <div class="col-xl-3">
+                                                <div class="form-group">
+                                                <label for="s1q7.6" class="float-label">RR</label>
+                                                <input type="text" class="form-control required" id="s1q7.6" name="s1q7.6">
+                                              </div>
+                                            </div> 
+                                            <div class="col-xl-3">
+                                              <div class="form-group">
+                                              <label for="s1q7.7" class="float-label">HR</label>
+                                              <input type="text" class="form-control required" id="s1q7.7" name="s1q7.7">
+                                            </div>
+                                          </div> 
+                                          <div class="col-xl-3">
+                                            <div class="form-group">
+                                            <label for="s1q7.8" class="float-label">BP</label>
+                                            <input type="text" class="form-control required" id="s1q7.8" name="s1q7.8">
+                                          </div>
+                                        </div> 
+                                        <div class="col-xl-3">
+                                          <div class="form-group">
+                                          <label for="s1q7.9" class="float-label">TEMP</label>
+                                          <input type="text" class="form-control required" id="s1q7.9" name="s1q7.9">
+                                        </div>
+                                        </div>
+                                    </fieldset>
+                                  </div>
+
+                                  <div class="col-xl-12">
+                                    <fieldset class="fieldset-outer">
+                                        <legend class="custom-legend">PREVENTION AND MANAGEMENT</legend>
+                                        
+                                        <div class="col-xl-12">
+                                          <fieldset class="fieldset-border">
+                                                  <legend>Check the Appropriate “BMI” Code:</legend>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o1" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o1">BMI < 19 (Z68.10)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o2" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o2">BMI 20.0-20.9 (Z68.20)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o3" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o3">BMI 21.0-21.9 (Z68.21)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o4" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o4">BMI 22.0-22.9 (Z68.22)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o5" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o5">BMI 23.0-23.9 (Z68.23)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o6" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o6">BMI 24.0-24.9 (Z68.24)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o7" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o7">BMI 25.0-25.9 (Z68.25)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o8" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o8">BMI 26.0-26.9 (Z68.26)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q8o9" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q8o9">BMI 27.0-27.9 (Z68.27)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q810" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q810">BMI 28.0-28.9 (Z68.28)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q811" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q811">BMI 29.0-29.9 (Z68.29)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q812" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q812">BMI30.0-30.9 (Z68.30)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q812" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q812">BMI 31.0-31.9 (Z68.31)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q813" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q813">BMI 32.0-32.9 (Z68.32)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q814" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q814">BMI 33.0-33.9 (Z68.33)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q815" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q815">BMI 34.0-34.9 (Z68.34)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q816" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q816">BMI35.0-35.9 (Z68.35)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q817" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q817">BMI 36.0-36.9 (Z68.36)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q818" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q818">BMI 37.0-37.9 (Z68.37)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q819" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q819">BMI38.0-38.9 (Z68.38)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q820" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q820">BMI 39.0-39.9 (Z68.39)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q821" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q821"> BMI 40.0-44.9 (Z68.41)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q822" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q822">BMI 45.0-49.9 (Z68.42)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q823" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q823">BMI 50.0-59.9 (Z68.43)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q824" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q824">BMI 60.0-69.9 (Z68.44)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q8" id="s1q825" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q825">BMI70 or greater (Z68.45)</label>
+                                                  </div>
+                                          </fieldset>                              
+                                        </div>
+
+                                        <div class="col-xl-12">
+                                                <fieldset class="fieldset-border">
+                                                  <legend>BREAST CANCER SCREENING</legend>
+                                                  <div class=row>
+                                                    <div class="form-group col-5">
+                                                      <label for="s1q9" class="float-label">Mammogram DOS</label>
+                                                      <input type="text" class="form-control required" id="s1q9" name="s1q9">
+                                                      </div>
+                                                    <div class="form-radio">
+                                                      <input type="radio" name="s1q9" id="s1q9o2" class="radio" value="">
+                                                      <label class="radiolabel required-label" for="s1q9o2">3014F</label>
+                                                    </div>            
+                                                  </div>
+                                                </fieldset>
+                                        </div>
+
+                                        <div class="col-xl-12">
+                                          <fieldset class="fieldset-border">
+                                           <div class="row">
+                                             <div class="col-xl-6">
+                                               <legend style="margin-bottom: 20px;">COLON CANCER SCREENING <small>(good for 10 years)</small></legend>
+                                               <div class="form-group">
+                                                 <label for="s1q9a" class="float-label">DOS</label>
+                                                 <input type="text" class="form-control required" id="s1q9a" name="s1q9o3">
+                                                 <small><b>(Z12.11) CPT 44388-44394</b></small>
+                                               </div>  
+                                             </div>
+                                             <!-- <p class="font-weight-bolder text-center">OR</p> -->
+                                             <div class="col-xl-6">
+                                              <legend style="margin-bottom: 20px;">Annual Fecal Occult Blood Test</legend>
+                                              <div class="form-group">
+                                                <label for="s1q9b" class="float-label">DOS</label>
+                                                <input type="text" class="form-control required" id="s1q9b" name="s1q9o4">
+                                                <small><b>Z12.11 CPT 82270- 82274</b></small>
+                                              </div>
+                                            </div> 
+                                           </div>
+                                         </fieldset>
+                                        </div>
+
+                                        <div class="col-xl-12">
+                                              <fieldset class="fieldset-border">
+                                                <legend>HYPERTENSION MANAGEMENT (CPC) <small>(only for patients diagnosed with Hypertenstion)</small></legend>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q9o5" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q9o5">SBP < 130 (3074F)</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q9o6" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q9o6">SBP 130-139 (3075F)</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q9o7" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q9o7">SBP 140 or over(3077F)</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q9o8" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q9o8">DBP < 80 (3078F)</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q9o9" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q9o9"> DBP 80-89 (3079F)</label>
+                                                </div>
+                                                <div class="form-radio">
+                                                  <input type="radio" name="s1q9" id="s1q910" class="radio" value="">
+                                                  <label class="radiolabel required-label" for="s1q910">DBP 90 or over (3080F)</label>
+                                                </div>
+                                              </fieldset>
+                                        </div>
+
+                                        <div class="col-xl-12">
+                                            <fieldset class="fieldset-border">
+                                              <legend>COMPREHENSIVE DIABETES CARE (CDC) <small>(only for patients diagnosed with Diabetes)</small></legend>
+                                              <div class="row">
+                                                <div class="col-12">
+                                                    <label class="font-weight-bolder">Annual Dilated Retina Exam V72.0 DX, CPT: 67028-67040</label>
+                                                    <div class="form-radio">
+                                                      <input type="radio" name="s1q9" id="s1q9o11" class="radio" value="">
+                                                      <label class="radiolabel required-label" for="s1q9o11">2022F Retinal result read by Ophthalmologist or Optometrist</label>
+                                                    </div>
+                                                    <div class="form-radio">
+                                                      <input type="radio" name="s1q9" id="s1q9o12" class="radio" value="">
+                                                      <label class="radiolabel required-label" for="s1q9o12"> 3072F Diabetic Retinal Screening -Negative</label>
+                                                    </div>           
+                                                </div>
+
+                                                <div class="col-12">
+                                                  <label class="font-weight-bolder">Check the Appropriate “Blood Pressure” Procedures(SBP =Systolic BP; DBP =Diastolic BP)</label>
+                                                  <br>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o1" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o1">SBP < 130 (3074F)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o2" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o2">SBP 130-139 (3075F)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o3" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o3">SBP 140 or over(3077F)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o4" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o4">DBP < 80 (3078F)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o5" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o5">DBP 80-89 (3079F)</label>
+                                                  </div>
+                                                  <div class="form-radio">
+                                                    <input type="radio" name="s1q10" id="s1q10o6" class="radio" value="">
+                                                    <label class="radiolabel required-label" for="s1q10o6">DBP 90 or over(3080F)</label>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                  <label class="font-weight-bolder">Urine Protein Test (Microalbumin) CPT 82042-82044</label>
+                                                  <br>
+                                                  <div class="row">
+                                                    <div class="col-12" style="margin-bottom: 20px;">
+                                                      <div class="form-radio">
+                                                        <input type="radio" name="s1q11" id="s1q11o1" class="radio" value="">
+                                                        <label class="radiolabel required-label" for="s1q11o1">3060F Positive microalbumin test result </label>
+                                                      </div>
+                                                      <div class="form-radio">
+                                                        <input type="radio" name="s1q11" id="s1q11o2" class="radio" value="">
+                                                        <label class="radiolabel required-label" for="s1q11o2">3061F Negative microalbumin</label>
+                                                      </div>              
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                      <div class="form-group">
+                                                        <label for="s1q11" class="float-label">Result Documented</label>
+                                                        <input type="text" class="form-control required" id="s1q11o3" name="s1q11o3">
+                                                        </div>              
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+
+                                                <div class="col-12">
+                                                  <label class="font-weight-bolder">HbA1C Test CPT 83036, 83037</label>
+                                                  <br>
+                                                  <div class="row">
+                                                    <div class="col-12" style="margin-bottom: 20px;">
+                                                      <div class="form-radio">
+                                                        <input type="radio" name="s1q12" id="s1q12o1" class="radio" value="">
+                                                        <label class="radiolabel required-label" for="s1q12o1">3044F, A1C <7%</label>
+                                                      </div>
+                                                      <div class="form-radio">
+                                                        <input type="radio" name="s1q12" id="s1q12o2" class="radio" value="">
+                                                        <label class="radiolabel required-label" for="s1q12o2">3045F, A1C between 7-9 %</label>
+                                                      </div> 
+                                                      <div class="form-radio">
+                                                        <input type="radio" name="s1q12" id="s1q12o3" class="radio" value="">
+                                                        <label class="radiolabel required-label" for="s1q12o3">3046F, A1C > 9%</label>
+                                                      </div>              
+                                                    </div>
+                                                    <div class="col-12">
+                                                      <div class="form-group">
+                                                        <label for="s1q12" class="float-label">Result Documented</label>
+                                                        <input type="text" class="form-control required" id="s1q12o4" name="s1q11o4">
+                                                        </div>              
+                                                    </div>
+                                                    <p class="font-weight-bold" style="margin-left: 15px;">Note: above 9%need to refer to Nutritionist and follow up with PCP. Follow up visit next three months to monitor A1C level</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </fieldset>
+                                        </div>                            
+                                    </fieldset> 
+                                  </div> 
+
+                                  <div class="col-xl-12">
+                                      <fieldset class="fieldset-outer">
+                                      <legend class="custom-legend">CARE OF OLDER ADULT: COA</legend>
+                                      <div class="row inner-row">
+                                        <table class="table">
+                                          <thead>
+                                            <th>FUNCTIONAL ASSESSMENT </th>
+                                            <th>Independent</th>
+                                            <th>Dependent</th>
+                                            <th>Comments</th>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Ability to Take Medications</td>
+                                              <td>
+                                                <div class="row">
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q13o1" id="s1q13o1" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q13o1">Yes</label>
+                                                  </div>
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q1301" id="s1q1301" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q1301">NO</label>
+                                                  </div>                                      
+                                                </div>
+
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o1" id="s1q14o1" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o1">Min</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o2" id="s1q14o2" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o2">Mod</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o3" id="s1q14o3" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o3">Max</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o4" id="s1q14o4" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o4">Total Care</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>Feeding</td>
+                                              <td>
+                                                <div class="row">
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q13o2" id="s1q13o2" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q13o2">Yes</label>
+                                                  </div>
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q1302" id="s1q1302" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q1302">No</label>
+                                                  </div>                                      
+                                                </div>
+
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o5" id="s1q14o5" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o5">FED</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o6" id="s1q14o6" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o6">PEG</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o7" id="s1q14o7" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o7">NG</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>Grooming</td>
+                                              <td>
+                                                <div class="row">
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q13o3" id="s1q13o3" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q13o3">Yes</label>
+                                                  </div> 
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q1303" id="s1q1303" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q1303">No</label>
+                                                  </div>                                                                           
+                                                </div>
+
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o8" id="s1q14o8" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o8">FED</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q14o9" id="s1q14o9" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q14o9">PEG</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1410" id="s1q1410" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1410">NG</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1411" id="s1q1411" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1411">Total Care</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td class="font-weight-bold">Toileting</td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q15o1" id="s1q15o1" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q15o1">Bladder</label>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q13o4" id="s1q13o4" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q13o4">Continent</label>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1412" id="s1q1412" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1412">Incontinent</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1413" id="s1q1413" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1413">Refer to Incontinence Program</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q15o2" id="s1q15o2" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q15o2">Bowel</label>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q13o5" id="s1q13o5" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q13o5">Continent</label>
+                                                </div>
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1414" id="s1q1414" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1414">Incontinent</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1415" id="s1q1415" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1415">Issue with supply forward to UM Dept</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+
+                                            <tr>
+                                              <td>Ambulation</td>
+                                              <td>
+                                                <div class="row">
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q13o5" id="s1q13o5" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q13o5">Yes</label>
+                                                  </div>    
+                                                  <div class="form-checkbox">
+                                                    <input class="checkbox" type="radio" name="s1q1305" id="s1q1305" value="Yes">
+                                                    <label class="checklabel required-label" for="s1q1305">No</label>
+                                                  </div>                                    
+                                                </div>
+
+                                              </td>
+                                              <td>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1416" id="s1q1416" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1416">Cane</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1417" id="s1q1417" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1417">Walker</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1418" id="s1q1418" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1418">W/C</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1419" id="s1q1419" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1419">Geri-Chair</label>
+                                                </div>
+                                                <div class="form-checkbox">
+                                                  <input class="checkbox" type="radio" name="s1q1420" id="s1q1420" value="Yes">
+                                                  <label class="checklabel required-label" for="s1q1420">Bed</label>
+                                                </div>
+                                              </td>
+                                              <td><textarea name="" id="" cols="30" rows="2" placeholder="Comment" class="col-12"></textarea></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Comment" class="col-12" style="margin-bottom: 30px;"></textarea>
+                                        <div class="form-radio col-12">
+                                          <input type="radio" name="s1q8" id="s1q16" class="radio" value="">
+                                          <label class="radiolabel required-label" for="s1q16">1170F (Functional Status Assessment)</label>
+                                        </div>
+                                      </div> 
+                                      </fieldset> 
+                                  </div>
+
+                       <div class="col-xl-12">
+                        <fieldset class="fieldset-outer">
+                         <legend class="custom-legend">DEPRESSION SCREEN (PHQ9)</legend>
+                         <div class="inner-row">
+                          <fieldset class="fieldset-border">
+                           <legend>Over the last 14 days, how often have you been bothered by any of the following problems?</legend>
+                           <div class="col-xl-12">
+                            <fieldset class="fieldset-border">
+                             <legend>Little interest or pleasure in doing things</legend>
+                             <div class="form-radio">
+                              <input type="radio" name="s2q1" id="s2q1o1" class="radio" value="">
+                              <label class="radiolabel required-label" for="s2q1o1">0</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="s2q1" id="s2q1o2" class="radio" value="">
+                              <label class="radiolabel required-label" for="s2q1o2">1-6</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="s2q1" id="s2q1o3" class="radio" value="">
+                              <label class="radiolabel required-label" for="s2q1o3">7-11</label>
+                            </div>
+                            <div class="form-radio">
+                              <input type="radio" name="s2q1" id="s2q1o4" class="radio" value="">
+                              <label class="radiolabel required-label" for="s2q1o4">12+</label>
+                            </div>
+                          </fieldset> 
+                        </div>
+                        <div class="col-xl-12">
+                          <fieldset class="fieldset-border">
+                           <legend>Feeling down, depressed or hopeless</legend>
+                           <div class="form-radio">
+                            <input type="radio" name="s2q2" id="s2q2o1" class="radio" value="">
+                            <label class="radiolabel required-label" for="s2q2o1">0</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="s2q2" id="s2q2o2" class="radio" value="">
+                            <label class="radiolabel required-label" for="s2q2o2">1-6</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="s2q2" id="s2q2o3" class="radio" value="">
+                            <label class="radiolabel required-label" for="s2q2o3">7-11</label>
+                          </div>
+                          <div class="form-radio">
+                            <input type="radio" name="s2q2" id="s2q2o4" class="radio" value="">
+                            <label class="radiolabel required-label" for="s2q2o4">12+</label>
+                          </div>
+                        </fieldset> 
+                      </div>
+                      <div class="col-xl-12">
+                        <fieldset class="fieldset-border">
+                         <legend>Trouble falling asleep, staying asleep, or sleeping too much</legend>
+                         <div class="form-radio">
+                          <input type="radio" name="s2q3" id="s2q3o1" class="radio" value="">
+                          <label class="radiolabel required-label" for="s2q3o1">0</label>
+                        </div>
+                        <div class="form-radio">
+                          <input type="radio" name="s2q3" id="s2q3o2" class="radio" value="">
+                          <label class="radiolabel required-label" for="s2q3o2">1-6</label>
+                        </div>
+                        <div class="form-radio">
+                          <input type="radio" name="s2q3" id="s2q3o3" class="radio" value="">
+                          <label class="radiolabel required-label" for="s2q3o3">7-11</label>
+                        </div>
+                        <div class="form-radio">
+                          <input type="radio" name="s2q3" id="s2q3o4" class="radio" value="">
+                          <label class="radiolabel required-label" for="s2q3o4">12+</label>
+                        </div>
+                      </fieldset> 
+                    </div>
+                    <div class="col-xl-12">
+                      <fieldset class="fieldset-border">
+                       <legend>Feeling tired or having little energy</legend>
+                       <div class="form-radio">
+                        <input type="radio" name="s2q4" id="s2q4o1" class="radio" value="">
+                        <label class="radiolabel required-label" for="s2q4o1">0</label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="s2q4" id="s2q4o2" class="radio" value="">
+                        <label class="radiolabel required-label" for="s2q4o2">1-6</label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="s2q4" id="s2q4o3" class="radio" value="">
+                        <label class="radiolabel required-label" for="s2q4o3">7-11</label>
+                      </div>
+                      <div class="form-radio">
+                        <input type="radio" name="s2q4" id="s2q4o4" class="radio" value="">
+                        <label class="radiolabel required-label" for="s2q4o4">12+</label>
+                      </div>
+                    </fieldset> 
+                  </div>
+                  <div class="col-xl-12">
+                    <fieldset class="fieldset-border">
+                     <legend>Poor appetite or overeating</legend>
+                     <div class="form-radio">
+                      <input type="radio" name="s2q5" id="s2q5o1" class="radio" value="">
+                      <label class="radiolabel required-label" for="s2q5o1">0</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="s2q5" id="s2q5o2" class="radio" value="">
+                      <label class="radiolabel required-label" for="s2q5o2">1-6</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="s2q5" id="s2q5o3" class="radio" value="">
+                      <label class="radiolabel required-label" for="s2q5o3">7-11</label>
+                    </div>
+                    <div class="form-radio">
+                      <input type="radio" name="s2q5" id="s2q5o4" class="radio" value="">
+                      <label class="radiolabel required-label" for="s2q5o4">12+</label>
+                    </div>
+                  </fieldset> 
+                </div>
+                <div class="col-xl-12">
+                  <fieldset class="fieldset-border">
+                   <legend>Feeling bad about yourself, feeling that you are a failure, or feeling that you have let yourself or your family down</legend>
+                   <div class="form-radio">
+                    <input type="radio" name="s2q6" id="s2q6o1" class="radio" value="">
+                    <label class="radiolabel required-label" for="s2q6o1">0</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="s2q6" id="s2q6o2" class="radio" value="">
+                    <label class="radiolabel required-label" for="s2q6o2">1-6</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="s2q6" id="s2q6o3" class="radio" value="">
+                    <label class="radiolabel required-label" for="s2q6o3">7-11</label>
+                  </div>
+                  <div class="form-radio">
+                    <input type="radio" name="s2q6" id="s2q6o4" class="radio" value="">
+                    <label class="radiolabel required-label" for="s2q6o4">12+</label>
+                  </div>
+                </fieldset> 
+              </div>
+              <div class="col-xl-12">
+                <fieldset class="fieldset-border">
+                 <legend>Trouble concentrating on such things as reading the newspaper or watching TV</legend>
+                 <div class="form-radio">
+                  <input type="radio" name="s2q7" id="s2q7o1" class="radio" value="">
+                  <label class="radiolabel required-label" for="s2q7o1">0</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="s2q7" id="s2q7o2" class="radio" value="">
+                  <label class="radiolabel required-label" for="s2q7o2">1-6</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="s2q7" id="s2q7o3" class="radio" value="">
+                  <label class="radiolabel required-label" for="s2q7o3">7-11</label>
+                </div>
+                <div class="form-radio">
+                  <input type="radio" name="s2q7" id="s2q7o4" class="radio" value="">
+                  <label class="radiolabel required-label" for="s2q7o4">12+</label>
+                </div>
+              </fieldset> 
+            </div>
+            <div class="col-xl-12">
+              <fieldset class="fieldset-border">
+               <legend>Moving or speaking so slowly that other people could have noticed or the opposite, being so fidgety or restless that you have been moving around a lot more than usual.</legend>
+               <div class="form-radio">
+                <input type="radio" name="s2q8" id="s2q8o1" class="radio" value="">
+                <label class="radiolabel required-label" for="s2q8o1">0</label>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="s2q8" id="s2q8o2" class="radio" value="">
+                <label class="radiolabel required-label" for="s2q8o2">1-6</label>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="s2q8" id="s2q8o3" class="radio" value="">
+                <label class="radiolabel required-label" for="s2q8o3">7-11</label>
+              </div>
+              <div class="form-radio">
+                <input type="radio" name="s2q8" id="s2q8o4" class="radio" value="">
+                <label class="radiolabel required-label" for="s2q8o4">12+</label>
+              </div>
+            </fieldset> 
+          </div>
+          <div class="col-xl-12">
+            <fieldset class="fieldset-border">
+             <legend>Thinking that you would be better off dead or that you want to hurt yourself in some way</legend>
+             <div class="form-radio">
+              <input type="radio" name="s2q9" id="s2q9o1" class="radio" value="">
+              <label class="radiolabel required-label" for="s2q9o1">0</label>
+            </div>
+            <div class="form-radio">
+              <input type="radio" name="s2q9" id="s2q9o2" class="radio" value="">
+              <label class="radiolabel required-label" for="s2q9o2">1-6</label>
+            </div>
+            <div class="form-radio">
+              <input type="radio" name="s2q9" id="s2q9o3" class="radio" value="">
+              <label class="radiolabel required-label" for="s2q9o3">7-11</label>
+            </div>
+            <div class="form-radio">
+              <input type="radio" name="s2q9" id="s2q9o4" class="radio" value="">
+              <label class="radiolabel required-label" for="s2q9o4">12+</label>
+            </div>
+          </fieldset> 
+        </div> 
+      </fieldset>
+
+      <div class="row">
+       <div class="col-xl-6">
+        <div class="form-group">
+         <label for="s2q11" class="float-label">Total Score</label>
+         <input type="number" name="" id="s2q11" class="form-control required"> 
+       </div> 
+     </div>
+     <div class="col-xl-6">
+      <div class="form-group">
+       <label for="s2q12" class="float-label">Total circled numbers</label>
+       <input type="number" name="" id="s2q12" class="form-control required"> 
+     </div> 
+   </div> 
+ </div>
+
+      <fieldset class="fieldset-border">
+       <legend>Depression Severity</legend>
+       <div class="form-radio">
+         <input type="radio" name="s2q10" id="s2q10o1" class="radio" value="">
+         <label class="radiolabel required-label" for="s2q10o1">Minimal depression(1–4)</label>
+       </div>
+       <div class="form-radio">
+         <input type="radio" name="s2q10" id="s2q10o2" class="radio" value="">
+         <label class="radiolabel required-label" for="s2q10o2">Mild depression(5-9)</label>
+       </div>
+       <div class="form-radio">
+         <input type="radio" name="s2q10" id="s2q10o3" class="radio" value="">
+         <label class="radiolabel required-label" for="s2q10o3">Moderate depression(10-14)</label>
+       </div>
+       <div class="form-radio">
+         <input type="radio" name="s2q10" id="s2q10o4" class="radio" value="">
+         <label class="radiolabel required-label" for="s2q10o4">Moderately severe depression - Refer to Case Management(15-19)</label>
+       </div>
+       <div class="form-radio">
+         <input type="radio" name="s2q10" id="s2q10o5" class="radio" value="">
+         <label class="radiolabel required-label" for="s2q10o5">Severe depression - Refer to Case Management(20-27)</label>
+       </div> 
+     </fieldset>
+
+     
+
+ <fieldset class="fieldset-border">
+  <legend>Unable to complete the depression assessment due to</legend>
+  <div class="form-radio">
+    <input type="radio" name="s2q13" id="s2q13o1" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q13o1">Unresponsive</label>
+  </div>
+  <div class="form-radio">
+    <input type="radio" name="s2q13" id="s2q13o2" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q13o2">Uncooperative</label>
+  </div>
+  <div class="form-radio">
+    <input type="radio" name="s2q13" id="s2q13o3" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q13o3">Severe Dementia</label>
+  </div>
+  <div class="form-radio">
+    <input type="radio" name="s2q13" id="s2q13o4" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q13o4">Patient Refused</label>
+  </div>
+  <div class="form-radio">
+    <input type="radio" name="s2q13" id="s2q13o5" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q13o5" onclick="depressionGroup()">Other</label>
+  </div>
+  <div class="form-group intial_hidden" id="depression-group">
+    <label for="s2q13a" class="float-label">Explain the reason</label>
+    <textarea class="form-control required" id="s2q13a" name="" rows="2"></textarea>
+  </div>
+</fieldset>
+<fieldset class="fieldset-border">
+  <legend>On Treatment for Depression?</legend>
+  <div class="form-radio">
+    <input type="radio" name="s2q14" id="s2q14o1" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q14o1">Yes</label>
+  </div>
+  <div class="form-radio">
+    <input type="radio" name="s2q14" id="s2q14o2" class="radio" value="">
+    <label class="radiolabel required-label" for="s2q14o2">No</label>
+  </div>
+</fieldset>
+</div>
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">PAIN ASSESSMENT</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <fieldset class="fieldset-border">
+      <legend>Do you have pain?</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q15" id="s2q15o1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15o1" onclick="painGroup()">Yes</label>
+     </div>
+     <div class="form-radio">
+      <input type="radio" name="s2q15" id="s2q15o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q15o2">No</label>
+    </div>
+    <div class="row intial_hidden" id="pain-group">
+     <div class="form-group">
+       <label for="s2q15a" class="float-label">If yes, Location</label>
+       <input type="text" class="form-control required" id="s2q15a" name="">
+     </div>
+     <fieldset class="fieldset-border">
+      <legend>Pain Scale</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo1">1</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo2" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo2">2</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo3" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo3">3</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo4" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo4">4</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo5" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo5">5</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo6" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo6">6</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo7" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo7">7</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo8" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo8">8</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo9" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo9">9</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q15b" id="s2q15bo10" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q15bo10">10</label>
+     </div>
+   </fieldset>
+   <div class="form-group">
+    <label for="s2q15c" class="float-label">How long?</label>
+    <input type="text" class="form-control required" id="s2q15c" name="">
+  </div>
+  <div class="form-group">
+    <label for="s2q15d" class="float-label">What do you take to help?</label>
+    <input type="text" class="form-control required" id="s2q15d" name="">
+  </div>  
+</div>
+</fieldset> 
+</div>
+<div class="col-xl-12">
+ <fieldset class="fieldset-border">
+  <legend>Check one</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q16" id="s2q16o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q16o1">1125F Has Pain</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q16" id="s2q16o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q16o2">1126F No Pain</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q16" id="s2q16o3" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q16o3">0521F Plan of care to address pain documented</label>
+ </div> 
+</fieldset> 
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-border">
+   <legend class="custom-legend">URINARY INCONTINENCE: SCREENING QUESTIONS</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <fieldset class="fieldset-border">
+      <legend>New Patient: In the past 12 months, have you</legend>
+       <div class="form-radio">
+        <input type="radio" name="s2q17" id="s2q17o1" class="radio" value="">
+        <label class="radiolabel required-label" for="s2q17o1">Refer to Incontinence Program</label>
+      </div>
+      <div class="form-radio">
+        <input type="radio" name="s2q17" id="s2q17o2" class="radio" value="">
+        <label class="radiolabel required-label" for="s2q17o2">Issue with supply forward to UM Department</label>
+      </div>
+      <div class="form-radio">
+        <input type="radio" name="s2q17" id="s2q17o3" class="radio" value="">
+        <label class="radiolabel required-label" for="s2q17o3">Had a problem with urinary incontinence (or your bladder) that is bothersome enough that you would like to know more about how it could be treated</label>
+      </div>
+   </fieldset> 
+ </div>
+ <div class="col-xl-12">
+   <fieldset class="fieldset-border">
+    <legend>Established Patient: Since your last visit here, have you</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q18" id="s2q18o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q18o1">Refer to Incontinence Program</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q18" id="s2q18o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q18o2">Issue with supply forward to UM Department</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q18" id="s2q18o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q18o3">Had a problem with urinary incontinence (or your bladder) that is bothersome enough that you would like to know more about how it could be treated</label>
+    </div>
+ </fieldset> 
+</div>
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">CURRENT MEDICATIONS</legend>
+   <div class="row inner-row">
+    <div class="col-xl-6">
+     <div class="form-group">
+      <label for="s2q20a" class="float-label">Drug</label>
+      <input type="text" name="" class="form-control required" id="s2q20a"> 
+    </div> 
+  </div>
+  <div class="col-xl-6">
+   <div class="form-group">
+    <label for="s2q20b" class="float-label">Dose</label>
+    <input type="text" name="" class="form-control required" id="s2q20b"> 
+  </div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q20c" class="float-label">Route</label>
+  <input type="text" name="" class="form-control required" id="s2q20c"> 
+</div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q20d" class="float-label">Frequency</label>
+  <input type="text" name="" class="form-control required" id="s2q20d"> 
+</div> 
+</div>
+<div class="col-xl-12" id="curren-medication" style="display: none;">
+ <div class="row">
+  <div class="col-xl-6">
+   <div class="form-group">
+    <label for="s2q20a1" class="float-label">Drug</label>
+    <input type="text" name="" class="form-control required" id="s2q20a1"> 
+  </div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q20b1" class="float-label">Dose</label>
+  <input type="text" name="" class="form-control required" id="s2q20b1"> 
+</div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q20c1" class="float-label">Route</label>
+  <input type="text" name="" class="form-control required" id="s2q20c1"> 
+</div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q20d1" class="float-label">Frequency</label>
+  <input type="text" name="" class="form-control required" id="s2q20d1"> 
+</div> 
+</div> 
+</div> 
+</div>
+<div class="col-xl-12 text-center mb-3">
+  <button type="button" class="btn btn-primary btn-minus"onclick="document.getElementById('curren-medication').style.display='none'">-</button>
+  <button type="button" class="btn btn-primary btn-add" onclick="document.getElementById('curren-medication').style.display='block'">+</button> 
+</div>
+<div class="col-xl-12">
+ <fieldset class="fieldset-border">
+  <legend>Check both the “Medication List” and “Medication Review” Codes</legend>
+  <div class="form-radio">
+   <input type="checkbox" name="s2q21" id="s2q21o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q21o1">YesMedication List ( 1159F )</label>
+ </div>
+ <div class="form-radio">
+   <input type="checkbox" name="s2q21" id="s2q21o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q21o2">Medication Review ( 1160F )</label>
+ </div>
+</fieldset> 
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">ADVANCED CARE PLAN</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <div class="form-radio">
+      <input type="radio" name="s2q22" id="s2q22o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q22o1">Advanced Care Plan or other legal document present in medical record (1157F)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q22" id="s2q22o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q22o2">Advanced Care Plan discussion documented in medical record (1158F)</label>
+    </div> 
+    <div class="form-radio">
+      <input type="radio" name="s2q22" id="s2q22o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q22o3">POLST Form documented in medical record for frail serious illness: advanced heart disease, lung disease and end stagecancer</label>
+    </div> 
+  </div>
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">FALL RISK ASSESSMENT</legend>
+   <div class="row inner-row">
+    <div class="col-xl-6">
+     <fieldset class="fieldset-border">
+      <legend>High Risk for Fall</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q23" id="s2q23o1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q23o1" onclick="fallRisk()">Yes</label>
+     </div>
+     <div class="form-radio">
+      <input type="radio" name="s2q23" id="s2q23o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q23o2">No</label>
+    </div>
+    <div class="form-group intial_hidden" id="fall-risk">
+     <label for="s2q23a" class="float-label">If Yes, Specify</label>
+     <input type="text" class="form-control required" id="s2q23a" name="">
+   </div>
+ </fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Cognitive Impairment</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q24" id="s2q24o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q24o1" onclick="cogImpair()">Yes</label>
+ </div>
+ <div class="form-radio">
+  <input type="radio" name="s2q24" id="s2q24o2" class="radio" value="">
+  <label class="radiolabel required-label" for="s2q24o2">No</label>
+</div>
+<div class="form-group intial_hidden" id="cog-impair">
+ <label for="s2q24a" class="float-label">If Yes, Specify</label>
+ <input type="text" class="form-control required" id="s2q24a" name="">
+</div>
+</fieldset>
+</div>
+<div class="col-xl-12">
+ <div class="form-group">
+   <label for="s2q25" class="float-label">Plan</label>
+   <input type="text" class="form-control required" id="s2q25" name="">
+ </div> 
+</div>
+<div class="col-xl-12">
+ <fieldset class="fieldset-border">
+  <legend>Housing assessment needed?</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q26" id="s2q26o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q26o1" onclick="houseAssess()">Yes</label>
+ </div>
+ <div class="form-radio">
+  <input type="radio" name="s2q26" id="s2q26o2" class="radio" value="">
+  <label class="radiolabel required-label" for="s2q26o2">No</label>
+</div>
+<div class="form-group intial_hidden" id="house-assess">
+ <label for="s2q26a" class="float-label">If yes, order review from refer to Case Management at Health Plan</label>
+ <input type="text" class="form-control required" id="s2q26a" name="">
+</div>
+</fieldset>
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">ALCOHOL / TOBACCO DRUGS RISK SCREEN Histoy</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <fieldset class="fieldset-border">
+      <legend>Have you ever smoked cigarettes, a pipe or cigars or chewed tobacco?</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q27" id="s2q27o1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q27o1" onclick="smokeGroup()">Yes</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q27" id="s2q27o2" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q27o2">No</label>
+     </div>
+     <div class="form-group intial_hidden" id="smoke_group">
+       <label for="s2q27a" class="float-label">If Yes, how much and for how long?</label>
+       <input type="text" class="form-control required" id="s2q27a" name="">
+     </div>
+   </fieldset>
+ </div>
+ <div class="col-xl-12">
+   <fieldset class="fieldset-border">
+    <legend>Do you ever drink alcohol?</legend>
+    <div class="form-radio">
+     <input type="radio" name="s2q28" id="s2q28o1" class="radio" value="">
+     <label class="radiolabel required-label" for="s2q28o1" onclick="alcohalGroup()">Yes</label>
+   </div>
+   <div class="form-radio">
+     <input type="radio" name="s2q28" id="s2q28o2" class="radio" value="">
+     <label class="radiolabel required-label" for="s2q28o2">No</label>
+   </div>
+   <div class="form-group intial_hidden" id="alcohal_group">
+     <label for="s2q28a" class="float-label">If Yes, how much?</label>
+     <input type="text" class="form-control required" id="s2q28a" name="">
+   </div>
+ </fieldset>
+</div>
+<div class="col-xl-12">
+ <fieldset class="fieldset-border">
+  <legend>Have you ever used any street drugs or taken prescription medications that were not prescribed for you?</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q29" id="s2q29o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q29o1" onclick="streetDrugs()">Yes</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q29" id="s2q29o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q29o2">No</label>
+ </div>
+ <div class="row intial_hidden" id="street_drugs">
+   <div class="col-xl-6">
+    <div class="form-group">
+     <label for="s2q29a" class="float-label">If Yes, what drugs/meds?</label>
+     <input type="text" class="form-control required" id="s2q29a" name="">
+   </div> 
+ </div>
+ <div class="col-xl-6">
+  <div class="form-group">
+   <label for="s2q29b" class="float-label">For how long?</label>
+   <input type="text" class="form-control required" id="s2q29b" name="">
+ </div> 
+</div> 
+</div>
+</fieldset>
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">PERSONAL HISTORY</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <fieldset class="fieldset-border">
+      <legend>Marital Status</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q30" id="s2q30o1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q30o1">Married</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q30" id="s2q30o2" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q30o2">Single</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q30" id="s2q30o3" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q30o3">Divorced</label>
+     </div>
+   </fieldset>
+ </div>
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">PAST SURGICAL/HEART/CANCER/STROKE HISTORY</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <div class="form-group">
+      <label for="s2q31" class="float-label">Please explain</label>
+      <input type="text" name="" id="s2q31" class="form-control required"> 
+    </div> 
+  </div>
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">PHYSICAL EXAM <small>(Please complete thoroughly each section unless exam component was deferred)</small></legend>
+   <div class="row inner-row">
+    <div class="col-xl-6">
+     <fieldset class="fieldset-border">
+      <legend>General</legend>
+      <div class="form-radio">
+       <input type="radio" name="s2q32" id="s2q32o1" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q32o1">Normal</label>
+     </div>
+     <div class="form-radio">
+       <input type="radio" name="s2q32" id="s2q32o2" class="radio" value="">
+       <label class="radiolabel required-label" for="s2q32o2" onclick="generalGroup()">Abnormal</label>
+     </div>
+     <div class="form-group intial_hidden" id="general-group">
+       <label for="s2q32a" class="float-label">Explain</label>
+       <textarea class="form-control required" id="s2q32a" name="" rows="2"></textarea>
+     </div>
+   </fieldset>
+ </div>
+ <div class="col-xl-6">
+   <fieldset class="fieldset-border">
+    <legend>Head</legend>
+    <div class="form-radio">
+     <input type="radio" name="s2q33" id="s2q33o1" class="radio" value="">
+     <label class="radiolabel required-label" for="s2q33o1">Normal</label>
+   </div>
+   <div class="form-radio">
+     <input type="radio" name="s2q33" id="s2q33o2" class="radio" value="">
+     <label class="radiolabel required-label" for="s2q33o2" onclick="headGroup()">Abnormal</label>
+   </div>
+   <div class="form-group intial_hidden" id="head-group">
+     <label for="s2q33a" class="float-label">Explain</label>
+     <textarea class="form-control required" id="s2q33a" name="" rows="2"></textarea>
+   </div>
+ </fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Eyes</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q34" id="s2q34o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q34o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q34" id="s2q34o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q34o2" onclick="eyesGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="eyes-group">
+   <label for="s2q34a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q34a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Ent</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q35" id="s2q35o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q35o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q35" id="s2q35o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q35o2" onclick="entGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="ent-group">
+   <label for="s2q35a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q35a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Neck</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q36" id="s2q36o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q36o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q36" id="s2q36o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q36o2" onclick="neckGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="neck-group">
+   <label for="s2q36a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q36a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Resp</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q37" id="s2q37o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q37o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q37" id="s2q37o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q37o2" onclick="respGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="resp-group">
+   <label for="s2q37a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q37a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Cv</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q38" id="s2q38o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q38o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q38" id="s2q38o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q38o2" onclick="cvGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="cv-group">
+   <label for="s2q38a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q38a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Chest/Breast</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q39" id="s2q39o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q39o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q39" id="s2q39o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q39o2" onclick="chestGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="chest-group">
+   <label for="s2q39a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q39a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>GI</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q40" id="s2q40o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q40o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q40" id="s2q40o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q40o2" onclick="giGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="gi-group">
+   <label for="s2q40a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q40a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>GU</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q41" id="s2q41o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q41o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q41" id="s2q41o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q41o2" onclick="guGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="gu-group">
+   <label for="s2q41a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q41a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Lymph</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q42" id="s2q42o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q42o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q42" id="s2q42o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q42o2" onclick="lymphGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="lymph-group">
+   <label for="s2q42a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q42a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>MS</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q43" id="s2q43o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q43o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q43" id="s2q43o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q43o2" onclick="msGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="ms-group">
+   <label for="s2q43a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q43a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Skin-Chronic Ulcer of skin?</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q44" id="s2q44o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q44o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q44" id="s2q44o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q44o2" onclick="skinGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="skin-group">
+   <label for="s2q44a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q44a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>PSYCH</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q45" id="s2q45o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q45o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q45" id="s2q45o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q45o2" onclick="psychGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="psych-group">
+   <label for="s2q45a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q45a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Neuro</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q46" id="s2q46o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q46o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q46" id="s2q46o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q46o2" onclick="neuroGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="neuro-group">
+   <label for="s2q46a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q46a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>MUSCU</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q47" id="s2q47o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q47o1">Normal</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q47" id="s2q47o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q47o2" onclick="muscuGroup()">Abnormal</label>
+ </div>
+ <div class="form-group intial_hidden" id="muscu-group">
+   <label for="s2q47a" class="float-label">Explain</label>
+   <textarea class="form-control required" id="s2q47a" name="" rows="2"></textarea>
+ </div>
+</fieldset>
+</div>
+<div class="col-xl-6">
+ <fieldset class="fieldset-border">
+  <legend>Amputee status</legend>
+  <div class="form-radio">
+   <input type="radio" name="s2q48" id="s2q48o1" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q48o1" onclick="amputeeStatus()">Yes</label>
+ </div>
+ <div class="form-radio">
+   <input type="radio" name="s2q48" id="s2q48o2" class="radio" value="">
+   <label class="radiolabel required-label" for="s2q48o2">No</label>
+ </div>
+ <div class="form-group intial_hidden" id="amputee_status">
+   <label for="s2q48a" class="float-label">If yes, Location</label>
+   <input type="text" class="form-control required" id="s2q48a" name="">
+ </div>
+</fieldset>
+</div>
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">Other result</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <div class="form-group">
+      <label for="s2q49" class="float-label">LAB RESULTS <small>(state specific findings & add diagnosis to assessment/plan)</small></label>
+      <textarea name="" id="s2q49" class="form-control required" rows="2"></textarea>
+    </div> 
+  </div>
+  <div class="col-xl-12">
+   <div class="form-group">
+    <label for="s2q50" class="float-label">XRAY RESULTS <small>(state specific findings & add diagnosis to assessment/plan)</small></label>
+    <textarea name="" id="s2q50" class="form-control required" rows="2"></textarea>
+  </div> 
+</div>
+<div class="col-xl-12">
+ <div class="form-group">
+  <label for="s2q51" class="float-label">SPECIALIST CONSULTANTS REPORTS</label>
+  <textarea name="" id="s2q51" class="form-control required" rows="2"></textarea>
+</div> 
+</div>
+<div class="col-xl-12">
+ <div class="form-group">
+  <label for="s2q52" class="float-label">RADIOLOGY DIAGNOSTIC RESULTS</label>
+  <textarea name="" id="s2q52" class="form-control required" rows="2"></textarea>
+</div> 
+</div>
+<div class="col-xl-12">
+ <div class="form-group">
+  <label for="s2q53" class="float-label">HOSPITAL NOTES/CONSULTS: DATE LAST ADMISSIONS AND DISCHARGE</label>
+  <textarea name="" id="s2q53" class="form-control required" rows="2"></textarea>
+</div> 
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+  <fieldset class="fieldset-outer">
+   <legend class="custom-legend">POST DISCHARGE MEDICATION RECONCILIATION</legend>
+   <div class="row inner-row">
+    <div class="col-xl-12">
+     <div class="form-group">
+      <label for="s2q54" class="float-label">LIST OF MEDICATIONS</label>
+      <input type="text" name="" id="s2q54" class="form-control required">
+    </div> 
+  </div>
+  <div class="col-xl-6">
+   <div class="form-group">
+    <label for="s2q55" class="float-label">Dose/strength</label>
+    <input type="text" name="" id="s2q55" class="form-control required">
+  </div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q56" class="float-label">Quantity/Frequency</label>
+  <input type="text" name="" id="s2q56" class="form-control required">
+</div> 
+</div>
+<div class="col-xl-12" id="post_medication" style="display:none;">
+ <div class="row">
+   <div class="col-xl-12">
+     <div class="form-group">
+      <label for="s2q54a" class="float-label">LIST OF MEDICATIONS</label>
+      <input type="text" name="" id="s2q54a" class="form-control required">
+    </div> 
+  </div>
+  <div class="col-xl-6">
+   <div class="form-group">
+    <label for="s2q55a" class="float-label">Dose/strength</label>
+    <input type="text" name="" id="s2q55a" class="form-control required">
+  </div> 
+</div>
+<div class="col-xl-6">
+ <div class="form-group">
+  <label for="s2q56a" class="float-label">Quantity/Frequency</label>
+  <input type="text" name="" id="s2q56a" class="form-control required">
+</div> 
+</div>
+</div>
+</div>
+<div class="col-xl-12 text-center mb-3">
+  <button type="button" class="btn btn-primary btn-minus"onclick="document.getElementById('post_medication').style.display='none'">-</button>
+  <button type="button" class="btn btn-primary btn-add" onclick="document.getElementById('post_medication').style.display='block'">+</button> 
+</div> 
+</div> 
+</fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <h5 class="my-3"><b>IMPRESSION / PLAN</b></h5> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">CARDIOVASCULAR DIAGNOSIS</legend> 
+  <div class="row inner-row">
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Coronary Heart Failure (CHF) I50.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q57" id="s2q57o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q57o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q57" id="s2q57o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q57o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Peripheral Arterial Disease (PAD) I73.9</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q58" id="s2q58o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q58o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q58" id="s2q58o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q58o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Atrial Fibrillation I48.91 on anticoagulant?</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q59" id="s2q59o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q59o1" onclick="atRial()">Yes</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q59" id="s2q59o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q59o2">No</label>
+    </div>
+    <div class="intial_hidden" id="atrial_group">
+      <fieldset class="fieldset-border">
+       <legend>If yes, status of DX</legend>
+       <div class="form-radio">
+        <input type="radio" name="s2q59a" id="s2q59ao1" class="radio" value="">
+        <label class="radiolabel required-label" for="s2q59ao1">Stable</label>
+      </div>
+      <div class="form-radio">
+        <input type="radio" name="s2q59a" id="s2q59ao2" class="radio" value="">
+        <label class="radiolabel required-label" for="s2q59ao2">Declining</label>
+      </div>
+     </fieldset> 
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Other Thrombophilia D68.59</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q60" id="s2q60o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q60o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q60" id="s2q60o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q60o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Hypertension w/Heart Failure I11.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q61" id="s2q61o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q61o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q61" id="s2q61o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q61o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Hypertensive heart with CKD5 I13.11</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q62" id="s2q62o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q62o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q62" id="s2q62o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q62o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Angina Pectoris I20.9</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q63" id="s2q63o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q63o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q63" id="s2q63o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q63o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Presence of Heart Assist device/Pacemaker</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q64" id="s2q64o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q64o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q64" id="s2q64o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q64o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Old Myocardial Infection Status Z95.8111</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q65" id="s2q65o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q65o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q65" id="s2q65o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q65o2">Declining</label>
+    </div>
+   </fieldset>
+   </div> 
+  </div>
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">DIABETIC DIAGNOSIS</legend>
+  <div class="row inner-row">
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetes with other specified complication E11.8</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q66" id="s2q66o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q66o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q66" id="s2q66o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q66o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic Nephropathy (positive Microalbumin) E10.21</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q67" id="s2q67o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q67o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q67" id="s2q67o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q67o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic Neuropathy (numbness) E10.40</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q68" id="s2q68o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q68o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q68" id="s2q68o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q68o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic Peripheral Angiopathy E11.51</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q69" id="s2q69o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q69o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q69" id="s2q69o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q69o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic Retinopathy E10.311</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q70" id="s2q70o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q70o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q70" id="s2q70o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q70o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic with Diabetic Cataract E10.36</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q71" id="s2q71o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q71o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q71" id="s2q71o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q71o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>CKD due to Diabetes E11.22</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q72" id="s2q72o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q72o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q72" id="s2q72o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q72o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic with hypoglycemia E11.65</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q73" id="s2q73o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q73o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q73" id="s2q73o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q73o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic with oral complications E11.638</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q74" id="s2q74o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q74o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q74" id="s2q74o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q74o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Diabetic with skin ulcer (foot/other) E10.622</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q75" id="s2q75o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q75o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q75" id="s2q75o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q75o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Long term use of Insulin status Z79.4</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q76" id="s2q76o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q76o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q76" id="s2q76o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q76o2">Declining</label>
+    </div>
+   </fieldset>
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">PULMONARY DIAGNOSIS</legend>
+  <div class="row inner-row">
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>COPD, unspecified J44.9</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q77" id="s2q77o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q77o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q77" id="s2q77o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q77o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>COPD with acute lower respiratory infection J44.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q78" id="s2q78o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q78o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q78" id="s2q78o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q78o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>COPD with acute exacerbation J44.1</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q79" id="s2q79o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q79o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q79" id="s2q79o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q79o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Simple chronic bronchitis (smoker’s cough) J41.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q80" id="s2q80o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q80o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q80" id="s2q80o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q80o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Pulmonary Hypertension I27.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q81" id="s2q81o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q81o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q81" id="s2q81o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q81o2">Declining</label>
+    </div>
+   </fieldset>
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">MENTAL DISORDERS</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Major Depressive Disorder, single episode, F32.0</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q82" id="s2q82o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q82o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q82" id="s2q82o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q82o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q82" id="s2q82o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q82o3">Severe(3)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q82" id="s2q82o4" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q82o4">Full Remission</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Major Depressive Disorder, single episode, in partial remission F32.4</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q83" id="s2q83o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q83o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q83" id="s2q83o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q83o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q83" id="s2q83o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q83o3">Severe(3)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q83" id="s2q83o4" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q83o4">Full Remission</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Alcohol abuse (F10.1)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q84" id="s2q84o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q84o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q84" id="s2q84o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q84o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q84" id="s2q84o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q84o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Opioid dependence (F11.2) /abuse (F11.1)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q85" id="s2q85o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q85o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q85" id="s2q85o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q85o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q85" id="s2q85o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q85o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Other stimulant abuse (F15.1)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q86" id="s2q86o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q86o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q86" id="s2q86o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q86o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q86" id="s2q86o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q86o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Sedative abuse (F13.1)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q87" id="s2q87o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q87o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q87" id="s2q87o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q87o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q87" id="s2q87o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q87o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Paranoid Schizophrenia (F20.0)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q88" id="s2q88o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q88o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q88" id="s2q88o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q88o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q88" id="s2q88o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q88o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Bipolar disorder, current</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q89" id="s2q89o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q89o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q89" id="s2q89o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q89o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q89" id="s2q89o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q89o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Bipolar disorder, in remission F31.7</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q90" id="s2q90o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q90o1">Mild(1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q90" id="s2q90o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q90o2">Moderate(2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q90" id="s2q90o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q90o3">Severe(3)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Pain D isorder related to psychological factors F45.42</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q91" id="s2q91o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q91o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q91" id="s2q91o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q91o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Obsessive Compulsive Personality Disorder F60.5</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q92" id="s2q92o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q92o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q92" id="s2q92o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q92o2">Declining</label>
+    </div>
+   </fieldset>
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">OTHER DIAGNOSIS</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Morbid Obesity E66.01</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q93" id="s2q93o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q93o1">BMI> 40 with Hypertension</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q93" id="s2q93o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q93o2">BMI> 35 with Hypertension</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Other Obesity due to excess calories E66.09</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q94" id="s2q94o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q94o1">BMI> 40 with Hypertension</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q94" id="s2q94o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q94o2">BMI> 35 with Hypertension</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Protein-Calorie Malnutrition</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q95" id="s2q95o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q95o1">Mild</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q95" id="s2q95o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q95o2">Moderate</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Chronic Kidney Disease</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q96" id="s2q96o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q96o1">Stage 3, N18.3</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q96" id="s2q96o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q96o2">Stage 4, N18.4</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q96" id="s2q96o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q96o3">Stage 5, N18.5</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q96" id="s2q96o4" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q96o4">End Stage N18.6</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q96" id="s2q96o5" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q96o5">Dialysis Z99.2</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Chronic Hepatitis</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q97" id="s2q97o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q97o1">HepB (B1 8.1)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q97" id="s2q97o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q97o2">HepC (B18.2)</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q97" id="s2q97o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q97o3">Chronic Hepatitis, unspecified (B18.9)</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Unspecified Cirrhosis of liver (low platelet count) K74.60</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q98" id="s2q98o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q98o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q98" id="s2q98o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q98o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-12">
+    <fieldset class="fieldset-border">
+     <legend>Late Effect of Stroke</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q99" id="s2q99o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q99o1">Monoplegia of upper/lower limb following cerebral infarction</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q99" id="s2q99o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q99o2">Hemiplegia and hemiparesis following cerebral I69.359</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Rheumatoid arthritis M06.9</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q100" id="s2q100o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q100o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q100" id="s2q100o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q100o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Anemia in CKD (D63.1)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q101" id="s2q101o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q101o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q101" id="s2q101o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q101o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Acquired Hemolytic Anemia, unspecified (D59.9)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q102" id="s2q102o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q102o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q102" id="s2q102o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q102o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Multiple Sclerosis G35</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q103" id="s2q103o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q103o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q103" id="s2q103o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q103o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Epilepsy G40.901</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q104" id="s2q104o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q104o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q104" id="s2q104o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q104o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Parkinson's G20</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q105" id="s2q105o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q105o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q105" id="s2q105o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q105o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Chronic ulcer of skin L98.4</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q106" id="s2q106o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q106o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q106" id="s2q106o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q106o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Amputee  Paraplegia</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q107" id="s2q107o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q107o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q107" id="s2q107o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q107o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Transplant status (heart/lung/liver)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q108" id="s2q108o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q108o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q108" id="s2q108o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q108o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Ostomy Status</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q109" id="s2q109o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q109o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q109" id="s2q109o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q109o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Other specified Immunodeficiencies D84.8</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q110" id="s2q110o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q110o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q110" id="s2q110o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q110o2">Declining</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Cancer</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q111" id="s2q111o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q111o1">Active</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q111" id="s2q111o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q111o2">Remission</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Human Immunodeficiency Virus (HIV)</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q112" id="s2q112o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q112o1">HepB Serology</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q112" id="s2q112o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q112o2">HepC Screening</label>
+    </div>
+   </fieldset>
+   </div>
+   <div class="col-xl-6">
+    <fieldset class="fieldset-border">
+     <legend>Polyneuropathy due to other toxic agents G62.2</legend>
+     <div class="form-radio">
+      <input type="radio" name="s2q113" id="s2q113o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q113o1">Stable</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q113" id="s2q113o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q113o2">Declining</label>
+    </div>
+   </fieldset>
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">FOLLOW UP VISIT</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <label for="s2q114a" class="float-label"></label>
+    <textarea id="s2q114a" class="form-control required" name=""></textarea> 
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">PATIENT EDUCATION</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o1">Advance Directives</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o2">Asthma</label>
+    </div> 
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o3">Breast Self Exam</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o4" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o4">Cholesterol</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o5" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o5">Diabetes</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o6" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o6">Diet</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o7" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o7">Exercise</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o8" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o8">Family Planning</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o9" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o9">Hypertension</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o10" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o10">Immunizations</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o11" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o11">Medications</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o12" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o12">Obesity</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o13" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o13">Medication Adherence</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o14" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o14">STD’s</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o15" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o15">Substance Abuse</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o16" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o16">Testicular Self Exam</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o17" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o17">Tobacco Cessation</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o18" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o18">Tuberculosis</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o19" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o19">Fall Prevention</label>
+    </div>
+    <div class="form-radio">
+      <input type="checkbox" name="s2q114" id="s2q114o20" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q114o20">Other</label>
+    </div>
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-6">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">Provider Info</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <div class="form-group">
+     <label for="s2q115a" class="float-label">Print Provider Name</label>
+     <input type="text" name="" id="s2q115a" class="form-control required"> 
+    </div> 
+   </div>
+   <div class="col-xl-12">
+    <div class="form-group">
+     <label for="s2q115b" class="float-label">Print Group Name</label>
+     <input type="text" name="" id="s2q115b" class="form-control required"> 
+    </div> 
+   </div>
+   <div class="col-xl-12">
+    <div class="form-group">
+     <label for="s2q115c" class="float-label">Primary Care Provider</label>
+     <input type="text" name="" id="s2q115c" class="form-control required"> 
+    </div> 
+   </div>
+   <div class="col-xl-12">
+    <div class="form-group">
+     <label for="s2q115d" class="float-label">Date</label>
+     <input type="text" name="" id="s2q115d" class="form-control required datepicker"> 
+    </div> 
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-6">
+  <div class="sigPad" id="smoothed1">
+    <ul class="sigNav">
+      <li class="drawIt"><a href="#draw-it" >Do your Signature</a></li>
+      <li class="clearButton"><a href="#clear">Clear</a></li>
+    </ul>
+    <div class="sig sigWrapper" style="height:auto;">
+      <div class="typed"></div>
+      <canvas class="pad"></canvas>
+      <input type="hidden" name="sign1" class="output" id="sign1">
+    </div>
+    <span class="error-span" id="error_sign1"></span>
+  </div>
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">Check One</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <div class="form-radio">
+      <input type="radio" name="s2q115e" id="s2q115eo1" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q115eo1">MD</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q115e" id="s2q115eo2" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q115eo2">DO</label>
+    </div> 
+    <div class="form-radio">
+      <input type="radio" name="s2q115e" id="s2q115eo3" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q115eo3">NP</label>
+    </div>
+    <div class="form-radio">
+      <input type="radio" name="s2q115e" id="s2q115eo4" class="radio" value="">
+      <label class="radiolabel required-label" for="s2q115eo4">PA</label>
+    </div> 
+   </div>
+  </div> 
+ </fieldset> 
+</div>
+
+<div class="col-xl-12">
+ <fieldset class="fieldset-outer">
+  <legend class="custom-legend">NOTES/COMMENTS</legend>
+  <div class="row inner-row">
+   <div class="col-xl-12">
+    <label for="s2q116" class="float-label"></label>
+    <textarea id="s2q116" class="form-control required" name="" rows="4"></textarea> 
+   </div> 
+  </div> 
+ </fieldset> 
+</div>
+
+
+</div>
+<!-- Steppers Navigation -->
+<div class="row mt-1 btn-box">
+  <a>
+   <img src="assest/img/Save & Exit.png" class="img-fluid next-btn" onmouseover="this.src='assest/img/Save & Exit 2.png'" onmouseout="this.src='assest/img/Save & Exit.png'"> 
+ </a>
+ <a>
+   <img src="assest/img/next.png" class="img-fluid next-btn" onmouseover="this.src='assest/img/next-hover.png'" onmouseout="this.src='assest/img/next.png'"> 
+ </a>
+</div>
+<!-- /.Vertical Steppers -->
+</div>
+
+</li>
+
+<li class="form-step" id="second-step">
+  <a>
+    <span class="circle" id="step-second-cirle">2</span>
+    <span class="label">Patient Demographics</span>
+  </a>
+
+  <!-- Section Description -->
+  <div class="step-content container pr-5">
+   <div class="row"></div>
+   <!-- Steppers Navigation -->
+   <div class="row mt-1 btn-box">
+     <a onclick="saveExit()">
+      <img src="assest/img/Save & Exit.png" class="img-fluid next-btn" onmouseover="this.src='assest/img/Save & Exit 2.png'" onmouseout="this.src='assest/img/Save & Exit.png'"> 
+    </a>
+    <a id="next_step3">
+      <img src="assest/img/next.png" class="img-fluid next-btn" onmouseover="this.src='assest/img/next-hover.png'" onmouseout="this.src='assest/img/next.png'"> 
+    </a>
+  </div>
+  <!-- /.Vertical Steppers -->
+</div>
+
+</li>   
+
+
+
+</ul>
+<!-- /.Stepers Wrapper -->
+
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- ======================= content ================================  -->
+
+</div> 
+<!-- ======================= container ================================  -->
+</section>
+
+
+
+<script type="text/javascript" src="assest/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="assest/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="assest/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="assest/js/custom.js"></script>
+<script type="text/javascript" src="assest/js/progress.js"></script>
+<script type="text/javascript" src="assest/js/mask.js"></script>
+<script type="text/javascript" src="assest/js/register.js"></script>
+<script type="text/javascript" src="assest/js/signature/bezier.js"></script>
+<script type="text/javascript" src="assest/js/signature/jquery.signaturepad.js"></script>
+<script type="text/javascript" src="assest/js/signature/json2.min.js"></script>
+<script type="text/javascript" src="assest/js/signature/numeric.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#smoothed1').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+    $('#smoothed2').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+    $('#smoothed3').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+    $('#smoothed4').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+    $('#smoothed5').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+    $('#smoothed6').signaturePad({drawOnly:true, drawBezierCurves:true, lineTop:200});
+  });
+</script>
+</body>
+</html>
