@@ -1,0 +1,10 @@
+topbar bg rgba(31, 38, 39, 0.8);
+topbar color #fff ,#01b1d7
+nav a color #354144
+nav a hover #01b1d7
+hero bg (0, 0, 0, 0.85)
+hero btn hover #165460
+section title #354144
+section back title #f3f5f5
+about-list p #848484
+resource title #222222
