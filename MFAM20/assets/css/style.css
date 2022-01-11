@@ -1571,23 +1571,24 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
+.contact .php-email-form input::placeholder, 
+.contact .php-email-form textarea::placeholder{
+  font-size: 16px;
+  text-align: left;
+}
+
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
+  font-size: 16px;
+  min-height: 44px;
+  padding: 12px 12px;
 }
 
 .contact .php-email-form button[type="submit"] {
   border: 0;
   padding: 18px 36px;
+  display: block !important;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1629,7 +1630,7 @@ section {
 }
 
 #footer .footer-top .footer-info h3 {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
@@ -1637,7 +1638,7 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
   margin-bottom: 0;
   color: #fff;
@@ -1665,7 +1666,7 @@ section {
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
   position: relative;
@@ -1693,6 +1694,7 @@ section {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  font-size: 15px;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1716,6 +1718,10 @@ section {
   padding: 6px 10px;
   position: relative;
   border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter p{
+  font-size: 15px;
 }
 
 #footer .footer-top .footer-newsletter form input[type="email"] {
