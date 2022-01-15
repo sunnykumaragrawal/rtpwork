@@ -188,6 +188,54 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Template button
+--------------------------------------------------------------*/
+.template-btn{
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.5s;
+  line-height: 1;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #fff;
+  background: #01b1d7;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.template-btn span{
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.template-btn::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background: #165460;
+  z-index: 0;
+  content: '';
+  transition: all 400ms cubic-bezier(.33,.68,.59,.99);
+}
+
+.template-btn:hover::after{
+  height: 100%;
+  color: #fff !important;
+}
+
+.template-btn:hover span{
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -475,10 +523,6 @@ a:hover {
   letter-spacing: 1.4px;
 }
 
-#hero h2 span{
-  color: #fff;
-}
-
 #hero p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
@@ -487,6 +531,54 @@ a:hover {
   font-size: 18px;
   line-height: 28px;
 }
+
+#hero .btn-get-started {
+  padding: 14px 32px;
+  margin: 10px;
+}
+
+@media (max-width: 767px) {
+  #hero{
+    height: 100vh;
+  }
+  #hero .carousel-item{
+    height: 100vh;
+  }
+  #hero .carousel-content {
+    padding: 10px;
+  }
+  #hero h6 {
+    font-size: 14px;
+  }
+  #hero h2 {
+    margin-bottom: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  #hero p {
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  #hero .btn-get-started {
+    padding: 14px 32px;
+    margin: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  #hero{
+    height: 100vh;
+  }
+  #hero .carousel-item{
+    height: 100vh;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/* carousel */
 
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
@@ -546,86 +638,6 @@ a:hover {
   margin-top: 0;
 }
 
-.template-btn{
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  position: relative;
-  border-radius: 5px;
-  transition: 0.5s;
-  line-height: 1;
-  letter-spacing: 1px;
-  display: inline-block;
-  color: #fff;
-  background: #01b1d7;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-}
-
-.template-btn span{
-  color: #fff;
-  position: relative;
-  z-index: 10;
-}
-
-.template-btn::after{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 0;
-  background: #165460;
-  z-index: 0;
-  content: '';
-  transition: all 400ms cubic-bezier(.33,.68,.59,.99);
-}
-
-.template-btn:hover::after{
-  height: 100%;
-  color: #fff !important;
-}
-
-.template-btn:hover span{
-  color: #fff;
-}
-
-#hero .btn-get-started {
-  padding: 14px 32px;
-  margin: 10px;
-}
-
-@media (max-width: 768px) {
-  #hero {
-    height: 90vh;
-  }
-  #hero .carousel-item {
-    height: 90vh;
-  }
-  #hero h2 {
-    font-size: 28px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #hero p {
-    width: 60%;
-  }
-  #hero .carousel-control-prev, #hero .carousel-control-next {
-    width: 5%;
-  }
-}
-
-@media (max-height: 500px) {
-  #hero {
-    height: 150vh;
-  }
-  #hero .carousel-item {
-    height: 150vh;
-  }
-}
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -635,7 +647,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2fdff; /* #f2fdff */
+  background-color: red; /* #f2fdff */
 }
 
 .section-title {
@@ -674,13 +686,16 @@ section {
   z-index: 2;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
+  section {
+    padding: 30px 0 20px;
+  }
   .section-title h2 {
     font-size: 28px;
     margin-bottom: 15px;
   }
   .section-title span {
-    font-size: 38px;
+    display: none;
   }
 }
 
@@ -706,29 +721,38 @@ section {
   line-height: 28px;
 }
 
-/* .about .about-content ul {
-  list-style: none;
-  padding: 0;
+@media(max-width: 767px){
+  .about .about-content{
+    background-color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .about .about-content h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .about .about-content h3 {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .about .about-content p{
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
-.about .about-content ul li {
-  padding: 10px 0 0 28px;
-  position: relative;
-  font-size: 18px;
-  line-height: 28px;
+@media(min-width: 768px) and (max-width: 991px){
+  .about .about-content{
+    background-color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
 }
-
-.about .about-content ul i {
-  left: 0;
-  top: 7px;
-  position: absolute;
-  font-size: 20px;
-  color: #01b1d7;
-}
-
-.about .about-content p:last-child {
-  margin-bottom: 0;
-} */
 
 /*--------------------------------------------------------------
 # About List
@@ -766,6 +790,20 @@ section {
   font-size: 15px;
   color: #848484;
   margin-left: 62px;
+}
+
+@media(max-width: 767px){
+  .about-listimg{
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-listimg{
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -927,6 +965,47 @@ section {
   color: #fff;
 }
 
+@media(max-width: 767px){
+  .strips{
+    padding: 15px;
+  }
+  .strip-left{
+    margin-bottom: 15px;
+  }
+  .strip-left i{
+    font-size: 36px;
+  }
+  .strip-center{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .strip-center h5{
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+  .strip-center h6{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .strip-right .strip-btn{
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .strips{
+    padding: 20px;
+  }
+  .strip-left{
+    margin-bottom: 15px;
+  }
+  .strip-center{
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Patient Resource Center
 --------------------------------------------------------------*/
@@ -1084,6 +1163,20 @@ section {
   align-items: center;
 }
 
+@media(max-width: 767px){
+  .service .service-img{
+    background-color: transparent;
+    margin-top: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .service .service-img{
+    background-color: transparent;
+    margin-top: 15px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
@@ -1095,6 +1188,24 @@ section {
   align-items: center;
   padding: 5px 10px;
   margin-bottom: 15px;
+}
+
+@media(max-width: 767px){
+  .insurance-img{
+    margin-bottom: 15px;
+  }
+  .insurance-item{
+    height: 75px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .insurance-img{
+    margin-bottom: 15px;
+  }
+  .insurance-item{
+    height: 130px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1237,6 +1348,33 @@ section {
   display: block !important;
 }
 
+@media(max-width: 767px){
+  .recentblogs-rightimg{
+    background-color: #fff;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .recentblogs-left.active{
+    margin-bottom: 20px;
+  }
+  .recentblogs-rightcontent{
+    padding: 25px 10px 20px 10px;
+    text-align: center;
+  }
+  .blog-right .nav-tabs{
+    margin-right: 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .recentblogs-left.active{
+    margin-bottom: 20px;
+  }
+  .blog-right .nav-tabs{
+    margin-right: 15px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -1297,12 +1435,32 @@ section {
   }
 }
 
+@media(max-width: 767px){
+  .doctors .nav-link {
+    border: 1px solid #d4d6df;
+    padding: 10px 18px;
+    transition: 0.3s;
+    border-radius: 0;
+    text-align: center;
+    display: block !important;
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #01b1d7;
+    margin-right: 0px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .doctors .nav-link {
+    display: block !important;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Doctors Info
 --------------------------------------------------------------*/
-.doctor-main{
-}
-
 .doctor-main .doctor-img{
   background-color: #fff;
   display: flex;
@@ -1311,16 +1469,11 @@ section {
   height: 100%;
 }
 
-.doctor-main .doctor-img img{
-}
-
 .doctor-main .doctor-content{
   background-color: #fff;
   padding: 25px 20px;
   height: 100%;
 }
-
-.doctor-main .doctor-content h4{}
 
 .doctor-main .doctor-content h6{
   font-style: italic;
@@ -1361,6 +1514,41 @@ section {
   color: #fff;
   font-size: 18px;
   margin-bottom: 3px;
+}
+
+@media(max-width: 767px){
+  .doctor-main .doctor-img{
+    height: auto;
+  }
+  .doctor-main .doctor-content{
+    text-align: center;
+    padding: 25px 20px;
+    height: auto;
+  }
+  .doctor-main .doctor-content strong{
+    display: none;
+  }
+  .doctor-main .doctor-hours{
+    margin-top: 15px;
+    padding: 25px 20px 5px 20px;
+    height: auto;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .doctor-main .doctor-img{
+    height: auto;
+  }
+  .doctor-main .doctor-content{
+    text-align: center;
+    padding: 25px 20px;
+    height: auto;
+  }
+  .doctor-main .doctor-hours{
+    margin-top: 15px;
+    padding: 25px 20px 5px 20px;
+    height: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1606,6 +1794,20 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media(max-width: 767px){
+  .contact-img{
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .contact-img{
+    background-color: transparent;
+    margin-bottom: 15px;
   }
 }
 
