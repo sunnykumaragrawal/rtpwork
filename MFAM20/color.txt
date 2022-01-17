@@ -1,10 +1,8 @@
-topbar bg rgba(31, 38, 39, 0.8);
-topbar color #fff ,#01b1d7
-nav a color #354144
-nav a hover #01b1d7
-hero bg (0, 0, 0, 0.85)
-hero btn hover #165460
-section title #354144
-section back title #f3f5f5
-about-list p #848484
-resource title #222222
+#01b1d7
+
+p color: #848484;  
+strip-btn{background-color: #165460}
+team heading{color: #354144}
+
+
+box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
