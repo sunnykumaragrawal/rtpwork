@@ -312,6 +312,7 @@ a:hover {
   text-align: center;
   cursor: pointer;
   padding: 18px 36px;
+  width: 85%;
   transition: 0.8s ease-in-out;
 }
 
@@ -321,7 +322,8 @@ a:hover {
 }
 
 #hero .hero-img{
-  padding: 0 0 0 15px; 
+  background-size: cover;
+  min-height: 100vh; 
 }
 
 #hero .hero-img img{
@@ -416,12 +418,14 @@ section {
 # About
 --------------------------------------------------------------*/
 .about-left{
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px 12px;
 }
 
 .about-left h5{
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 32px;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .about-left p{
@@ -429,58 +433,41 @@ section {
   line-height: 28px;
 }
 
-.about-right{
-}
-
-.about-right p{
-  font-size: 18px;
-  line-height: 28px;
-}
-
-/*--------------------------------------------------------------
-# Why Us
---------------------------------------------------------------*/
-.why-box{
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  height: 100%;
+.about-box{
   background-color: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 40px;
 }
 
-.why-box .why-header{
-  background-color: #7272f5;
-  height: 100px;
-  padding: 20px 30px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.why-box .why-header i{
-  width: 60px;
-  height: 60px;
+.about-icon{
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background-color: #fff;
-  float: left;
-  font-size: 32px;
+  background-color: #ccc;
+  margin: 0 auto 30px;
+  position: relative;
+}
+
+.about-icon i{
   color: #7272f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 15px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-size: 56px;
 }
 
-.why-box .why-header h5{
-  color: #fff;
-  line-height: 60px;
-  font-size: 22px;
-}
-
-.why-box .why-content{
+.about-content{
   padding: 20px;
 }
 
-.why-box .why-content p{
+.about-content h5{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.about-content p{
   font-size: 18px;
   line-height: 28px;
 }
@@ -944,48 +931,24 @@ section {
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
-.insurance-img{
+.insurance-bg{
   background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.insuranc-box{
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 22px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  padding: 15px;
 }
 
-.insurances .nav-link.active h3 a{
-  color: #7272f5;
-}
-
-.insurances .icon-box {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  transition: ease-in-out 0.3s;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-}
-
-.insurances .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
-}
-
-.insurances .icon-box h3 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-size: 16px;
-}
-
-.insurances .icon-box h3 a {
-  color: #434175;
-  transition: ease-in-out 0.3s;
-}
-
-.insurances .icon-box:hover h3 a {
-  color: #5a5af3;
+.insuranc-box img{
+  max-height: 90px;
 }
 
 /*--------------------------------------------------------------
