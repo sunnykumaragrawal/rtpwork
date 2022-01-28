@@ -715,6 +715,9 @@ section {
   .socialmedia-box{
     width: 70%;
   }
+  .socialmedia-carousel{
+    padding: 50px;
+  }
 }
 
 .socialmedia-carousel{
