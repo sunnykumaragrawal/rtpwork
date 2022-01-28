@@ -711,15 +711,6 @@ section {
   border: 0.7px solid #7272f5;
 }
 
-@media(max-width: 400px){
-  .socialmedia-box{
-    width: 70%;
-  }
-  .socialmedia-carousel{
-    padding: 50px;
-  }
-}
-
 .socialmedia-carousel{
   border-radius: 50%;
   padding: 120px;
@@ -1612,11 +1603,12 @@ section {
 
 #footer .social-links a {
   font-size: 18px;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   background: #deddec;
   color: #434175;
   line-height: 1;
-  padding: 14px 0;
   margin-right: 8px;
   border-radius: 50%;
   text-align: center;
