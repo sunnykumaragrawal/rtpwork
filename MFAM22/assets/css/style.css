@@ -147,7 +147,7 @@ a:hover {
 #hero .hero-container {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
   top: 0;
   left: 0;
   background-color: rgba(0, 123, 255, 0.85);
@@ -396,7 +396,7 @@ section {
 # Hero Boxes
 --------------------------------------------------------------*/
 .hero-boxes{
-  margin-top: -150px;
+  margin-top: -130px;
   padding: 0 0;
 }
 
