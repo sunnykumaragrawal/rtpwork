@@ -1,3 +1,15 @@
+NEON PURPLE
+PMS: 246 C
+HEX COLOR: #C724B1;
+RGB: (199,36,177)
+
+AQUA GREEN
+PMS: 922 C
+HEX COLOR: #00C0A3;
+RGB: (0,192,163)
+
+
+
 main color #fd680e
 sectionsubtitle color: #743e1d;
 sectionsubpara color: #5e5e5e;
