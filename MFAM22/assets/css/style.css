@@ -116,7 +116,7 @@ a:hover {
 }
 
 .nav-toggle i {
-  color: #C724B1;
+  color: #87CEEB;
   font-size: 28px;
   font-weight: 600;
 }
@@ -149,7 +149,7 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(199,36,177, 0.85);
+  background-color: rgba(135,206,235, 0.92);
   display: flex;
   justify-content: center;
   align-items: center;
