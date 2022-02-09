@@ -115,7 +115,7 @@ a:hover {
 }
 
 .nav-toggle i {
-  color: #87CEEB;
+  color: #00C0A3;
   font-size: 28px;
   font-weight: 600;
 }
@@ -364,7 +364,7 @@ section {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
-  color: #C724B1;
+  color: #00C0A3;
 }
 
 .section-header::before {
@@ -374,7 +374,7 @@ section {
     height: 3px;
     right: -55px;
     bottom: 11px;
-    background: #C724B1;
+    background: #00C0A3;
 }
 
 .section-header::after {
@@ -547,7 +547,7 @@ section {
 # Strips
 --------------------------------------------------------------*/
 .strip {
-  background: #C724B1;
+  background: #00C0A3;
   background-size: cover;
   padding: 20px 0;
   position: relative;
@@ -564,7 +564,7 @@ section {
 .strip-column h3 {
   font-size: 28px;
   font-weight: 700;
-  color: #C724B1;
+  color: #00C0A3;
 }
 
 .strip-arrow{
@@ -573,7 +573,7 @@ section {
   top: 20px;
   width: 60px;
   height: 60px;
-  background-color: #00C0A3;
+  background-color: #FFE9F5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -583,7 +583,7 @@ section {
 
 .strip-arrow i{
   font-size: 32px;
-  color: #fff;
+  color: #00C0A3;
 }
 
 .strip:hover .strip-arrow{
@@ -1119,12 +1119,12 @@ section {
 --------------------------------------------------------------*/
 .footer-links i{
   margin-right: 8px;
-  color: #00C0A3;
+  color: #FFE9F5;
 }
 
 .footer-info i{
   margin-right: 8px;
-  color: #00C0A3;
+  color: #FFE9F5;
 }
 
 .footer-social a{
@@ -1151,7 +1151,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #C724B1;
+  background: #00C0A3;
   color: #fff;
   transition: all 0.4s;
 }
@@ -1248,7 +1248,7 @@ section {
   left: 0px;
   top: 250px;
   z-index: 996;
-  background: #C724B1;
+  background: #00C0A3;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1262,7 +1262,7 @@ section {
 }
 
 .select-language:hover {
-  background: #C724B1;
+  background: #00C0A3;
   cursor: pointer;
 }
 
@@ -1320,7 +1320,7 @@ section {
   top: 50%;
   width: 0;
   height: 0;
-  background: #C724B1;
+  background: #00C0A3;
   z-index: 0;
   content: '';
   transition: all 400ms cubic-bezier(.33,.68,.59,.99);
