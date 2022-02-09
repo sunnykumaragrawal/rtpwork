@@ -39,7 +39,6 @@ a:hover {
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -149,7 +148,7 @@ a:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(135,206,235, 0.92);
+  background-color: rgba(255, 233, 245, 0.82); /* #FFE9F5 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,7 +158,6 @@ a:hover {
 }
 
 #hero h6{
-  color: #fff;
   font-size: 22px;
   font-weight: 500;
   margin: 15px;
@@ -171,11 +169,9 @@ a:hover {
   font-weight: 700;
   letter-spacing: 1.3px;
   line-height: 56px;
-  color: #fff; /* #222 */
 }
 
 #hero h2 {
-  color: #fff; /* #333 */
   margin-bottom: 30px;
   font-size: 24px;
   width: 70%;
@@ -765,8 +761,6 @@ section {
 # Insurance
 --------------------------------------------------------------*/
 .insurance-bg img{
-  background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 .insuranc-box{
