@@ -34,9 +34,7 @@
     <div class="container-fluid">
 
       <div class="logo float-left">
-        <!-- <h1 class="text-light"><a href="index.html"><span>MFAM22</span></a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="index.html"><img src="assets/img/rtplogo.png" alt="" class="img-fluid"></a>
+        <a href="index.html"><img src="assets/img/rtplogo.png" alt="" class="img-fluid"></a>
       </div>
 
       <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
@@ -62,23 +60,16 @@
       <h6>LET'S START WITH US</h6>
       <h1>RTP MEDICAL SOLUTION</h1>
       <h2>We Are A Leading Medical Solutions Expert In The United States</h2>
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+      <form class="php-email-form">
         <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
             <input name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <div class="validate"></div>
           </div>
           <div class="col-md-6 form-group pl-md-1">
             <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-            <div class="validate"></div>
           </div>
         </div>
 
-        <div class="mb-1">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your notification request was sent. Thank you!</div>
-        </div>
         <div class="text-center"><button type="submit">Notify me!</button></div>
       </form>
     </div>
@@ -92,7 +83,7 @@
           <div class="col-lg-12 hero-subbox d-flex flex-column">
             <h3>Make Appointment</h3>
             <p>Get the healthcare you need in just seconds! Skip the waiting room, the unending telephone calls, and the cascade of protocols regular medical visits require</p>
-            <div class="col-9 mx-auto mt-3">
+            <div class="col-md-9 col-12 mx-auto mt-3">
               <a data-toggle="modal" data-target="#appointmentwidget" id="appointment" class="hero-btn">Book An Appointment</a>
             </div>
           </div>
@@ -109,10 +100,10 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right" data-aos-delay="100">
             <div class="about-left">
-              <h5 class="section-header">About Us</h5>
-              <h2 class="section-theme">We Are A Leading Medical Solutions Expert In The United States</h2>
+              <h5 class="section-subheader">About Us</h5>
+              <h2 class="section-header">We Are A Leading Medical Solutions Expert In The United States</h2>
               <h4>The idea behind RTP Medical Solution was to develop a long term concept which aims to improve people’s medical care</h4>
               <div class="row mb-3">
                 <div class="col-sm-6 col-12">
@@ -131,7 +122,7 @@
               <a href="" class="template-btn d-none"><span>RTP MEDICAL SOLUTION</span></a>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100">
             <div class="about-img">
               <img src="assets/img/about/about-img.png" class="img-fluid">
             </div>
@@ -217,13 +208,13 @@
           <h2>Follow Us</h2>
         </div>
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-6 social-img" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/img/icons/social-bg.jpg" class="img-fluid">
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100" style="overflow: hidden">
             <div class="social-theme">
-              <h5 class="section-header">Social Media</h5>
-              <h2 class="section-theme">Get Us Connect on Social Media Platforms</h2>
+              <h5 class="section-subheader">Social Media</h5>
+              <h2 class="section-header">Get Us Connect on Social Media Platforms</h2>
             </div>
             <div class="socialmedia-carousel owl-theme">
 
@@ -386,18 +377,18 @@
         </div>
 
         <div class="row mb-1">
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-5 d-flex justify-content-center align-items-center flex-column" data-aos="fade-right" data-aos-delay="100">
             <div class="service-bg">
               <img src="assets/img/service/service-bg.jpg" class="img-fluid">
             </div>
           </div>
           <div class="col-lg-7">
             <div class="row">
-              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="100">
-                <h5 class="section-header">Services</h5>
-                <h2 class="section-theme">We Offer The Best Quality Medical Services</h2>
+              <div class="col-md-12 service-theme" data-aos="fade-left" data-aos-delay="100">
+                <h5 class="section-subheader">Services</h5>
+                <h2 class="section-header">We Offer The Best Quality Medical Services</h2>
               </div>
-              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
                 <div class="service-box">
                   <div class="service-img">
                     <img src="assets/img/service/image1.jpg" class="img-fluid">
@@ -410,7 +401,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
                 <div class="service-box">
                   <div class="service-img">
                     <img src="assets/img/service/image2.jpg" class="img-fluid">
@@ -428,7 +419,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image3.jpg" class="img-fluid">
@@ -441,7 +432,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image4.jpg" class="img-fluid">
@@ -454,7 +445,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image5.jpg" class="img-fluid">
@@ -467,7 +458,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="700">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image6.jpg" class="img-fluid">
@@ -480,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="800">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="800">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image7.jpg" class="img-fluid">
@@ -493,7 +484,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="900">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="900">
             <div class="service-box">
               <div class="service-img">
                 <img src="assets/img/service/image8.jpg" class="img-fluid">
@@ -532,51 +523,51 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 order-lg-1 order-2">
             <div class="row">
-              <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100">
+              <div class="col-lg-12 col-md-6" data-aos="fade-right" data-aos-delay="100">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/01.png" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-right" data-aos-delay="200">
+              <div class="col-lg-12 col-md-6" data-aos="fade-right" data-aos-delay="200">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/02.png" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-right" data-aos-delay="300">
+              <div class="col-lg-12 col-md-6" data-aos="fade-right" data-aos-delay="300">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/03.png" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-right" data-aos-delay="400">
+              <div class="col-lg-12 col-md-6" data-aos="fade-right" data-aos-delay="400">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/04.png" class="img-fluid">
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 insurance-bg" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6 order-lg-2 order-1 insurance-bg" data-aos="zoom-in" data-aos-delay="100">
             <img src="assets/img/insurance/medical-insurance.jpg" class="img-fluid">
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 order-lg-3 order-3">
             <div class="row">
-              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="100">
+              <div class="col-lg-12 col-md-6" data-aos="fade-left" data-aos-delay="100">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/05.jpg" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="200">
+              <div class="col-lg-12 col-md-6" data-aos="fade-left" data-aos-delay="200">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/06.jpg" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="300">
+              <div class="col-lg-12 col-md-6" data-aos="fade-left" data-aos-delay="300">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/07.jpg" class="img-fluid">
                 </div>
               </div>
-              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="400">
+              <div class="col-lg-12 col-md-6" data-aos="fade-left" data-aos-delay="400">
                 <div class="insuranc-box">
                   <img src="assets/img/insurance/08.png" class="img-fluid">
                 </div>
@@ -629,8 +620,8 @@
        <div class="row">
         <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
           <div class="blog-theme">
-            <h5 class="section-header">Our Blogs</h5>
-            <h2 class="section-theme">Get the Latest News From Our Medical Expert</h2>
+            <h5 class="section-subheader">Our Blogs</h5>
+            <h2 class="section-header">Get the Latest News From Our Medical Expert</h2>
             <h6><i class="fa fa-check"></i>Less Than 15% of Medical Sites Meet CORE WEB VITALS Scores<br> <span>Posted By: Saul Goodman</span></h6>
             <h6><i class="fa fa-check"></i>8 Silly But Harmful SEO Mistakes Medical Sites Make<br> <span>Posted By: Jena Karlis</span></h6>
             <h6><i class="fa fa-check"></i>Don't Let Your Medical Web Site Listings be Sabotaged<br> <span>Posted By: Sara Wilsson</span></h6>
@@ -709,15 +700,15 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+          <div class="col-lg-4 col-md-12" data-aos="fade-right" data-aos-delay="100">
             <div class="doctor-theme">
-              <h5 class="section-header">Our Doctors</h5>
-              <h2 class="section-theme">Meet Our Certified & Experienced Doctors</h2>
+              <h5 class="section-subheader">Our Doctors</h5>
+              <h2 class="section-header">Meet Our Certified & Experienced Doctors</h2>
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank" class="template-btn btn-block mt-3"><span>Need An Appointment?</span></a>
               <a href="tel:888-753-5487" class="template-btn btn-block mt-3" style="background-color: red;"><span><i class="bi bi-phone-vibrate mr-2"></i> 888-753-5487</span></a>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="doctor-box">
               <div class="doctor-img">
                 <img src="assets/img/doctors/team-1.jpg" class="img-fluid">
@@ -734,7 +725,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="doctor-box">
               <div class="doctor-img">
                 <img src="assets/img/doctors/team-2.jpg" class="img-fluid">
@@ -751,7 +742,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="doctor-box">
               <div class="doctor-img">
                 <img src="assets/img/doctors/team-3.jpg" class="img-fluid">
@@ -768,7 +759,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="doctor-box">
               <div class="doctor-img">
                 <img src="assets/img/doctors/team-4.jpg" class="img-fluid">
@@ -785,7 +776,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="600">
+          <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-delay="600">
             <div class="doctor-timetable">
               <h4>Operational Hours</h4>
               <ul>
@@ -863,8 +854,8 @@
 
           <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
             <div class="contact-info">
-              <h5 class="section-header">Contact Us</h5>
-              <h2 class="section-theme">Feel Free To Contact Us</h2>
+              <h5 class="section-subheader">Contact Us</h5>
+              <h2 class="section-header">Feel Free To Contact Us</h2>
               <div class="contact-box">
                 <div class="contact-icon">
                   <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>

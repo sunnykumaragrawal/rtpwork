@@ -69,16 +69,16 @@
   $('.insurance-carousel').owlCarousel({
     autoplay: true,
     loop: true,
-    margin: 20,
+    margin: 30,
     dots: false,
     nav: false,
     responsiveClass: true,
     responsive: {
       0: {
-        items: 3
+        items: 1
       },
       768: {
-        items: 4
+        items: 2
       },
       900: {
         items: 4
