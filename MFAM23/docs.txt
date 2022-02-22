@@ -1,0 +1,1 @@
+main color #ff7f5d
