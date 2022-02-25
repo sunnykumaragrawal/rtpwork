@@ -1,1 +1,1 @@
-main color #ff7f5d
+#092E20 Hex Color | RGB: 9, 46, 32 | BOTTLE GREEN, GREEN BLUE.
