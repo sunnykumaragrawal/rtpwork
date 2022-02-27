@@ -163,7 +163,7 @@
         items: 1
       },
       768: {
-        items: 2
+        items: 3
       },
       992: {
         items: 3
@@ -227,7 +227,7 @@
       responsive: [{
               breakpoint: 991,
               settings: {
-                  slidesToShow: 3,
+                  slidesToShow: 4,
                   slidesToScroll: 1,
                   adaptiveHeight: true,
               },
@@ -235,14 +235,14 @@
           {
               breakpoint: 767,
               settings: {
-                  slidesToShow: 3,
+                  slidesToShow: 2,
                   slidesToScroll: 1,
               },
           },
           {
               breakpoint: 576,
               settings: {
-                  slidesToShow: 2,
+                  slidesToShow: 1,
                   slidesToScroll: 1,
               },
           },
