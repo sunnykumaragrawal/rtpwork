@@ -154,7 +154,7 @@
   // Hero carousel (uses the Owl Carousel library)
   $(".hero-carousel").owlCarousel({
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
     margin:20,
     responsive: {
@@ -182,7 +182,7 @@
 
   $(function(){
       $(".servicetwo-typed").typed({
-          strings: ["EKG service"],
+          strings: ["EKG services"],
           loop: true,
           typeSpeed: 100,
           backSpeed: 40,
