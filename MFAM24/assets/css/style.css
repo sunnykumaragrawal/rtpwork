@@ -38,7 +38,7 @@ a:hover {
 
 .back-to-top:hover {
   color: #fff;
-  background: #2ae149;
+  background: #D81324;
   transition: 0.3s ease-in-out;
 }
 
@@ -320,7 +320,7 @@ section {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: #A4C639;
+    color: #D81324;
     font-weight: 500;
 }
 
@@ -568,8 +568,8 @@ Services
 }
 
 .services .hidden-content {
-  background: rgb(42,225,57);
-  background: linear-gradient(105deg, rgba(42,225,57,1) 0%, rgba(42,225,57,1) 100%);
+  background: rgb(216,19,36);
+  background: linear-gradient(105deg, rgba(216,19,36,1) 0%, rgba(216,19,36,1) 100%);
   padding: 25px;
   border-radius: 20px;
   text-align: center;
@@ -585,13 +585,13 @@ Services
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgb(42,225,57);
+  background: rgb(216,19,36);
   content: '';
   left: 50%;
   bottom: -8px;
   margin-left: -5px;
   transform: rotate(45deg);
-  background: linear-gradient(105deg, rgba(42,225,57,1) 0%, rgba(42,225,57,1) 100%);
+  background: linear-gradient(105deg, rgba(216,19,36,1) 0%, rgba(216,19,36,1) 100%);
   z-index: -1;
 }
 
@@ -773,7 +773,7 @@ a.btn-slide span{
     align-items: center;
     font-size: 16px;
     color: #FFFFFF;
-    background: #A4C639;
+    background: #D81324;
     border-radius: 0 35px 35px 0;
     transition: .5s;
     z-index: 2;
@@ -795,7 +795,7 @@ a.btn-slide:hover span{
 
 a.btn-slide:hover i,
 a.btn-slide:hover span{
-    background: #A4C639;
+    background: #D81324;
 }
 
 /*--------------------------------------------------------------
@@ -1039,7 +1039,7 @@ a.btn-slide:hover span{
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #2ae149;
+  background: #D81324;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1188,7 +1188,7 @@ a.btn-slide:hover span{
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #2ae149;
+  background: #D81324;
 }
 
 #footer .credits {
