@@ -360,9 +360,14 @@ section {
   margin-bottom: 20px;
 }
 
+@media(min-width: 992px){
+  .about-icon{
+    flex-shrink: 0;
+  }
+}
+
 .about-icon{
   display: flex;
-  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 55px; 
@@ -403,6 +408,14 @@ section {
 }
 
 @media(max-width: 767px){
+  .about-box{
+    display: block;
+    text-align: center;
+  }
+  .about-icon{
+    margin-right: 0;
+    margin: 0 auto;
+  }
   .about-img iframe{
     width: 100%;
     height: 300px;
@@ -413,11 +426,23 @@ section {
   .about-left h1{
     font-size: 32px;
   }
-  .about-left p{
-  }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .about-img iframe{
+    width: 100%;
+    height: 300px;
+  }
+  .about-left{
+    margin-top: 30px;
+  }
+  .about-left h1{
+    text-align: center;
+  }
+  .about-left p{
+    text-align: center;
+  }
+}
 
 /*--------------------------------------------------------------
 # Strips
@@ -470,7 +495,7 @@ section {
 
 @media(max-width: 767px){
   .strip-left{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
@@ -801,7 +826,11 @@ Services
   background-color: #ff3333;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .recentblogs-block{
+    min-height: auto;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){}
 
@@ -956,9 +985,20 @@ a.btn-slide:hover span{
   color: #D81324;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .doctor-content{
+    padding: 30px 15px 20px 30px;
+  }
+  .doctor-content h2{
+    font-size: 28px;
+  }
+}
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .doctor-content{
+    padding: 40px 25px 30px 40px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact
