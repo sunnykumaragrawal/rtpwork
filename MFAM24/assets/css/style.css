@@ -6,6 +6,7 @@ body {
 }
 
 a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -63,21 +64,8 @@ a:hover {
 }
 
 #header .logo {
-  font-size: 28px;
   margin: 0;
   padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-#header .logo a {
-  color: #111;
-}
-
-#header .logo a span {
-  color: #D81324;
 }
 
 #header .logo img {
@@ -201,34 +189,6 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Header Social Links
---------------------------------------------------------------*/
-.header-social-links {
-  padding-left: 14px;
-  margin-left: 20px;
-  border-left: 1px solid #c4c4c4;
-}
-
-.header-social-links a {
-  color: #a0a0a0;
-  padding-left: 6px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-
-.header-social-links a:hover {
-  color: #D81324;
-}
-
-@media (max-width: 768px) {
-  .header-social-links {
-    padding: 0 48px 0 0;
-    border-left: 0;
-  }
-}
-
-/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
@@ -291,6 +251,28 @@ a:hover {
   font-weight: 500;
   letter-spacing: 1.2px;
   word-spacing: 3.5px;
+}
+
+@media(max-width: 767px){
+  .heroimg-hover{
+    padding: 15px;
+  }
+  .heroimg-hover h1{
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .heroimg-hover p{
+    font-size: 20px;
+    width: 100%;
+    margin: 0 auto 40px;
+    letter-spacing: 1.2px;
+  }
+  .heroimg-hover .hero-btn{
+    padding: 8px 15px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    word-spacing: 3px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -356,6 +338,19 @@ section {
     left: 0;
 }
 
+@media(max-width: 767px){
+  section {
+    padding: 30px 0;
+  }
+
+  .section-title h2{
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -392,6 +387,37 @@ section {
 .about-content h5{
   font-weight: bold;
 }
+
+@media(min-width: 992px){
+  .about-img{
+    position: relative;
+  }
+
+  .about-img iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media(max-width: 767px){
+  .about-img iframe{
+    width: 100%;
+    height: 300px;
+  }
+  .about-left{
+    text-align: center;
+  }
+  .about-left h1{
+    font-size: 32px;
+  }
+  .about-left p{
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Strips
@@ -442,12 +468,24 @@ section {
   font-size: 24px;
 }
 
+@media(max-width: 767px){
+  .strip-left{
+    margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Social Media
 --------------------------------------------------------------*/
 .social-block{
   padding: 25px;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Patient Resource Center
@@ -544,6 +582,10 @@ section {
     color: #FFFFFF !important;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /* ---------------------------------------------
 Services
 --------------------------------------------- */
@@ -620,6 +662,10 @@ Services
 
 .services .showed-content img {
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Insurance
@@ -755,6 +801,10 @@ Services
   background-color: #ff3333;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /* btn slide */
 
 a.btn-slide{
@@ -797,6 +847,10 @@ a.btn-slide:hover i,
 a.btn-slide:hover span{
     background: #D81324;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Doctors
@@ -901,6 +955,10 @@ a.btn-slide:hover span{
   margin-right: 20px;
   color: #D81324;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1060,6 +1118,10 @@ a.btn-slide:hover span{
   }
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1217,6 +1279,10 @@ a.btn-slide:hover span{
   color: #fff;
   text-decoration: none;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Breadcrumb
