@@ -668,7 +668,7 @@ Services
 }
 
 .services .item:hover{
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .services .item:hover .hidden-content {
@@ -693,6 +693,7 @@ Services
   position: absolute;
   z-index: 2;
   transition: all 0.5s;
+  min-height: 230px;
 }
 
 .services .hidden-content:after {
@@ -879,7 +880,11 @@ Services
   }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .recentblogs-block{
+    min-height: auto;
+  }
+}
 
 /* btn slide */
 
@@ -1385,6 +1390,12 @@ a.btn-slide:hover span{
   font-weight: 700;
   font-size: 56px;
   color: #fff;
+}
+
+@media(max-width: 767px){
+  .hero-header h1{
+    font-size: 28px;
+  }
 }
 
 /*--------------------------------------------------------------
