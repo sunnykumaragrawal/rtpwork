@@ -143,10 +143,29 @@
         items: 3
       },
       768: {
+        items: 4
+      },
+      900: {
+        items: 4
+      }
+    }
+  });
+
+  // Medical Media carousel (uses the Owl Carousel library)
+  $(".medicalmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    margin:20,
+    responsive: {
+      0: {
+        items: 4
+      },
+      768: {
         items: 5
       },
       900: {
-        items: 5
+        items: 6
       }
     }
   });

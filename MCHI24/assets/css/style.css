@@ -555,7 +555,11 @@ section {
   padding: 40px;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .social-block{
+    padding: 25px;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){}
 
