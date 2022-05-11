@@ -10,6 +10,7 @@ body {
 
 a {
   color: #A52A2A;
+  text-decoration: none;
 }
 
 a:hover {
@@ -68,6 +69,53 @@ a:hover {
 .search-btn{
   padding: 14px 30px 14px 30px;
   border: none;
+}
+
+/*--------------------------------------------------------------
+# Select language button
+--------------------------------------------------------------*/
+#google_translate_element2 {display:none!important;}
+
+.select-language {
+  position: fixed;
+  left: 0px;
+  top: 300px;
+  z-index: 996;
+  background: #A52A2A;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.select-language i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.select-language:hover {
+  background: #A52A2A;
+  cursor: pointer;
+}
+
+.select-language:hover i {
+  color: #fff;
+}
+
+@media(max-width: 767px){
+  .select-language {
+    width: 30px;
+    height: 30px;
+  }
+
+  .select-language i {
+    font-size: 20px;
+  }  
+}
+
+#selectlanguage{
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /*--------------------------------------------------------------
@@ -231,10 +279,6 @@ a:hover {
   overflow: hidden;
 }
 
-.hero-leftimg{
-  padding-left: 0;
-}
-
 .hero-block img{
   border-radius: 50%;
 }
@@ -258,16 +302,30 @@ a:hover {
   font-size: 24px;
 }
 
+#appointment {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: none;
+  color: #fff;
+  background: #A52A2A;
+}
+
 @media(min-width: 992px){
   #hero{
     height: 100vh;
   }
+  .hero-leftimg{
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
-  #hero{
-    height: 200vh;
-  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -276,6 +334,17 @@ a:hover {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 991px){
+  #hero{
+    min-height: 110vh;
+    background: linear-gradient(rgba(255,255,255, 0.75), rgba(255,255,255, 0.80)), url("../img/hero-bg.jpg") center center;
+    background-size: cover;
+  }
+  .hero-leftimg{
+    display: none;
   }
 }
 
@@ -356,24 +425,6 @@ a:hover {
   width: 85%;
   height: 40px;
   margin: 0 8px;
-}
-
-#hero .php-email-form button[type="submit"] {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: none;
-  color: #fff;
-  background: #A52A2A;
-}
-
-#hero .php-email-form button[type="submit"]:hover {
-  background: #fd8841;
 }
 
 @media (max-width: 767px){
