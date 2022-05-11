@@ -83,6 +83,38 @@ a:hover {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
+#nav1{
+  background-color: #007AFF;
+}
+
+#nav2{
+  background-color: #FF9500;
+}
+
+#nav3{
+  background-color: #6A6A6A;
+}
+
+#nav4{
+  background-color: #4CD964;
+}
+
+#nav5{
+  background-color: #FF3B30;
+}
+
+#nav6{
+  background-color: #6A6A6A;
+}
+
+#nav7{
+  background-color: #5AC8FA;
+}
+
+#nav8{
+  background-color: #7F7F7F;
+}
+
 .nav-menu {
   position: fixed;
   top: 0;
@@ -159,12 +191,32 @@ a:hover {
   right: 475px;
 }
 
+@media(max-width: 767px){
+  .nav-toggle {
+    padding: 5px 6px;
+  }
+  .nav-toggle i {
+    font-size: 24px;
+  }
+  .nav-menu ul li{
+    height: 25vh;
+  }
+  .nav-menu ul li i{
+    font-size: 28px;
+  }
+
+  .nav-menu a {
+    font-size: 22px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
   position: relative;
   margin-top: -80px;
   z-index: 9;
@@ -177,6 +229,10 @@ a:hover {
   left: 0;
   right: 0;
   overflow: hidden;
+}
+
+.hero-leftimg{
+  padding-left: 0;
 }
 
 .hero-block img{
@@ -200,6 +256,27 @@ a:hover {
 .hero-content h2 {
   margin-bottom: 30px;
   font-size: 24px;
+}
+
+@media(min-width: 992px){
+  #hero{
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero{
+    height: 200vh;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
 }
 
 #hero .php-email-form{
@@ -299,16 +376,7 @@ a:hover {
   background: #fd8841;
 }
 
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
+@media (max-width: 767px){
   #hero .php-email-form input {
     margin: 0 auto;
   }
@@ -398,6 +466,20 @@ section {
     background: #FFFFFF;
 }
 
+@media(max-width: 767px){
+  section {
+    padding: 30px 0;
+  }
+  .section-title h2{
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Strips
 --------------------------------------------------------------*/
@@ -486,6 +568,50 @@ section {
   }
   100% {
     transform: scale(1.1) translateX(0);
+  }
+}
+
+@media(max-width: 767px){
+  .strip-content{
+    padding: 15px;
+  }
+
+  .strip-content h3{
+    font-size: 20px;
+    animation: none;
+  }
+  .strip-left{
+    justify-content: center;
+  }
+
+  .strip-right{
+    justify-content: center;
+  }
+
+  .strip-btn{
+    width: 40px;
+    height: 40px;
+  }
+
+  .strip-btn i{
+    font-size: 20px;
+    transform: rotate(90deg);
+    animation: none;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .strip-left{
+    justify-content: center;
+  }
+
+  .strip-right{
+    justify-content: center;
+  }
+
+  .strip-btn i{
+    transform: rotate(90deg);
+    animation: none;
   }
 }
 
@@ -670,6 +796,23 @@ section {
   font-size: 20px;
   line-height: 28px;
 }
+
+@media(max-width: 767px){
+  .resource-icon img{
+    height: 100px;
+    margin: 30px auto;
+    animation: resource-popup 2s linear infinite;
+  }
+  .resource-icon span{
+    font-size: 36px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /* Start Iconbox Area
 ==================================================*/
@@ -875,6 +1018,10 @@ section {
 /* ---------------------------------------------
 # Doctors
 --------------------------------------------- */
+.team-item{
+  margin-bottom: 30px;
+}
+
 .team-item .team-img img{
   box-shadow: 0px 0px 15px rgba(0,0,0,0.4);
 }
