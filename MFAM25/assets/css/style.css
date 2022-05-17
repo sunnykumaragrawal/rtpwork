@@ -217,7 +217,7 @@ a:hover {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9999;
+  z-index: 9998;
   border: 0;
   background: rgba(255, 255, 255, 1);
   transition: all 0.4s;
@@ -236,7 +236,7 @@ a:hover {
 }
 
 .nav-toggle-active {
-  right: 15px;
+  right: 475px;
 }
 
 @media(max-width: 767px){
@@ -797,38 +797,6 @@ section {
 /* ---------------------------------------------
 # Resources
 --------------------------------------------- */
-.auth-box{
-  position: relative;
-}
-
-.auth-btns{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 0;
-  width: 100%;
-  border-radius: 20px;
-  padding: 120px 60px;
-  background-color: rgba(255, 255, 255, 0.8);
-  opacity: 0;
-  transition: 0.5s ease-in;
-}
-
-.auth-btns a{
-  display: block;
-  background-color: #A52A2A;
-  color: #fff;
-  padding: 14px 30px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.auth-box:hover .auth-btns{
-  height: 100%;
-  opacity: 1;
-}
-
 .resource-box{
   background-color: #fff;
   text-align: center;
