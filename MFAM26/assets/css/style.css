@@ -9,11 +9,11 @@ body {
 }
 
 a {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 a:hover {
-  color: #E3242B;
+  color: #b57edc;
   text-decoration: none;
 }
 
@@ -36,13 +36,13 @@ a:hover {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #E3242B;
+  background: #b57edc;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: #E3242B;
+  background: #b57edc;
   color: #fff;
 }
 
@@ -59,7 +59,7 @@ a:hover {
   letter-spacing: 1px;
   display: inline-block;
   color: #fff;
-  background: #E3242B;
+  background: #b57edc;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
@@ -79,7 +79,7 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 0;
-  background: #E3242B;
+  background: #b57edc;
   z-index: 0;
   content: '';
   transition: all 400ms cubic-bezier(.33,.68,.59,.99);
@@ -117,11 +117,11 @@ a:hover {
 }
 
 #topbar .contact-info a:hover {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 #topbar .contact-info i {
-  color: #E3242B;
+  color: #b57edc;
   padding: 4px;
   font-size: 18px;
 }
@@ -146,7 +146,7 @@ a:hover {
 }
 
 #topbar .social-links a:hover {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 #topbar .social-links a:first-child {
@@ -183,7 +183,7 @@ a:hover {
 }
 
 #header .logo h1 a span, #header .logo h1 a:hover span {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 #header .logo img {
@@ -194,7 +194,7 @@ a:hover {
 
 .appointment-btn{
   align-items: center;
-  background: #f6180c;
+  background: #b57edc;
   color: #fff;
   display: flex;
   font-size: 20px;
@@ -206,6 +206,10 @@ a:hover {
   text-transform: uppercase;
   transition: .3s;
   margin-right: 0;
+}
+
+.appointment-btn:hover{
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -236,7 +240,7 @@ a:hover {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #E3242B;
+  color: #b57edc;
   text-decoration: none;
 }
 
@@ -292,7 +296,7 @@ a:hover {
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #E3242B;
+  color: #b57edc;
   text-decoration: none;
 }
 
@@ -334,9 +338,8 @@ a:hover {
 }
 
 .hero-content{
-  background-color: #E3242B;
-  padding: 40px;
-  padding-top: 150px;
+  background-color: #b57edc;
+  padding: 150px 40px 40px 60px;
 }
 
 #hero h2 {
@@ -374,7 +377,7 @@ a:hover {
   line-height: 1;
   margin: 10px;
   color: #fff;
-  background: #E3242B;
+  background: #b57edc;
   border: 3px solid #fff;
 }
 
@@ -420,7 +423,7 @@ section {
     left: 50%;
     bottom: 0;
     margin-left: -30px;
-    background: #E3242B;
+    background: #b57edc;
 }
 
 .section-title::after {
@@ -431,7 +434,7 @@ section {
     left: 50%;
     bottom: 4px;
     margin-left: -90px;
-    background: #E3242B;
+    background: #b57edc;
 }
 
 /*--------------------------------------------------------------
@@ -442,7 +445,7 @@ section {
 }
 
 .strip-left{
-  background-color: #E3242B;
+  background-color: #b57edc;
   padding: 15px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -483,7 +486,7 @@ section {
 .strip-content{
   width: calc(100% - 50px);
   margin: 0 auto;
-  background-color: #E3242B;
+  background-color: #b57edc;
   text-align: center;
   padding: 15px;
   position: relative;
@@ -543,7 +546,7 @@ section {
 }
 
 .strip-right{
-  background-color: #E3242B;
+  background-color: #b57edc;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   padding: 15px;
@@ -948,24 +951,31 @@ a.btn-slide:hover .span2{
 --------------------------------------------------------------*/
 .service-box{
   text-align: center;
-  padding: 40px 40px 20px;
+  padding: 30px 20px 35px;
   position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
 }
 
 .service-box img{
   border-radius: 50%;
   margin-bottom: 30px;
+  max-width: 80%;
 }
 
 .service-box h5{
-  color: #fff;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .service-box a img{
   cursor: pointer;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  max-width: 100% !important;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
 .service-hover{
@@ -976,15 +986,16 @@ a.btn-slide:hover .span2{
   bottom: 0;
   display: none;
   transition: 0.5s ease-out;
-  padding: 40px 30px;
+  padding: 25px 15px;
+  background-color: #b57edc;
 }
 
 .service-hover i{
   color: #fff;
-  font-size: 48px;
-  border: 5px solid #fff;
-  width: 110px;
-  height: 110px;
+  font-size: 36px;
+  border: 3px solid #fff;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -995,48 +1006,49 @@ a.btn-slide:hover .span2{
 .service-hover h4{
   color: #fff;
   font-weight: 700;
-  font-size: 30px;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .service-hover p{
   color: #fff;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
-.service1{
-  background-color: #007AFF;
+/*.service1{
+  background-color: #007AFF !important;
 }
 
 .service2{
-  background-color: #FF9500;
+  background-color: #FF9500 !important;
 }
 
 .service3{
-  background-color: #6A6A6A;
+  background-color: #6A6A6A !important;
 }
 
 .service4{
-  background-color: #4CD964;
+  background-color: #4CD964 !important;
 }
 
 .service5{
-  background-color: #FF3B30;
+  background-color: #FF3B30 !important;
 }
 
 .service6{
-  background-color: #6A6A6A;
+  background-color: #6A6A6A !important;
 }
 
 .service7{
-  background-color: #5AC8FA;
+  background-color: #5AC8FA !important;
 }
 
 .service8{
-  background-color: #7F7F7F;
-}
+  background-color: #7F7F7F !important;
+}*/
 
 /*--------------------------------------------------------------
 # Insurance
@@ -1061,7 +1073,7 @@ a.btn-slide:hover .span2{
 #portfolio-flters .btn:hover,
 #portfolio-flters .btn.active {
     color: var(--light);
-    background: #E3242B;
+    background: #b57edc;
 }
 
 .portfolio-item{
@@ -1089,7 +1101,7 @@ a.btn-slide:hover .span2{
 .timeline{
   width: 80px !important;
   height: 80px !important;
-  background-color: #E3242B;
+  background-color: #b57edc;
   color: #fff;
   text-align: center;
   position: relative;
@@ -1168,19 +1180,19 @@ a.btn-slide:hover .span2{
     bottom: 0;
     left: 0;
     border-radius: 10px;
-    background: #E3242B;
+    background: #b57edc;
     box-shadow: 0 0 45px rgba(0, 0, 0, .1);
     transition: .5s;
     z-index: -1;
 }
 
 .team-item:hover::after {
-    background-color: #E3242B;
+    background-color: #b57edc;
 }
 
 .team-item a{
   background-color: #fff;
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .team-item h5,
@@ -1228,7 +1240,7 @@ a.btn-slide:hover .span2{
 
 .contact .info i {
   font-size: 24px;
-  color: #E3242B;
+  color: #b57edc;
   float: left;
   width: 48px;
   height: 48px;
@@ -1256,7 +1268,7 @@ a.btn-slide:hover .span2{
 }
 
 .contact .info:hover i {
-  background: #E3242B;
+  background: #b57edc;
   color: #fff;
 }
 
@@ -1273,7 +1285,7 @@ a.btn-slide:hover .span2{
 
 .contact .php-email-form .validate {
   display: none;
-  color: #E3242B;
+  color: #b57edc;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -1335,7 +1347,7 @@ a.btn-slide:hover .span2{
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #E3242B;
+  background: #b57edc;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1344,7 +1356,7 @@ a.btn-slide:hover .span2{
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #E3242B;
+  background: #b57edc;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1376,7 +1388,7 @@ a.btn-slide:hover .span2{
 }
 
 .footer-contacts{
-  background-color: #E3242B;
+  background-color: #b57edc;
   padding: 20px 100px;
 }
 
@@ -1427,7 +1439,7 @@ a.btn-slide:hover .span2{
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #E3242B;
+  background: #b57edc;
   color: #fff;
   text-decoration: none;
 }
@@ -1489,7 +1501,7 @@ a.btn-slide:hover .span2{
 }
 
 .footer-blogs span{
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .footer-blogs h5{
@@ -1501,7 +1513,7 @@ a.btn-slide:hover .span2{
   padding-top: 30px;
 }
 
-#footer .c#E3242Bits {
+#footer .c#b57edcits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
@@ -1551,7 +1563,7 @@ a.btn-slide:hover .span2{
   letter-spacing: 1px;
   display: inline-block;
   color: #fff;
-  background: #E3242B;
+  background: #b57edc;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
@@ -1589,7 +1601,7 @@ a.btn-slide:hover .span2{
 }
 
 .blog .entry .entry-title a:hover {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .blog .entry .entry-meta {
@@ -1611,7 +1623,7 @@ a.btn-slide:hover .span2{
 .blog .entry .entry-meta i {
   font-size: 15px;
   padding-right: 4px;
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .blog .entry .entry-meta a {
@@ -1637,7 +1649,7 @@ a.btn-slide:hover .span2{
 }
 
 .blog .entry .entry-content ul li i{
-  color: #E3242B;
+  color: #b57edc;
   font-size: 22px;
   margin-right: 5px;
 }
@@ -1687,7 +1699,7 @@ a.btn-slide:hover .span2{
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .blog .blog-comments .comment h5 .reply {
@@ -1733,7 +1745,7 @@ a.btn-slide:hover .span2{
 
 .blog .blog-comments .reply-form input:focus {
   box-shadow: none;
-  border-color: #E3242B;
+  border-color: #b57edc;
 }
 
 .blog .blog-comments .reply-form textarea {
@@ -1744,7 +1756,7 @@ a.btn-slide:hover .span2{
 
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #E3242B;
+  border-color: #b57edc;
 }
 
 .blog .blog-comments .reply-form .form-group {
@@ -1766,26 +1778,26 @@ a.btn-slide:hover .span2{
 }
 
 .blog .blog-pagination li {
-  border: 1px solid #E3242B;
+  border: 1px solid #b57edc;
   margin: 0 5px;
   transition: 0.3s;
   background-color: #fff;
 }
 
 .blog .blog-pagination li.active {
-  background: #E3242B;
+  background: #b57edc;
 }
 
 .blog .blog-pagination li a {
-  color: #E3242B;
+  color: #b57edc;
   font-weight: bold;
   padding: 7px 16px;
   display: inline-block;
 }
 
 .blog .blog-pagination li.active, .blog .blog-pagination li:hover {
-  background: #E3242B;
-  border: 1px solid #E3242B;
+  background: #b57edc;
+  border: 1px solid #b57edc;
 }
 
 .blog .blog-pagination li.active a, .blog .blog-pagination li:hover a {
@@ -1829,7 +1841,7 @@ a.btn-slide:hover .span2{
 }
 
 .blog .blog-author .social-links a {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .blog .sidebar .sidebar-title {
@@ -1837,7 +1849,7 @@ a.btn-slide:hover .span2{
   text-transform: uppercase;
   font-weight: 700;
   padding: 15px;
-  background-color: #E3242B;
+  background-color: #b57edc;
   margin: 0 0 0 0;
   color: #fff;
   text-align: center;
@@ -1867,19 +1879,19 @@ a.btn-slide:hover .span2{
 }
 
 .blog .sidebar .categories ul a {
-  color: #E3242B;
+  color: #b57edc;
   font-size: 15px;
   font-weight: bold;
   padding: 6px 14px;
   margin: 0 6px 8px 0;
-  border: 1px solid #E3242B;
+  border: 1px solid #b57edc;
   display: block;
   transition: 0.3s;
   text-align: center;
 }
 
 .blog .sidebar .categories ul a:hover {
-  background-color: #E3242B;
+  background-color: #b57edc;
   color: #fff;
 }
 
@@ -1908,7 +1920,7 @@ a.btn-slide:hover .span2{
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #E3242B;
+  color: #b57edc;
 }
 
 .blog .sidebar .recent-posts time {
@@ -1931,12 +1943,12 @@ a.btn-slide:hover .span2{
 }
 
 .blog .sidebar .tags ul a {
-  color: #E3242B;
+  color: #b57edc;
   font-size: 15px;
   font-weight: bold;
   padding: 6px 14px;
   margin: 0 6px 8px 0;
-  border: 1px solid #E3242B;
+  border: 1px solid #b57edc;
   display: block;
   transition: 0.3s;
   text-align: center;
@@ -1944,7 +1956,7 @@ a.btn-slide:hover .span2{
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  background: #E3242B;
+  background: #b57edc;
 }
 
 .blog .sidebar .tags ul a span {
