@@ -192,6 +192,12 @@ a:hover {
   max-height: 40px;
 }
 
+@media(max-width: 991px){
+  #header{
+    padding-left: 15px;
+  }
+}
+
 .appointment-btn{
   align-items: center;
   background: #b57edc;
@@ -205,11 +211,32 @@ a:hover {
   padding: 7px 30px 8px;
   text-transform: uppercase;
   transition: .3s;
-  margin-right: 0;
 }
 
 .appointment-btn:hover{
   color: #fff;
+}
+
+@media(min-width: 768px){
+  .appointment-btn i{
+    display: none;
+  }
+}
+
+@media(max-width: 991px){
+  .appointment-btn{
+    margin-right: 50px;
+  }
+}
+
+@media(max-width: 767px){
+  .appointment-btn{
+    font-size: 28px;
+  }
+
+  .appointment-btn span{
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -360,30 +387,49 @@ a:hover {
   font-size: 32px;
 }
 
-#hero p {
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 22px;
-}
-
-#hero .btn-get-started {
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 20px 38px;
-  border-radius: 5px;
-  transition: 0.5s;
-  line-height: 1;
-  margin: 10px;
-  color: #fff;
-  background: #b57edc;
-  border: 3px solid #fff;
-}
-
 .hero-img{
-  background-color: black;
   padding: 0 0 !important;
+}
+
+@media(max-width: 767px){
+  #hero {
+    height: auto;
+  }
+
+  .hero-content{
+    padding: 40px 30px 40px 30px;
+  }
+
+  #hero h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .hero-count{
+    border-left: 2px solid white;
+    color: #fff;
+    padding: 20px 15px 20px 30px;
+  }
+
+  .hero-count h4{
+    font-weight: 700;
+    font-size: 32px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  #hero {
+    height: auto;
+  }
+
+  .hero-content{
+    padding: 40px 30px 40px 30px;
+  }
+
+  #hero h2 {
+    text-align: center;
+  }
 }
 
 /*--------------------------------------------------------------
