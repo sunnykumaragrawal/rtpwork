@@ -100,6 +100,53 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Select language button
+--------------------------------------------------------------*/
+#google_translate_element2 {display:none!important;}
+
+.select-language {
+  position: fixed;
+  left: 0px;
+  top: 150px;
+  z-index: 996;
+  background: #b57edc;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.select-language i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.select-language:hover {
+  background: #b57edc;
+  cursor: pointer;
+}
+
+.select-language:hover i {
+  color: #fff;
+}
+
+@media(max-width: 767px){
+  .select-language {
+    width: 30px;
+    height: 30px;
+  }
+
+  .select-language i {
+    font-size: 20px;
+  }  
+}
+
+#selectlanguage{
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
@@ -640,7 +687,7 @@ section {
   .strip-content{
     background-color: #fff;
     width: 100%;
-    padding: 15px;
+    padding: 15px 20px;
   }
 
   .strip-content a{
@@ -651,6 +698,12 @@ section {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 15px;
+  }
+}
+
+@media(max-width: 767px){
+  .strip-content a{
+    font-size: 20px;
   }
 }
 
@@ -1059,6 +1112,32 @@ section {
   .resources ul li:nth-child(6) {
       width: 46.5%;
   }
+}
+
+.auth-rel{
+  position: relative;
+}
+
+.auth-absol{
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.auth-rel:hover .auth-absol{
+  opacity: 1;
+}
+
+.auth-absol a{
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #fff;
+  margin-right: 10px;
+  padding: 7px 15px;
+  font-size: 24px;
+  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -1515,6 +1594,10 @@ section {
 }
 
 @media(max-width: 991px){
+  .footer-contacts{
+    padding: 20px 30px;
+  }
+
   .footer-cbox{
     margin-bottom: 25px;
   }
