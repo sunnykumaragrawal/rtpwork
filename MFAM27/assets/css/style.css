@@ -142,7 +142,7 @@ a:hover {
 }
 
 #header.header-scrolled{
-  background-color: #ccc;
+  background-color: #568203;
 }
 
 @media (max-width: 992px) {
@@ -180,7 +180,7 @@ a:hover {
   align-items: center;
   color: #45505b;
   padding: 10px 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
@@ -213,6 +213,11 @@ a:hover {
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #fff;
   background: #568203;
+}
+
+#header.header-scrolled .nav-menu a:hover,
+#header.header-scrolled .nav-menu .active > a{
+  border: 2px solid #fff;
 }
 
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
@@ -350,7 +355,7 @@ a:hover {
 
 .strip-column{
   padding: 20px 0;
-  background-color: #ccc /*#f2f3f5*/;
+  background-color: #568203 /*#f2f3f5*/;
   text-align: center;
   position: relative;
 }
@@ -361,6 +366,7 @@ a:hover {
   font-style: italic;
   letter-spacing: 1.3px;
   animation: stripleft 2s linear infinite;
+  color: #fff;
 }
 
 @keyframes stripleft {
@@ -391,6 +397,7 @@ a:hover {
   bottom: 0;
   width: 80px;
   background-color: #568203;
+  border-left: 4px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,7 +470,7 @@ section{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #568203;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -471,7 +478,7 @@ section{
 }
 
 .about-item .icon i{
-  color: #568203;
+  color: #fff;
 }
 
 .about-item h5{
@@ -541,6 +548,10 @@ section{
 /*--------------------------------------------------------------
 # Resources
 --------------------------------------------------------------*/
+.resources{
+  padding-bottom: 80px;
+}
+
 .resources .nav-tabs {
   border: 0;
 }
@@ -651,7 +662,8 @@ section{
 }
 
 .service-item:hover{
-  border: 3px solid #568203;
+  background-color: #568203;
+  color: #fff;
 }
 
 .service-icon img{
