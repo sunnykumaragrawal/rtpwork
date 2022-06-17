@@ -20,6 +20,11 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Select language button
+--------------------------------------------------------------*/
+#google_translate_element2 {display:none!important;}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
@@ -430,9 +435,23 @@ a:hover {
 
 @media(max-width: 767px){
   .strip-column h5{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1.2px;
     margin: 0 20px;
+  }
+
+  .strip-arrow{
+    top: calc(100% - 30px);
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-left: none;
+  }
+
+  .strip-arrow i{
+    font-size: 20px;
+    color: #568203;
+    animation: none;
   }
 }
 
@@ -440,6 +459,20 @@ a:hover {
   .strip-column h5{
     font-size: 22px;
     margin: 0 15px;
+  }
+
+  .strip-arrow{
+    top: calc(100% - 30px);
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-left: none;
+  }
+
+  .strip-arrow i{
+    font-size: 20px;
+    color: #568203;
+    animation: none;
   }
 }
 
@@ -502,7 +535,11 @@ section{
   }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  section{
+    padding: 45px 0;
+  }
+}
 
 @media(max-width: 767px){}
 
@@ -767,6 +804,25 @@ section{
   .resources .tab-pane.active{
     width: 80%;
   }
+}
+
+.auth-absol{
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.auth-absol a{
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #568203;
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.auth-absol a:first-child{
+  margin-right: 15px;
 }
 
 @media(max-width: 767px){}
