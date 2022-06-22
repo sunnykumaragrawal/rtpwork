@@ -17,6 +17,7 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/select2.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -79,6 +80,45 @@
               <div class="blog-eye">
                 <a href="blog-single3.html"><i class="icofont-search"></i></a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+             <div class="section-title" data-aos="zoom-in">
+               <h2>Helpful Resources</h2>
+             </div>
+             <div class="well text-center">
+              <select id="multiple-resource" class="form-control" multiple>
+                  <option value="Physical">Physical</option>
+                  <option value="Fever">Fever</option>
+                  <option value="Sports Physical">Sports Physical</option>
+                  <option value="Camp Physical">Camp Physical</option>
+                  <option value="EKG">EKG</option>
+              </select>
+              <button class="search-btn template-btn mt-4"><span>Search</span></button>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4">
+             <div class="section-title" data-aos="zoom-in">
+               <h2>Popular Tags</h2>
+             </div>
+             <div class="well text-center">
+              <select id="multiple-tags" class="form-control" multiple>
+                  <option value="Physical">Physical</option>
+                  <option value="Fever">Fever</option>
+                  <option value="Sports Physical">Sports Physical</option>
+                  <option value="Camp Physical">Camp Physical</option>
+                  <option value="EKG">EKG</option>
+              </select>
+              <button class="search-btn template-btn mt-4"><span>Search</span></button>
             </div>
           </div>
         </div>
@@ -271,6 +311,18 @@
 
   </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; 2022 Copyright <strong><span><a href="https://rtpmedicalsolution.com/" target="_blank">RTPMedicalSolution.com</a></span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://rtpmedicalsolution.com/" target="_blank">RTPMedicalSolution.com</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
   <div id="preloader"></div>
 
@@ -286,9 +338,20 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/select2.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    $("#multiple-resource").select2({
+        placeholder: "Choose",
+        allowClear: true
+    });
+    $("#multiple-tags").select2({
+        placeholder: "Choose",
+        allowClear: true
+    });
+  </script>
 
 </body>
 
