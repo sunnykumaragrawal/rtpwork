@@ -7,13 +7,15 @@
    $("#preloder").delay(400).fadeOut("slow");	
   });
 
-  // Init AOS
-  function aos_init() {
+  // AOS animation
+  window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
-      once: true
-    });
-  }
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
 
   //navbar
   $(".menu-switch").on('click', function () {
@@ -143,6 +145,36 @@
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
     return false;
+  });
+
+  $(function(){
+      $(".serviceone-typed").typed({
+          strings: ["I am Gynecologist"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 40,
+          backDelay: 2000
+      });
+  });
+
+  $(function(){
+      $(".servicetwo-typed").typed({
+          strings: ["I am Physician"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 40,
+          backDelay: 2000
+      });
+  });
+
+  $(function(){
+      $(".servicethree-typed").typed({
+          strings: ["I am Pediatrician"],
+          loop: true,
+          typeSpeed: 100,
+          backSpeed: 40,
+          backDelay: 2000
+      });
   });
 
 })(jQuery);
