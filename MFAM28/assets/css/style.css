@@ -99,7 +99,7 @@ a:focus {
   border-radius: 50px;
   right: 10px;
   bottom: 15px;
-  background: #fd645b;
+  background: #54348f;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -153,7 +153,7 @@ a:focus {
   height: 100%;
   left: 0;
   top: 0;
-  background-color: #fd645b;
+  background-color: #54348f;
   -webkit-box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
   box-shadow: 14px 0px 103px rgba(0, 0, 0, 0.08);
   z-index: 999;
@@ -382,7 +382,7 @@ a:focus {
 
 .hero-content{
   padding: 150px 60px 30px;
-  background-color: #fd645b;
+  background-color: #54348f;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -527,7 +527,7 @@ section{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #fd645b;
+  background: #54348f;
   opacity: 1;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -550,7 +550,7 @@ section{
 } 
 
 .about-item .about-innerbox:hover .about-btn {
-  background: #fd645b; 
+  background: #54348f; 
 }
 
 .about-item .about-innerbox:hover .about-btn span {
@@ -600,7 +600,7 @@ section{
 --------------------------------------------------------------*/
 .strips{
   padding: 20px 0;
-  background-color: #fd645b;
+  background-color: #54348f;
   position: relative;
   overflow: visible;
 }
@@ -636,7 +636,7 @@ section{
 .strip-arrow{
   width: 80px;
   height: 80px;
-  background-color:#fd645b /*#fd645b*/;
+  background-color:#54348f /*#54348f*/;
   position: absolute;
   right: 0;
   top: 0;
@@ -788,7 +788,7 @@ section{
 }
 
 #myservice2{
-  background-color: #fd645b;
+  background-color: #54348f;
 }
 
 #myservice3{
@@ -808,7 +808,7 @@ section{
 }
 
 #myservice7{
-  background-color: #fd645b;
+  background-color: #54348f;
 }
 
 #myservice8{
@@ -1097,7 +1097,7 @@ section{
 }
     
 .contact-item p a {
-  color: #fd645b; 
+  color: #54348f; 
 }
 
 .contact-item .contact-icon {
@@ -1219,7 +1219,7 @@ section{
   bottom: 0;
   width: 100%;
   height: 0;
-  background: #fd645b;
+  background: #54348f;
   z-index: 0;
   content: '';
   transition: all 400ms cubic-bezier(.33,.68,.59,.99);
