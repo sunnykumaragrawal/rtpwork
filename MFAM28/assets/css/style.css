@@ -422,8 +422,9 @@ a:focus {
 
 .hero-btn{
   text-transform: uppercase;
-  background-color: red;
   color: #fff;
+  background-color: #54348f;
+  border: 3px solid #fff;
   margin-top: 24px;
   padding: 18px;
   display: block;
@@ -433,6 +434,8 @@ a:focus {
 
 .hero-btn:hover{
   color: #fff;
+  background-color: #54348f;
+  border: 3px solid #fff;
 }
 
 .hero-img{
@@ -500,7 +503,7 @@ section{
    box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.3);
 }
 
-.about-item  p{
+.about-item p{
   font-size: 18px;
   line-height: 28px;
   padding: 0 10px 15px 15px;
@@ -510,7 +513,7 @@ section{
   font-size: 20px;
   margin-bottom: 15px;
   padding: 20px 30px;
-  background: #6A6A6A;
+  background: #54348f;
   color: #fff;
   border-radius: 4px;
   position: relative;
@@ -527,7 +530,7 @@ section{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background: #54348f;
+  background: #fff;
   opacity: 1;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -539,22 +542,8 @@ section{
   transition: all 0.3s ease; 
 }
 
-.about-item .about-innerbox .about-btn span,
-.about-item .about-innerbox .about-btn:hover span {
-  color: #fff; 
-}
-
-.about-item .about-innerbox:hover {
-  background: #6A6A6A;
-  color: #fff; 
-} 
-
-.about-item .about-innerbox:hover .about-btn {
-  background: #54348f; 
-}
-
-.about-item .about-innerbox:hover .about-btn span {
-  color: #6A6A6A; 
+.about-item .about-innerbox .about-btn span {
+  color: #54348f; 
 }
 
 /*--------------------------------------------------------------
@@ -923,7 +912,7 @@ section{
   top: -7px;
   left: 20px;
   padding: 5px 15px;
-  background: #f15d30; 
+  background: #54348f; 
   display: flex;
   align-items: center;
 }
