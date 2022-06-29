@@ -267,7 +267,7 @@ a:focus {
 }
 
 .site-logo {
-  background: #6A6A6A;
+  background: #54348f;
   width: calc(100% - 90px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -773,7 +773,7 @@ section{
 }
 
 #myservice1{
-	background-color: #eec857;
+	background-color: #7F7F7F;
 }
 
 #myservice2{
@@ -801,7 +801,7 @@ section{
 }
 
 #myservice8{
-  background-color: #eec857;
+  background-color: #7F7F7F;
 }
 
 /*--------------------------------------------------------------
