@@ -6,7 +6,7 @@
     $('.image-animate').toggleClass('image-animate-active');
     $('.nav-menu').toggleClass('nav-menu-active');
     $('.nav-toggle').toggleClass('nav-toggle-active');
-    $('.nav-toggle i').toggleClass('bx-x bx-menu');
+    $('.nav-toggle i').toggleClass('bx-left-arrow-alt bx-menu');
 
   });
 
@@ -42,7 +42,7 @@
           $('.image-animate').toggleClass('image-animate-active');
           $('.nav-menu').removeClass('nav-menu-active');
           $('.nav-toggle').removeClass('nav-toggle-active');
-          $('.nav-toggle i').toggleClass('bx-x bx-menu');
+          $('.nav-toggle i').toggleClass('bx-left-arrow-alt bx-menu');
         }
         return false;
       }
@@ -102,6 +102,25 @@
       },
       900: {
         items: 1
+      }
+    }
+  });
+
+  // Medical Media carousel (uses the Owl Carousel library)
+  $(".medicalmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:30,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
       }
     }
   });
