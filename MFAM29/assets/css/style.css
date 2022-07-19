@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
 
 /*--------------------------------------------------------------
 # General
@@ -115,6 +116,41 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Select language button
+--------------------------------------------------------------*/
+#google_translate_element2 {display:none!important;}
+
+.select-language {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+  background: #0192c8;
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.select-language i {
+  font-size: 20px;
+  color: #fff;
+  line-height: 0;
+}
+
+.select-language:hover {
+  background: #b57edc;
+  cursor: pointer;
+}
+
+.select-language:hover i {
+  color: #fff;
+}
+
+#selectlanguage{
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 .image-animate{
@@ -133,6 +169,8 @@ a:hover {
   position: absolute;
   top: 0;
   left: 0;
+  width: 40px;
+  height: 40px;
   background-color: #0192c8;
   padding: 5px;
 }
@@ -177,8 +215,11 @@ a:hover {
   height: 25vh;
 }
 
-.nav-menu a i{
-  font-size: 48px;
+.nav-menu a img{
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  max-height: 80px;
 }
 
 .nav-menu a span{
@@ -211,7 +252,7 @@ a:hover {
 }
 
 #nav1{
-  background-color: #007AFF;
+  background-color: #0192c8;
 }
 
 #nav2{
@@ -219,11 +260,11 @@ a:hover {
 }
 
 #nav3{
-  background-color: #0192c8;
+  background-color: #4CD964;
 }
 
 #nav4{
-  background-color: #4CD964;
+  background-color: #7F7F7F;
 }
 
 #nav5{
@@ -231,7 +272,7 @@ a:hover {
 }
 
 #nav6{
-  background-color: #0192c8;
+  background-color: #fd990c;
 }
 
 #nav7{
@@ -239,7 +280,7 @@ a:hover {
 }
 
 #nav8{
-  background-color: #7F7F7F;
+  background-color: #007AFF;
 }
 
 /*--------------------------------------------------------------
@@ -270,25 +311,43 @@ a:hover {
 #hero .hero-content{
   text-align: center;
   width: 60%;
-  padding: 50px;
-  border-radius: 15px;
-  border-bottom: 4px solid #0192c8;
-  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px 30px;
+  border-radius: 5px;
+  border-bottom: 3px solid #0192c8;
+  background-color: rgba(255, 255, 255, 0.85);
   margin: 0 auto 30px;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 900;
+  font-size: 52px;
+  font-weight: 800;
   line-height: 56px;
-  color: #222;
+  color: #0192c8;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+#hero h1 span{
+  color: #FF3514;
 }
 
 #hero h2 {
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#hero .hero-btn{
+  display: none;
+  text-align: center;
+  padding: 40px 30px;
+}
+
+#hero .hero-btn a{
+  background-color: #fff;
+  color: #FF3514;
+  padding: 18px 36px;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -444,7 +503,7 @@ section{
 }
 
 .about-btn1{
-  background-color: blue !important;
+  background-color: #0192c8 !important;
   color: #fff !important;
   padding: 14px 20px !important;
   border: none !important;
@@ -452,7 +511,7 @@ section{
 }
 
 .about-btn2{
-  background-color: red !important;
+  background-color: #FF3514 !important;
   color: #fff !important;
   padding: 14px 20px !important;
   border: none !important;
@@ -514,8 +573,32 @@ section{
 
 .strip-left h3{
   color: #fff;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  animation: stripleft 3s linear infinite;
+}
+
+@keyframes stripleft {
+  0% {
+    transform: scale(1.0) translateX(0);
+  }
+  20% {
+    transform: scale(1.0) translateX(-15px);
+  }
+  30% {
+    transform: scale(1.0) translateX(15px);
+  }
+  50% {
+    transform: scale(1.0) translateX(-15px);
+  }
+  60% {
+    transform: scale(1.0) translateX(15px);
+  }
+  100% {
+    transform: scale(1.0) translateX(0);
+  }
 }
 
 .strip-btn{
@@ -536,6 +619,14 @@ section{
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+  transition: ease-in all 0.5s;
+}
+
+.strip-btn a:hover{
+  background: #FF3514;
+  color: #fff;
+  border: none;
+  transition: ease-in all 0.5s;
 }
 
 /*---------------------------------------------------------------
@@ -587,6 +678,7 @@ section{
 
 .resource-content{
   padding: 30px;
+  position: relative;
 }
 
 .resource-item h3 {
@@ -643,6 +735,15 @@ section{
   border: 3px solid #0192c8;
   font-weight: 700;
   font-size: 20px;
+}
+
+.auth-absol{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 28px;
 }
 
 /*---------------------------------------------------------------
@@ -1068,9 +1169,17 @@ section{
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.working-hours .row{
+  margin-bottom: 5px;
+}
+
+.working-hours{
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1103,6 +1212,7 @@ section{
   padding: 10px 0;
   display: flex;
   align-items: center;
+  font-size: 16px;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
