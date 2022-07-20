@@ -24,7 +24,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: red /*#f2f9f8*/;
 }
 
 /*--------------------------------------------------------------
@@ -37,13 +37,14 @@ section {
 .title-left{
   background-color: #fd990c;
   text-align: right;
-  padding: 15px 30px;
+  padding: 15px 30px 10px;
 }
 
 .title-left h6{
   color: #fff;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
 }
 
 .title-right{
@@ -54,7 +55,8 @@ section {
 }
 
 .title-right a{
-  font-size: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
   color: #fff;
 }
 
@@ -234,6 +236,7 @@ section {
 
 .resource-content h3{
   font-weight: 700;
+  font-size: 24px;
 }
 
 .resource-content p{
