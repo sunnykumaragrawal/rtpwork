@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  /*font-family: "Montserrat", sans-serif;*/
+  /*font-family: "Muli", sans-serif;*/
+  font-family: 'Baloo Bhaijaan 2', cursive;
+  color: #000;
+}
+
+a,a:hover{
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color: #f2f9f8;
+}
+
+/*--------------------------------------------------------------
+# My Title
+--------------------------------------------------------------*/
+.mytitle{
+  margin-bottom: 80px;
+}
+
+.title-left{
+  background-color: #fd990c;
+  text-align: right;
+  padding: 15px 30px;
+}
+
+.title-left h6{
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title-right{
+  background-color: #fd990c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-right a{
+  font-size: 20px;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Strips
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Template btn
+--------------------------------------------------------------*/
+.template-btn{
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  position: relative;
+  border-radius: 30px;
+  transition: 0.5s;
+  line-height: 1;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #fff;
+  background: #fd990c;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px 30px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.template-btn span{
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.template-btn::after{
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  background: red;
+  z-index: 0;
+  content: '';
+  transition: all 400ms cubic-bezier(.33,.68,.59,.99);
+  border-radius: 30px;
+}
+
+.template-btn:hover::after{
+  width: 100%;
+  color: #fff !important;
+}
+
+.template-btn:hover span{
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Tooltip
+--------------------------------------------------------------*/
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before, 
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #052c3f !important;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before, 
+.bs-tooltip-top .arrow::before {
+    border-top-color: #052c3f !important;
+}
+
+.tooltip-inner {
+    border-radius: 10px;
+    background-color: #052c3f;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+#about1{
+  background-color: #007AFF;
+}
+
+#about2{
+  background-color: #FF9500;
+}
+
+#about3{
+  background-color: #FF3B30;
+}
+
+.about-content{
+  padding: 20px;
+}
+
+.about-content h3{
+  margin-top: 60px;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.about-content p{
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.about-item{
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.about-icon{
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icon img{
+  max-height: 60px;
+}
+
+.about-item h5{
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/*--------------------------------------------------------------
+# Resource
+--------------------------------------------------------------*/
+.resource-item{
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.resource-img{
+}
+
+.resource-img:hover{
+}
+
+.resource-icon{
+  margin: -30px 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.resource-icon a{
+  width: 60px;
+  height: 60px;
+  background-color: #fd990c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.resource-content{
+  padding: 20px;
+}
+
+.resource-content h3{
+  font-weight: 700;
+}
+
+.resource-content p{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service-item{
+}
+
+.service-img{
+  padding: 0 0;
+}
+
+.service-content{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.service-content:hover{
+  background-color: #fd990c;
+  color: #fff;
+}
+
+.service-content h5{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-content p{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.service-btn{
+  text-align: center;
+  padding-top: 60px;
+}
+
+/*--------------------------------------------------------------
+# Doctors
+--------------------------------------------------------------*/
+.team-item{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.team-img{}
+
+.team-social{
+  position: absolute;
+  left: calc(50% - 60px);
+  right: calc(50% - 60px);
+  top: 0;
+}
+
+.team-social a{
+  background-color: #fd990c;
+  color: #fff;
+  padding: 10px;
+  margin: 0 0;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.team-content{
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  border-radius: 10px;
+}
+
+.team-content h5{
+  font-weight: 700;
+}
+
+.team-content span{
+  font-style: italic;
+}
