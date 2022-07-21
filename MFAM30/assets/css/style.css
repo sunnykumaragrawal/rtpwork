@@ -24,7 +24,7 @@ section {
 }
 
 .section-bg {
-  background-color: red /*#f2f9f8*/;
+  background-color: #f2f9f8 /*#f2f9f8*/;
 }
 
 /*--------------------------------------------------------------
@@ -176,6 +176,7 @@ section {
   text-align: center;
   margin-bottom: 25px;
   width: 100%;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
 }
 
 .about-icon{
@@ -204,6 +205,7 @@ section {
 .resource-item{
   background-color: #fff;
   margin-bottom: 35px;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
 }
 
 .resource-img{
@@ -247,6 +249,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.myservices{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+}
+
 .service-item{
 }
 
@@ -286,19 +292,186 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Insurance
+--------------------------------------------------------------*/
+.insurance-box{
+  background-color: #fff;
+  height: 120px;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 15px;
+}
+
+.insurance-box img{
+  max-height: 80px;
+}
+
+@media(max-width: 767px){
+  .insurance-bg{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .insurance-bg{
+    margin-bottom: 25px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Recent Blogs
+--------------------------------------------------------------*/
+.recentblogs-carousel.owl-carousel .owl-dots {
+  text-align: center;
+  background-color: black;
+}
+.recentblogs-carousel.owl-carousel .owl-dots button {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #B6E3E3;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.recentblogs-carousel.owl-carousel .owl-dots button.owl-dot.active {
+  background: #fd990c;
+  border-color: #fd990c;
+}
+.recentblogs-carousel.owl-carousel .owl-dots button:last-child {
+  margin-right: 0;
+}
+.recentblogs-carousel .col-lg-4 {
+  max-width: 100%;
+}
+.recentblogs-carousel .owl-stage-outer {
+  padding-bottom: 45px;
+  padding-top: 20px;
+}
+
+
+
+.recentblogs-carousel .recentblogs-item {
+  /*box-shadow: 0 4px 15px 5px rgba(44, 44, 44, 0.5);*/
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  background: #ffffff;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img {
+  height: 220px;
+  position: relative;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .pic-tag {
+  overflow: hidden;
+  padding: 15px 15px 0 15px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .pic-tag .f-text {
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #E1481F;
+  display: inline-block;
+  padding: 4px 15px;
+  float: left;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .pic-tag .s-text {
+  font-size: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #fd990c;
+  display: inline-block;
+  padding: 4px 15px;
+  float: right;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author .fa-pic {
+  float: left;
+  margin-right: 10px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author .fa-pic img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author .fa-text {
+  overflow: hidden;
+  display: inline-block;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author .fa-text span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 35px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .inside-text {
+  padding: 25px 20px;
+  min-height: 225px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .inside-text h4 {
+  font-size: 22px;
+  color: #19191a;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .inside-text p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .room-features {
+  text-align: center;
+  background: #1c1c1c;
+  padding: 12px 0;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .room-features li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 38px;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .room-features li:last-child {
+  margin-right: 0;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .room-features li i {
+  color: #fd990c;
+  margin-right: 4px;
+  display: inline-block;
+}
+.recentblogs-carousel .recentblogs-item .recentblogs-content .room-features li p {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
 .team-item{
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
 }
 
 .team-img{}
 
 .team-social{
   position: absolute;
-  left: calc(50% - 60px);
-  right: calc(50% - 60px);
+  left: calc(50% - 65px);
+  right: calc(50% - 65px);
+  top: -100%;
+  transition: all 0.5s ease-in;
+}
+
+.team-item:hover .team-social{
   top: 0;
 }
 
@@ -309,17 +482,26 @@ section {
   margin: 0 0;
   width: 40px !important;
   height: 40px !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-content{
-  background-color: #fff;
+  background-color: #fd990c;
+  color: #fff;
   text-align: center;
   padding: 20px;
   position: absolute;
-  left: 10%;
-  right: 10%;
+  left: -100%;
   bottom: 10%;
   border-radius: 10px;
+  transition: all 0.5s ease-in;
+}
+
+.team-item:hover .team-content{
+  left: 10%;
+  right: 10%;
 }
 
 .team-content h5{
