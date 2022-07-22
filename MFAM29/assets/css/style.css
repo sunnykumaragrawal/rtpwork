@@ -112,14 +112,12 @@ a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #header .logo h1 {
-    font-size: 28px;
+    font-size: 24px;
     padding: 8px 0;
   }
 }
-
-@media(max-width: 767px){}
 
 @media(min-width: 768px) and (max-width: 991px){}
 
@@ -511,7 +509,7 @@ section{
   }
 
   section{
-    padding: 25px 0 30px;
+    padding: 0px 0 30px;
   }
 
   .section-title {
@@ -537,7 +535,7 @@ section{
   }
 
   section{
-    padding: 30px 0 40px;
+    padding: 0 0 40px;
   }
 
   .section-title {
@@ -657,7 +655,11 @@ section{
   }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .about-img{
+    margin-top: 35px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Social Media
@@ -776,12 +778,36 @@ section{
     font-size: 18px;
     line-height: 28px;
   }
+
+  .strip-btn{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .strip-btn a{
+    border: 2px solid #0192c8;
+    padding: 8px 18px;
+    font-size: 15px;
+  }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
   .strip-left h3{
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .strip-btn{
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .strip-btn a{
+    border: 3px solid #0192c8;
+    padding: 12px 22px;
+    font-size: 16px;
   }
 }
 
@@ -1038,11 +1064,6 @@ section{
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
-.insurance .col-lg-4{
-  padding: 0 0;
-  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.35);
-}
-
 .insurance-box{
   background-color: #fff;
   height: 120px;
@@ -1050,6 +1071,7 @@ section{
   justify-content: center;
   align-items: center;
   padding:20px 15px;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.35);
 }
 
 .insurance-box img{
@@ -1057,15 +1079,14 @@ section{
 }
 
 @media(max-width: 767px){
-  .insurance-bg{
-    margin-bottom: 20px;
+  .insurance-box{
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
-  .insurance-bg{
-    margin-bottom: 25px;
-  }
+  
 }
 
 /*---------------------
@@ -1132,7 +1153,33 @@ section{
   justify-content: center;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .recentblogs-content{
+    padding: 25px 15px !important;
+  }
+
+  .recentblogs-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px; 
+  }
+
+  .recentblogs-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .recentblogs-content .author-box {
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-left: 10px solid #4285f4; 
+  }
+
+  .recentblogs-content .author-box img {
+    max-width: 60px; 
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){}
   
@@ -1148,6 +1195,7 @@ section{
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  margin-bottom: 30px;
   box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.35);
 }
 .team-item:hover {
