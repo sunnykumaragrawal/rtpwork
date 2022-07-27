@@ -1,6 +1,11 @@
 !(function($) {
   "use strict";
 
+  // Hero animations
+  $(window).on('load', function(e) {
+    $('#hero').toggleClass('hero-animate');
+  });
+
   // Toggle nav menu
   $(document).on('click', '.nav-toggle', function(e) {
     $('.image-animate').toggleClass('image-animate-active');
