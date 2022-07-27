@@ -357,6 +357,7 @@ a:hover {
   margin-top: -80px;
   z-index: 9;
   animation: hero-image 15s linear infinite;
+  animation-delay: 7s;
 }
 
 @keyframes hero-image {
