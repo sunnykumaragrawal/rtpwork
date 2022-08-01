@@ -43,6 +43,12 @@
     template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
   });
 
+  // jQuery counterUp
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 3000
+  });
+
   $(".recentblogs-carousel").owlCarousel({
       items: 3,
       dots: true,
