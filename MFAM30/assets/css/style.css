@@ -243,7 +243,7 @@ a,a:hover{
 # Hero Slider
 --------------------------------------------------------------*/
 .hero {
-  background-color: #FF3B30;
+  background-color: #fff;
   padding: 0 0;
   position: relative; 
   height: 100vh;
@@ -269,18 +269,17 @@ a,a:hover{
   font-size: 6rem;
   font-weight: 900;
   line-height: 1; 
-  color: #fff /*#FF3B30*/;
+  color: #FF3B30 /*#FF3B30*/;
 }
 
 .hero-content h1 span{
-  color: #000 /*#fd990c*/;
+  color: #fd990c /*#fd990c*/;
 }
 
 .hero-content p {
   font-size: 22px;
   line-height: 30px;
   margin-bottom: 35px; 
-  color: #fff;
 }
 
 .hero-content .template-btn{
