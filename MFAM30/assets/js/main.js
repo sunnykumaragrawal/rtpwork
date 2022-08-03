@@ -3,7 +3,7 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 400) {
       $('#header').addClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
@@ -60,7 +60,7 @@
           animateIn: 'fadeIn',
           pauseOnHover: false,
           nav: true,
-          navText: ['<span class="icon-arrow_back"><i class="icofont-arrow-left"></i></span>', '<span class="icon-arrow_forward"><i class="icofont-arrow-right"></i></span>']
+          navText: ['<span class="icon-arrow_back"><i class="icofont-arrow-up"></i></span>', '<span class="icon-arrow_forward"><i class="icofont-arrow-down"></i></span>']
         });
       }
 
@@ -68,7 +68,7 @@
       items: 3,
       dots: true,
       autoplay: true,
-      margin: 0,
+      margin: 20,
       loop: true,
       smartSpeed: 1200,
       responsive: {
@@ -82,6 +82,70 @@
               items: 3,
           }
       }
+  });
+
+  // Social Media carousel (uses the Owl Carousel library)
+  $(".socialmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    margin:20,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 5
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  // Medical Media carousel (uses the Owl Carousel library)
+  $(".medicalmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:30,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  // AOS animation
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').addClass('showbacktop');
+    } else {
+      $('.back-to-top').removeClass('showbacktop');
+    }
+  });
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
   });
 
   /*------------------
