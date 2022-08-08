@@ -384,6 +384,20 @@ section {
   background-color: #FF3B30;
 }*/
 
+.title-center{
+  background-color: #fd990c;
+  padding: 20px 30px 15px;
+}
+
+.title-center h6{
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  letter-spacing: 1.3px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------
 # Strips
 --------------------------------------------------------------*/
