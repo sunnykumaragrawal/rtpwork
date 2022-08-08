@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MFAM31</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div class="logo float-left">
+        <h1 class="text-light"><a href="index.html"><span>Siimple</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End #header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to Siimple</h1>
+      <h2>Please, fill out the for below to be notified for the latest updates!</h2>
+
+      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+        <div class="row no-gutters">
+          <div class="col-md-6 form-group pr-md-1">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+            <div class="validate"></div>
+          </div>
+          <div class="col-md-6 form-group pl-md-1">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+        </div>
+
+        <div class="mb-1">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your notification request was sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Notify me!</button></div>
+      </form>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <section id="aboutus" class="aboutus">
+      <div class="section-title">
+        <h2>Why <span>Choose Us</span></h2>
+        <div class="icon"><i class="bx-menu"></i></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- <h3>Why Choose Us</h3> -->
+            <div class="row about-item">
+              <div class="col-md-4 about-icon">
+                <img src="assets/img/about/icon1.png" class="img-fluid">
+              </div>
+              <div class="col-md-8 about-content">
+                <h4>Trained Physician</h4>
+                <p>Our highly trained physicians and front of office carry out only the highest quality medical services that are of the finest standard</p>
+              </div>
+            </div>
+            <div class="row about-item">
+              <div class="col-md-4 about-icon">
+                <img src="assets/img/about/icon2.png" class="img-fluid">
+              </div>
+              <div class="col-md-8 about-content">
+                <h4>Extra Care</h4>
+                <p>We pride ourselves on getting to see our patients FAST – taking extra care to ensure you land a same-day appointment with a short waiting time</p>
+              </div>
+            </div>
+            <div class="row about-item">
+              <div class="col-md-4 about-icon">
+                <img src="assets/img/about/icon3.png" class="img-fluid">
+              </div>
+              <div class="col-md-8 about-content">
+                <h4>24x7 Support</h4>
+                <p>Please feel free to view our range of insurance options. We also offer a 24-hour service for out of hour questions and emergency services</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/service/image4.jpg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="resources"></section>
+
+    <section id="services" class="services"></section>
+
+    <section id="recentblogs" class="recentblogs"></section>
+
+    <section id="doctors" class="doctors"></section>
+
+    <section id="contactus" class="contactus"></section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Siimple</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-landing-page/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
