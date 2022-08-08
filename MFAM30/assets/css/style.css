@@ -343,35 +343,46 @@ section {
 }
 
 .title-left{
-  background-color: #fd990c;
-  text-align: right;
-  padding: 20px 30px 15px;
+  border-left: 8px solid #fd990c;
+  background-color: #fff;
+  padding: 15px 25px 10px;
+}
+
+.title-left span{
+  color: #FF3B30;
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .title-left h6{
-  color: #fff;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 36px;
   letter-spacing: 1.3px;
   word-spacing: 5px;
   text-transform: uppercase;
 }
 
 .title-right{
-  background-color: #fd990c;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 .title-right a{
+  background-color: #fd990c;
   color: #fff;
+  padding: 14px 32px;
   font-weight: 700;
   font-size: 28px;
   letter-spacing: 1.3px;
   word-spacing: 5px;
   text-transform: uppercase;
+  transition: all 0.5s ease-in;
 }
+
+/*.title-right a:hover{
+  background-color: #FF3B30;
+}*/
 
 /*--------------------------------------------------------------
 # Strips
@@ -835,8 +846,8 @@ section {
   margin-right: 10px;
 }
 .recentblogs-carousel .recentblogs-item .recentblogs-img .feature-author .fa-pic img {
-  height: 36px;
-  width: 36px;
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
   border: 1px solid #ffffff;
 }
