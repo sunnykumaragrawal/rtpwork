@@ -17,6 +17,22 @@ a,a:hover{
 }
 
 /*--------------------------------------------------------------
+# Alert
+--------------------------------------------------------------*/
+.alert{
+  border: none !important;
+  margin-bottom: 0 !important;
+  overflow: hidden;
+}
+
+.alert span{
+  font-size: 36px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #FF3B30 !important;
+}
+
+/*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
