@@ -45,4 +45,24 @@
     }
   });
 
+  $(".recentblogs-carousel").owlCarousel({
+      items: 2,
+      dots: false,
+      autoplay: true,
+      margin: 30,
+      loop: true,
+      smartSpeed: 1200,
+      responsive: {
+          320: {
+              items: 1,
+          },
+          768: {
+              items: 2,
+          },
+          992: {
+              items: 2,
+          }
+      }
+  });
+
 })(jQuery);

@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #fd680e;
+  color: #ab7636;
 }
 
 a:hover {
@@ -278,7 +278,7 @@ a:hover {
   margin: 10px;
   border: none;
   color: #fff;
-  background: #fd680e;
+  background: #ab7636;
 }
 
 #hero .php-email-form button[type="submit"]:hover {
@@ -334,7 +334,7 @@ section {
   display: inline-block;
   text-align: center;
   border-radius: 100%;
-  background: #05C46B;
+  background: #ab7636;
   color: #fff;
   top: 0;
   position: relative;
@@ -347,7 +347,7 @@ section {
   top: 50%;
   width: 100px;
   height: 2px;
-  background: #05C46B;
+  background: #ab7636;
   left: 50%;
   margin-left: -50px;
   margin-top: -1px;
@@ -379,7 +379,7 @@ section {
 }
 
 .about-icon{
-  background-color: #fd680e;
+  background-color: #ab7636;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -487,7 +487,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #05C46B;
+  background: #ab7636;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 50%;
@@ -566,7 +566,7 @@ section {
   border-radius: 0;
   text-align: center;
   background-color: #fff;
-  color: #fd680e;
+  color: #ab7636;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -576,17 +576,17 @@ section {
 
 .service-main .nav-link h4 {
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .service-main .nav-link:hover {
-  color: #fd680e;
+  color: #ab7636;
 }
 
 .service-main .nav-link.active {
   background: #fff;
-  color: #fd680e;
-  border: 5px solid #fd680e;
+  color: #ab7636;
+  border: 5px solid #ab7636;
 }
 
 .service-main .tab-content {
@@ -599,6 +599,33 @@ section {
 
 .service-item img{
   margin-bottom: 30px;
+}
+
+/*--------------------------------------------------------------
+# Recent Blogs
+--------------------------------------------------------------*/
+.recentblogs-item{}
+
+.recentblogs-img{}
+
+.recentblogs-date h5{
+  background-color: #ab7636;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 24px;
+  padding: 25px;
+  text-align: center;
+}
+
+.recentblogs-content{
+  background-color: #fff;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+.recentblogs-btn{
+  text-align: right;
+  padding-top: 20px;
 }
 
 /*--------------------------------------------------------------

@@ -19,6 +19,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -360,7 +361,33 @@
       </div>
     </section>
 
-    <section id="recentblogs" class="recentblogs"></section>
+    <section id="recentblogs" class="recentblogs">
+      <div class="section-title">
+        <h2>Recent <span>Medical</span> News</h2>
+        <div class="icon"><i class="bx-menu"></i></div>
+      </div>
+      <div class="container">
+        <div class="recentblogs-carousel owl-carousel">
+          <div class="recentblogs-item">
+            <div class="recentblogs-img">
+              <img src="assets/img/blog/blog-1.jpg" class="img-fluid">
+            </div>
+            <div class="row recentblogs-block">
+              <div class="col-3 recentblogs-date">
+                <h5>14 Aug</h5>
+              </div>
+              <div class="col-9 recentblogs-content">
+                <h4>Less Than 15% of Medical Sites Meet CORE WEB VITALS Scores</h4>
+                <p>Data from a recent study shows less than 15% of websites are optimized well enough to pass a Core Web Vitals assessment</p>
+              </div>
+            </div>
+            <div class="recentblogs-btn">
+              <a href="#" class="template-btn color1 color2">Full Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="doctors" class="doctors">
       <div class="section-title">
@@ -418,6 +445,7 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
