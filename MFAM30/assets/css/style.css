@@ -202,8 +202,9 @@ a,a:hover{
   height: 15vh;
   background-color: #fd990c;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 25px;
 }
 
 .overlay-top h5{
@@ -489,7 +490,7 @@ a,a:hover{
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 70px 0 60px;
+  padding: 60px 0 50px;
   overflow: hidden;
 }
 
@@ -589,20 +590,6 @@ section {
     letter-spacing: 1.2px;
     word-spacing: 4px;
   }
-
-  .title-center{
-    background-color: #fd990c;
-    padding: 20px 30px 15px;
-  }
-
-  .title-center h6{
-    font-weight: 700;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 1.3px;
-    word-spacing: 5px;
-    text-transform: uppercase;
-  }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
@@ -623,20 +610,6 @@ section {
   .title-right{
     justify-content: center;
     margin-bottom: 30px;
-  }
-
-  .title-center{
-    background-color: #fd990c;
-    padding: 20px 30px 15px;
-  }
-
-  .title-center h6{
-    font-weight: 700;
-    font-size: 28px;
-    color: #fff;
-    letter-spacing: 1.3px;
-    word-spacing: 5px;
-    text-transform: uppercase;
   }
 } 
 
@@ -693,7 +666,12 @@ section {
   color: #fff;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .template-btn{
+    font-size: 16px;
+    padding: 16px 28px;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){} 
 
@@ -720,7 +698,12 @@ section {
     padding: 15px;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .tooltip-inner {
+      font-size: 18px;
+      padding: 10px;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){} 
 
@@ -1461,7 +1444,12 @@ section {
   color: #fff;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  #contact1,#contact2,#contact3,#contact4{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){} 
 
