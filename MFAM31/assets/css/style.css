@@ -354,14 +354,16 @@ section {
 }
 
 .section-title h2 {
-  font-size: 34px;
+  font-size: 36px;
+  font-weight: 700;
   text-transform: capitalize;
   position: relative;
   margin-bottom: 10px;
 }
 
 .section-title h2 span {
-  font-weight: 300;
+  font-weight: 400;
+  color: #ab7636;
 }
 
 /*--------------------------------------------------------------
@@ -383,14 +385,21 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+}
+
+.about-icon .about-image{
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .about-icon img{
-  max-height: 110px;
-  background-color: #fff;
-  border-radius: 50%;
-  padding: 20px;
+  max-height: 80px;
 }
 
 .about-content{
@@ -403,6 +412,7 @@ section {
 
 .about-content p{
   font-size: 18px;
+  line-height: 28px;
 }
 
 /*--------------------------------------------------------------
@@ -440,7 +450,8 @@ section {
   width: 225px;
   height: 295px;
   border-radius: 90px;
-  background-color: #363636;
+  background-color: #fff;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
 }
 
 .resource-img img {
@@ -454,23 +465,30 @@ section {
 
 .resource-content h4 {
   margin-top: 15px;
+  font-weight: 700;
+}
+
+.resource-content p{
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .template-btn {
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #fff;
   background:#20232E;
   display: inline-block;
   padding: 14px 30px;
   border-radius: 0px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 14px;
   overflow: hidden;
   position: relative;
   border: none;
-  box-shadow: none;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -559,6 +577,7 @@ section {
 }
 
 .service-main .nav-link {
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   border: 1px solid #d4d6df;
   padding: 12px;
   transition: 0.3s;
@@ -567,7 +586,6 @@ section {
   text-align: center;
   background-color: #fff;
   color: #ab7636;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
 .service-main .nav-link img {
@@ -584,6 +602,7 @@ section {
 }
 
 .service-main .nav-link.active {
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   background: #fff;
   color: #ab7636;
   border: 5px solid #ab7636;
@@ -591,6 +610,7 @@ section {
 
 .service-main .tab-content {
   background-color: #fff;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
 }
 
 .service-item{
@@ -601,31 +621,169 @@ section {
   margin-bottom: 30px;
 }
 
+.service-item h4{
+  font-weight: 700;
+  padding: 0 25px 10px;
+}
+
+.service-item p{
+  padding: 0 25px 40px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
 /*--------------------------------------------------------------
 # Recent Blogs
 --------------------------------------------------------------*/
-.recentblogs-item{}
+.recentblogs-item{
+  overflow: hidden;
+}
 
-.recentblogs-img{}
+.recentblogs-img{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+}
+
+.recentblogs-date{
+  
+}
 
 .recentblogs-date h5{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   background-color: #ab7636;
   color: #fff;
   margin-top: 15px;
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 700;
   padding: 25px;
   text-align: center;
 }
 
+.recentblogs-date h5 span{
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
 .recentblogs-content{
   background-color: #fff;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   padding: 20px;
   margin-top: -40px;
+}
+
+.recentblogs-content h4{
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.recentblogs-content p{
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .recentblogs-btn{
   text-align: right;
   padding-top: 20px;
+}
+
+/*--------------------------------------------------------------
+# Doctors
+--------------------------------------------------------------*/
+.team-item{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  background-color: #fff;
+}
+
+.team-img{
+  position: relative;
+}
+
+.team-social{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ab7636;
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  padding: 30px 20px 20px;
+}
+
+.team-img:hover .team-social{
+  width: 100%;
+  opacity: 1;
+}
+
+.team-appointment{}
+
+.team-appointment a{
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #ab7636;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: -20px auto 0;
+  position: relative;
+}
+
+.team-content{
+  text-align: center;
+  padding: 20px;
+}
+
+.team-content h4{
+  font-weight: 700;
+}
+
+.team-sicon {
+  transition: all 0.5s ease-in;
+}
+
+.team-sicon{
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.team-sicon:hover{
+  width: auto !important;
+  border-radius: 30px !important;
+  color: #fff;
+}
+
+.team-sicon span{
+  display: none;
+}
+
+.team-sicon:hover span{
+  display: inline-block;
+  color: #fff;
+  margin-left: 10px;
+  line-height: 50px;
+}
+
+.facebook-bg{
+  background:#3b5998 !important;
+  color: #fff;
+}
+
+.twitter-bg{
+  background: #1da1f2 !important;
+  color: #fff;
+}
+
+.instagram-bg{
+  background: #bb1500 !important;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
