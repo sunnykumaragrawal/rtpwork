@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900&display=swap");
 
 /*--------------------------------------------------------------
 # General
@@ -8,7 +10,8 @@ body {
   /*font-family: "Open Sans", sans-serif;*/
   /*font-family: "Raleway", sans-serif;*/
   /*font-family: "Work Sans", Arial, sans-serif;*/
-  font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family:'Rubik', sans-serif;
   color: #444444;
 }
 
@@ -22,26 +25,81 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #020c26;
+  font-size: 14px;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.8);
+  height: 50px;
+}
+
+#topbar .contact-info i {
+  font-style: normal;
+  color: #bebebe;
+}
+
+#topbar .contact-info i a{
+  margin-right: 35px;
+  margin-left: 5px;
+  padding-left: 5px;
+  color: #bebebe;
+}
+
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+  color: #bebebe;
+}
+
+#topbar .cta ul{
+  display: inline-flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+#topbar .cta ul li a{
+  color: #bebebe;
+  margin-right: 25px !important;
+}
+
+#topbar .cta a {
+  display: inline-block;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
+  background-color: #fff;
   height: 80px;
   padding: 20px 0;
   z-index: 10;
   position: relative;
 }
 
+#header.header-scrolled {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 #header .logo h1 {
-  font-size: 36px;
+  font-size: 28px;
   margin: 0;
+  margin-top: 7px;
   padding: 0;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 3px;
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -63,15 +121,19 @@ a:hover {
 --------------------------------------------------------------*/
 .nav-menu {
   position: fixed;
-  top: 0;
-  bottom: 0;
+  top: -130px;
+  left: 0;
+  right: 0;
+  height: 130px;
+  width: 100vw;
   z-index: 9999;
   overflow-y: auto;
-  right: -260px;
-  width: 260px;
-  padding-top: 18px;
-  background: rgba(34, 34, 34, 0.8);
+  background: rgba(255, 255, 255, 1);
   transition: 0.4s;
+}
+
+.nav-menu ul{
+  display: flex;
 }
 
 .nav-menu * {
@@ -81,55 +143,34 @@ a:hover {
 }
 
 .nav-menu a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  color: #ffd2b7;
+  color: #ab7636;
+  border: 1px solid #ab7636;
   padding: 10px 20px;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 18px;
   transition: 0.3s;
+  width: 12.5vw;
+  height: 130px;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #ffa26a;
+  background-color: #ab7636;
+  color: #fff;
   text-decoration: none;
 }
 
-.nav-menu .drop-down > a:after {
-  content: "\e9ac";
-  font-family: "boxicons";
-  padding-left: 10px;
-  position: absolute;
-  right: 15px;
-}
-
-.nav-menu .active.drop-down > a:after {
-  content: "\e9ac";
-}
-
-.nav-menu .drop-down > a {
-  padding-right: 35px;
-}
-
-.nav-menu .drop-down ul {
-  display: none;
-  overflow: hidden;
-}
-
-.nav-menu .drop-down li {
-  padding-left: 20px;
-}
-
 .nav-menu-active {
-  right: 0;
+  top: 0;
+  height: 130px;
 }
 
 .nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  z-index: 9998;
+  float: right;
   border: 0;
-  background: rgba(34, 34, 34, 0.5);
   transition: all 0.4s;
   outline: none !important;
   line-height: 1;
@@ -139,13 +180,33 @@ a:hover {
   border-radius: 2px;
 }
 
+.nav-toggle span{
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: black;
+}
+
+.nav-toggle .s-1{
+  margin-bottom: 3.25px;
+}
+
+.nav-toggle .s-2{
+  margin-bottom: 3.5px;
+}
+
+.nav-toggle .s-3{}
+
 .nav-toggle i {
-  color: #fff;
-  font-size: 18px;
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 .nav-toggle-active {
-  right: 275px;
+  position: fixed;
+  right: 0;
+  top: 130px;
 }
 
 /*--------------------------------------------------------------
@@ -153,7 +214,7 @@ a:hover {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background: url("../img/hero-bg.jpg") center center;
   background-size: cover;
   position: relative;
@@ -175,135 +236,29 @@ a:hover {
   padding: 0 15px;
 }
 
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 56px;
-  line-height: 56px;
-  color: #222;
+.hero-content{
+  background:#fff;
+  padding:50px 56px 50px 56px;
+  position:absolute;
+  z-index:9;
+  bottom: 0;
+  width: 50%;
+  border-bottom: 2px solid #020c26;
 }
 
-#hero h2 {
-  color: #333;
-  margin-bottom: 30px;
-  font-size: 24px;
+.hero-content p{
+  color:#ff5e13;
+  font-size:16px;
+  font-weight:400;
+  margin-bottom:16px;
 }
 
-#hero .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-#hero .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#hero .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-#hero .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 15px;
-  border-radius: 50px;
-}
-
-#hero .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading-notify 1s linear infinite;
-  animation: animate-loading-notify 1s linear infinite;
-}
-
-@-webkit-keyframes animate-loading-notify {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading-notify {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-#hero .php-email-form input {
-  border-radius: 50px;
-  box-shadow: none;
-  font-size: 14px;
-  border: 0;
-  padding: 0px 15px 2px 20px;
-  width: 250px;
-  height: 40px;
-  margin: 0 8px;
-}
-
-#hero .php-email-form button[type="submit"] {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  border: none;
-  color: #fff;
-  background: #ab7636;
-}
-
-#hero .php-email-form button[type="submit"]:hover {
-  background: #fd8841;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #hero .php-email-form input {
-    margin: 0 auto;
-  }
+.hero-content h1{
+  font-weight:500;
+  font-size:60px;
+  color:#020c26;
+  line-height:72px;
+  margin-bottom:28px;
 }
 
 /*--------------------------------------------------------------

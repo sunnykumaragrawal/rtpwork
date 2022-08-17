@@ -6,11 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>MFAM31</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.jpg" rel="icon">
   
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -29,40 +26,47 @@
 
 <body>
 
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bx bx-envelope d-flex align-items-center"><a href="mailto:support@reviewthatplace.com">support@reviewthatplace.com</a></i>
+        <i class="bx bx-phone d-flex align-items-center ms-4"><a href="tel:888-503-1636">+888-503-1636</a></i>
+      </div>
+
+      <div class="cta d-none d-md-flex align-items-center">
+        <ul>
+            <li><a href="#">News & media</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="container-fluid">
+    <div class="container">
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Siimple</span></a></h1>
+      <div class="logo" style="float: left;">
+        <h1><a href="index.html"><span>MFAM31</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
+      <button type="button" class="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </button>
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="#header">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#aboutus">About</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#service-main">Services</a></li>
+          <li><a href="#">Insurance</a></li>
+          <li><a href="#recentblogs">News</a></li>
+          <li><a href="#doctors">Doctors</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -72,28 +76,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>Welcome to Siimple</h1>
-      <h2>Please, fill out the for below to be notified for the latest updates!</h2>
-
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
-        <div class="row no-gutters">
-          <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <div class="validate"></div>
-          </div>
-          <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-            <div class="validate"></div>
-          </div>
-        </div>
-
-        <div class="mb-1">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your notification request was sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Notify me!</button></div>
-      </form>
+      <div class="hero-content">
+        <p>RTP MEDICAL SOLUTION</p>
+        <h1>We provide your Medical Solution</h1>
+      </div>
     </div>
   </section><!-- #hero -->
 

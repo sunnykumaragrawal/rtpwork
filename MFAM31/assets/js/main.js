@@ -1,6 +1,15 @@
 !(function($) {
   "use strict";
 
+  // Toggle .header-scrolled class to #header when page is scrolled
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 400) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
+
   // Toggle nav menu
   $(document).on('click', '.nav-toggle', function(e) {
     $('.nav-menu').toggleClass('nav-menu-active');
