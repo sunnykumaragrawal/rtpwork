@@ -74,4 +74,62 @@
       }
   });
 
+  // Testimonial carousel (uses the Owl Carousel library)
+  $(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    smartSpeed: 1200,
+    margin:20,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+
+  // Social Media carousel (uses the Owl Carousel library)
+  $(".socialmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:20,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 5
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  // Medical Media carousel (uses the Owl Carousel library)
+  $(".medicalmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:30,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
 })(jQuery);
