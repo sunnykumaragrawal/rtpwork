@@ -340,6 +340,38 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Strips
+--------------------------------------------------------------*/
+.strips{
+  padding: 0 0;
+}
+
+.strip-left{
+  background-color: #ab7636;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.strip-left h4{
+  color: #fff;
+  font-weight: 600;
+}
+
+.strip-right{
+  background-color: #ab7636;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  display: none;
+}
+
+.strip-right a{
+  color: #fff;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
 .aboutus h3{
@@ -351,6 +383,7 @@ section {
 .about-item{
   background-color: #fff;
   margin-bottom: 40px;
+  margin-right: 7px;
 }
 
 .about-icon{
@@ -358,7 +391,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
 }
 
 .about-icon .about-image{
@@ -422,7 +455,7 @@ section {
   height: 200px;
   border-radius: 90px;
   background-color: #fff;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
 }
 
 .resource-img img {
@@ -462,7 +495,7 @@ section {
   overflow: hidden;
   position: relative;
   border: none;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -551,7 +584,7 @@ section {
 }
 
 .service-main .nav-link {
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   border: 1px solid #d4d6df;
   padding: 15px 12px 12px;
   transition: 0.3s;
@@ -577,7 +610,7 @@ section {
 }
 
 .service-main .nav-link.active {
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   background: #fff;
   color: #ab7636;
   /*border: 5px solid #ab7636;*/
@@ -585,7 +618,7 @@ section {
 
 .service-main .tab-content {
   background-color: #fff;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
 }
 
 .service-item{
@@ -614,7 +647,7 @@ section {
 # Insurance
 --------------------------------------------------------------*/
 .insurance-box{
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   background-color: #fff;
   height: 120px;
   display: flex;
@@ -662,9 +695,8 @@ section {
 .recentblogs-date h5{
   background-color: #ab7636;
   color: #fff;
-  margin-top: 15px;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 600;
   padding: 25px;
   text-align: center;
 }
@@ -675,10 +707,11 @@ section {
 }
 
 .recentblogs-content{
+  border-top: 5px solid #ab7636;
+  min-height: 240px;
   background-color: #fff;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   padding: 20px;
-  margin-top: -40px;
 }
 
 .recentblogs-content h4{
@@ -968,7 +1001,7 @@ section {
 # Doctors
 --------------------------------------------------------------*/
 .team-item{
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   background-color: #fff;
 }
 
@@ -1078,7 +1111,7 @@ section {
   display: block;
   padding: 20px;
   cursor: pointer;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   border-radius: 8px;
   overflow: hidden;
   transition: all 150ms ease;
@@ -1153,7 +1186,7 @@ section {
   text-align: center;
   padding: 40px;
   background-color: #fff;
-  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
 }
 
 .contact-icon img{
@@ -1209,3 +1242,56 @@ section {
 }
 
 @media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  padding: 6em 0 0;
+  background: #343a40; 
+}
+
+.footer .border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important; 
+}
+
+.footer p {
+  color: #fff; 
+}
+
+.footer h2, .footer h3, .footer h4, .footer h5 {
+  color: #fff; 
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.8); 
+}
+
+.footer a:hover {
+  color: white; 
+}
+
+.footer ul li {
+  margin-bottom: 10px; 
+}
+
+.footer .footer-heading {
+  font-size: 20px;
+  color: #fd4d40; 
+}
+
+.site-section {
+  padding: 7rem 0; 
+}
+
+@media (max-width: 991.98px) {
+  .site-section {
+    padding: 3rem 0; 
+  } 
+}
+
+.btn-custom-1 {
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0; 
+}
