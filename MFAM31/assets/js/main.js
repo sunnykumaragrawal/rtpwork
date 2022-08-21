@@ -1,6 +1,22 @@
 !(function($) {
   "use strict";
 
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').addClass('showbacktop');
+    } else {
+      $('.back-to-top').removeClass('showbacktop');
+    }
+  });
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
   // AOS animation
   window.addEventListener('load', () => {
     AOS.init({
@@ -140,6 +156,13 @@
         items: 6
       }
     }
+  });
+
+  $("[title]").tooltip({
+    delay: { "show": 500, "hide": 10 },
+    offset: '0 10',
+    boundary: 'window',
+    template: '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
   });
 
 })(jQuery);
