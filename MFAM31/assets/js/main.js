@@ -80,6 +80,19 @@
     }
   });
 
+  $('.hero-carousel').owlCarousel({
+    items: 1,
+    loop: true,
+    stagePadding: 0,
+    margin: 0,
+    autoplay: true,
+    animateOut: 'slideOutDown',
+    animateIn: 'fadeIn',
+    pauseOnHover: false,
+    nav: true,
+    navText: ['<span class="icon-arrow_back"><i class="icofont-arrow-up"></i></span>', '<span class="icon-arrow_forward"><i class="icofont-arrow-down"></i></span>']
+  });
+
   $(".recentblogs-carousel").owlCarousel({
       items: 2,
       dots: false,

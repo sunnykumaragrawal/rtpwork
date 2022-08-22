@@ -338,7 +338,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff7f2 /*#fff7f2*/;
+  background-color: #ccc /*#fff7f2*/;
 }
 
 .section-title {
@@ -404,10 +404,15 @@ section {
 # Strips
 --------------------------------------------------------------*/
 .strips{
+  padding: 0 0;
+  transition: all 0.5s;
+}
+
+.strips:hover{
   padding: 30px 0 0;
 }
 
-.strip-left{
+.strip-btn{
   background-color: #ab7636;
   padding: 20px;
   text-align: center;
@@ -416,36 +421,16 @@ section {
   border-bottom-left-radius: 0;
 }
 
-.strip-left h4 a{
+.strip-btn h4 a{
   color: #fff;
-  font-weight: 600;
-}
-
-.strip-right{
-  background-color: #ab7636;
-  padding: 20px;
-  border: 5px solid black;
-  border-radius: 20px;
-  display: none;
-}
-
-.strip-right a{
-  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 5px;
   font-weight: 600;
 }
 
 /*--------------------------------------------------------------
 # Tooltip
 --------------------------------------------------------------*/
-@media(max-width: 767px){
-  .tooltip-inner {
-      font-size: 18px;
-      padding: 10px;
-  }
-}
-
-@media(min-width: 768px) and (max-width: 991px){} 
-
 .tooltip {
   position: absolute;
   z-index: 1080;
