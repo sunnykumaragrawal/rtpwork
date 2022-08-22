@@ -80,17 +80,26 @@
     }
   });
 
-  $('.hero-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    stagePadding: 0,
-    margin: 0,
+  // Hero carousel (uses the Owl Carousel library)
+  $(".hero-carousel").owlCarousel({
     autoplay: true,
+    dots: false,
+    loop: true,
+    margin:20,
     animateOut: 'slideOutDown',
     animateIn: 'fadeIn',
-    pauseOnHover: false,
-    nav: true,
-    navText: ['<span class="icon-arrow_back"><i class="icofont-arrow-up"></i></span>', '<span class="icon-arrow_forward"><i class="icofont-arrow-down"></i></span>']
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
   });
 
   $(".recentblogs-carousel").owlCarousel({
