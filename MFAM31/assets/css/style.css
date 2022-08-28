@@ -258,18 +258,13 @@ a:hover {
 
 @media(max-width: 767px){
   .nav-menu a {
-    display: flex;
     padding: 15px 15px 10px;
     width: 25vw;
+    font-size: 12px;
   }
 
   .nav-menu a img{
     max-height: 50px;
-    margin: 0 auto 0;
-  }
-
-  .nav-menu a span{
-    display: none;
   }
 }
 
@@ -808,9 +803,27 @@ section {
   .resource-item {
     margin-bottom: 25px;
   }
+
+  .resource-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .resource-img img {
+    max-height: 100px;
+  }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .resource-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .resource-img img {
+    max-height: 100px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Template Btn
@@ -1020,6 +1033,10 @@ section {
 }
 
 @media(max-width: 767px){
+  .insurance-box{
+    margin-bottom: 25px;
+  }
+
   .insurance-bg{
     margin-bottom: 20px;
   }
@@ -1711,25 +1728,17 @@ section {
   color: #fd4d40; 
 }
 
-.site-section {
-  padding: 7rem 0; 
+@media(max-width: 767px){
+  .footer {
+    padding: 3em 20px 0;
+  }
 }
 
-@media (max-width: 991.98px) {
-  .site-section {
-    padding: 3rem 0; 
-  } 
+@media(min-width: 768px) and (max-width: 991px){
+  .footer {
+    padding: 4em 0 0;
+  }
 }
-
-.btn-custom-1 {
-  border-radius: 30px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0; 
-}
-
-@media(max-width: 767px){}
-
-@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # All Blogs
