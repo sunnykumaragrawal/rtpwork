@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500,500i,700,700i,900&display=swap");
 
@@ -7,10 +5,6 @@
 # General
 --------------------------------------------------------------*/
 body {
-  /*font-family: "Open Sans", sans-serif;*/
-  /*font-family: "Raleway", sans-serif;*/
-  /*font-family: "Work Sans", Arial, sans-serif;*/
-  /*font-family: 'Josefin Sans', sans-serif;*/
   font-family:'Rubik', sans-serif;
   color: #444444;
 }
@@ -106,9 +100,6 @@ a:hover {
   margin-left: 5px;
   padding-left: 5px;
   color: #bebebe;
-}
-
-#topbar .contact-info i a {
   line-height: 0;
   transition: 0.3s;
 }
@@ -132,6 +123,14 @@ a:hover {
 #topbar .cta a {
   display: inline-block;
 }
+
+@media(max-width: 767px){
+  #topbar .contact-info{
+    display: none !important;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Header
@@ -165,18 +164,14 @@ a:hover {
   text-decoration: none;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
-@media (max-width: 768px) {
+@media(max-width: 767px){
   #header .logo h1 {
     font-size: 28px;
     padding: 8px 0;
   }
 }
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -249,23 +244,6 @@ a:hover {
   border-radius: 2px;
 }
 
-.nav-toggle span{
-  display: block;
-  width: 24px;
-  height: 4px;
-  background-color: black;
-}
-
-.nav-toggle .s-1{
-  margin-bottom: 3.25px;
-}
-
-.nav-toggle .s-2{
-  margin-bottom: 3.5px;
-}
-
-.nav-toggle .s-3{}
-
 .nav-toggle i {
   color: #000;
   font-size: 36px;
@@ -278,16 +256,43 @@ a:hover {
   top: 130px;
 }
 
+@media(max-width: 767px){
+  .nav-menu a {
+    display: flex;
+    padding: 15px 15px 10px;
+    width: 25vw;
+  }
+
+  .nav-menu a img{
+    max-height: 50px;
+    margin: 0 auto 0;
+  }
+
+  .nav-menu a span{
+    display: none;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .nav-menu a {
+    padding: 15px 7px 7px;
+    font-size: 14px;
+  }
+
+  .nav-menu a img{
+    max-height: 50px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 130px);
   background: url("../img/hero-bg.jpg") center center;
   background-size: cover;
   position: relative;
-  margin-top: -80px;
   z-index: 9;
 }
 
@@ -326,13 +331,6 @@ a:hover {
   max-height: 120px;
 }
 
-.hero-content p{
-  color:#ff5e13;
-  font-size:16px;
-  font-weight:400;
-  margin-bottom:16px;
-}
-
 .hero-content h1{
   font-weight: 600;
   letter-spacing: 1.2px;
@@ -343,36 +341,32 @@ a:hover {
   line-height:56px;
 }
 
-.icon-arrow_back {
-  position: absolute;
-  bottom: 120px;
-  left: 40px;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  background: #FF3B30;
-  color: #fff;
-  margin-bottom: 10px;
-  font-size: 1.3rem; 
+@media(max-width: 767px){
+  .hero-content{
+    width: 95%;
+    padding: 20px;
+  }
+
+  .hero-content h1{
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+    font-size: 24px;
+    line-height:36px;
+  }
 }
-  
-.icon-arrow_forward{
-  position: absolute;
-  bottom: 60px;
-  left: 40px;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  background: #FF3B30;
-  color: #fff;
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+
+@media(min-width: 768px) and (max-width: 991px){
+  .hero-content{
+    width: 80%;
+    padding: 20px;
+  }
+
+  .hero-content h1{
+    letter-spacing: 1.15px;
+    word-spacing: 5px;
+    font-size: 36px;
+    line-height:48px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -380,6 +374,7 @@ a:hover {
 --------------------------------------------------------------*/
 section {
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .section-bg {
@@ -402,20 +397,6 @@ section {
   padding: 10px;
   position: relative;
   border: 2px solid #ab7636;
-}
-
-.section-title .icon i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 100%;
-  background: #ab7636;
-  color: #fff;
-  top: 0;
-  position: relative;
-  z-index: 4;
 }
 
 .section-title .icon::before {
@@ -445,6 +426,32 @@ section {
   color: #ab7636;
 }
 
+@media(max-width: 767px){
+  section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Strips
 --------------------------------------------------------------*/
@@ -472,6 +479,23 @@ section {
   word-spacing: 5px;
   font-weight: 600;
 }
+
+@media(max-width: 767px){
+  .strips:hover{
+    padding: 40px 0 0;
+  }
+
+  .strip-btn{
+    padding: 15px;
+  }
+
+  .strip-btn h4 a{
+    word-spacing: 4px;
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Tooltip
@@ -593,7 +617,17 @@ section {
     border-top: 15px solid #ab7636;
 }
 
+@media(max-width: 767px){
+  .tooltip-inner {
+    max-width: 90%;
+    padding: 10px 7px !important;
+    border: 2px solid #ab7636;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
 
+@media(min-width: 768px) and (max-width: 991px){}
 
 
 /*--------------------------------------------------------------
@@ -676,6 +710,36 @@ section {
   transform: scale(1.2);
 }
 
+@media(max-width: 767px){
+  .about-item{
+    width: 95%;
+    margin: 0 auto 25px;
+  }
+
+  .about-icon{
+    padding: 25px;
+  }
+
+  .about-content{
+    text-align: center;
+    padding: 20px;
+  }
+
+  .about-img{
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-item{
+    margin-right: 0;
+  }
+
+  .about-img{
+    margin-bottom: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Resources
 --------------------------------------------------------------*/
@@ -706,11 +770,6 @@ section {
   opacity: 1;
   font-size: 28px;
   color: rgba(255, 255, 255, 0.9);
-}
-
-.resource-item:hover {
-  transform: translateY(0);
-  cursor: pointer;
 }
 
 .resource-img {
@@ -744,6 +803,14 @@ section {
   font-size: 18px;
   line-height: 28px;
 }
+
+@media(max-width: 767px){
+  .resource-item {
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Template Btn
@@ -840,6 +907,10 @@ section {
   color:#252525;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Service Main
 --------------------------------------------------------------*/
@@ -911,6 +982,18 @@ section {
   padding: 0 25px 40px;
   font-size: 18px;
   line-height: 28px;
+}
+
+@media(max-width: 767px){
+  .service-main .nav-link h4 {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .service-main .nav-link h4 {
+    font-size: 13px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -997,6 +1080,44 @@ section {
 .recentblogs-btn{
   text-align: right;
   padding-top: 20px;
+}
+
+@media(max-width: 767px){
+  .recentblogs-date h5{
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .recentblogs-date h5 span{
+    font-size: 18px;
+  }
+
+  .recentblogs-content h4{
+    margin-left: 15px;
+  }
+
+  .recentblogs-content p{
+    margin-left: 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .recentblogs-date h5{
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .recentblogs-date h5 span{
+    font-size: 20px;
+  }
+
+  .recentblogs-content h4{
+    margin-left: 20px;
+  }
+
+  .recentblogs-content p{
+    margin-left: 20px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1267,6 +1388,10 @@ section {
   background-image: url("../img/rms/design-5.svg");
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -1276,6 +1401,7 @@ section {
 }
 
 .team-img{
+  text-align: center;
   position: relative;
 }
 
@@ -1368,6 +1494,18 @@ section {
   color: #fff;
 }
 
+@media(max-width: 767px){
+  .team-item{
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .team-item{
+    margin-bottom: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Faqs
 --------------------------------------------------------------*/
@@ -1449,6 +1587,10 @@ section {
   font-weight: 500;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1471,6 +1613,19 @@ section {
 .contact-content p{
   font-size: 18px;
   line-height: 28px;
+}
+
+@media(max-width: 767px){
+  .contact-item{
+    padding: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .contact-item{
+    margin-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1524,6 +1679,7 @@ section {
 .footer {
   padding: 6em 0 0;
   background: #343a40; 
+  overflow: hidden;
 }
 
 .footer .border-top {
@@ -1570,6 +1726,10 @@ section {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0; 
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # All Blogs
