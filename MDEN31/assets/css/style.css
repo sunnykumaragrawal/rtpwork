@@ -1013,7 +1013,7 @@ section {
 # Pricing
 --------------------------------------------------------------*/
 .pricing .pricing-item {
-  padding: 10px 0 0;
+  padding: 10px 0 30px;
   background: #fff;
   text-align: center;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
