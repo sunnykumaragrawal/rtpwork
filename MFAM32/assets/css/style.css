@@ -531,6 +531,130 @@ section{
 }
 
 /*--------------------------------------------------------------
+# Service Main
+--------------------------------------------------------------*/
+.service-main .nav-tabs {
+  border: 0;
+}
+
+.service-main .nav-item{
+  margin-bottom: 10px;
+}
+
+.service-main .nav-link {
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+  border: none;
+  padding: 20px 12px 15px;
+  transition: all 0.5s;
+  border-radius: 0;
+  text-align: center;
+  background-color: #fddd33;
+  color: #000;
+}
+
+.service-main .nav-link img {
+  max-height: 100px;
+  transition: all 0.5s;
+  display: none;
+}
+
+.service-main .nav-link h4 {
+  font-size: 22px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.service-main .nav-link:hover,
+.service-main .nav-link.active {
+  background: #fff;
+  color: #ab7636;
+  border: 1px solid #ab7636;
+}
+
+.service-main .nav-link:hover img,
+.service-main .nav-link.active img{
+  max-height: 110px;
+}
+
+.service-main .tab-content {
+  background-color: #fff;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+}
+
+.service-item{
+  text-align: center;
+}
+
+.service-item img{
+  margin-bottom: 30px;
+}
+
+.service-item h4{
+  letter-spacing: 1.25px;
+  word-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 25px 10px;
+}
+
+.service-item p{
+  padding: 0 25px 40px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media(max-width: 767px){
+  .service-main .nav-link h4 {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .service-main .nav-link h4 {
+    font-size: 13px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Insurance
+--------------------------------------------------------------*/
+.insurance-box{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.insurance-box:hover{
+  border: 2px solid #ab7636;
+}
+
+.insurance-box img{
+  max-height: 80px;
+}
+
+@media(max-width: 767px){
+  .insurance-box{
+    margin-bottom: 25px;
+  }
+
+  .insurance-bg{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .insurance-bg{
+    margin-bottom: 25px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Recentblogs
 --------------------------------------------------------------*/
 .recentblogs-item{}
@@ -659,3 +783,88 @@ section{
   background: #bb1500 !important;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Faqs
+--------------------------------------------------------------*/
+.accordion {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.faq-item {
+  background-color: #fff;
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 150ms ease;
+}
+.faq-item:not(:last-child) {
+  border-bottom: 1px solid #fafafa;
+}
+
+.faq-heading {
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 150ms ease;
+  position: relative;
+  padding-right: 30px;
+  font-weight: 700;
+}
+
+.faq-heading img{
+  max-height: 25px;
+  margin-right: 10px;
+}
+
+.faq-heading::after, .faq-heading::before {
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: #21368b;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  transition: all 150ms ease;
+}
+.faq-heading::after {
+  transform: rotate(90deg);
+}
+
+.faq-desc {
+  transform: translateY(50%);
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 0;
+  opacity: 0;
+  transition: all 150ms ease;
+}
+
+.faq-item [type=checkbox], .faq-item [type=radio] {
+  display: none;
+}
+.faq-item [type=radio]:checked + .faq-heading, .faq-item [type=checkbox]:checked + .faq-heading {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.faq-item [type=radio]:checked + .faq-heading::after, .faq-item [type=checkbox]:checked + .faq-heading::after {
+  transform: rotate(45deg);
+}
+.faq-item [type=radio]:checked + .faq-heading::before, .faq-item [type=checkbox]:checked + .faq-heading::before {
+  transform: rotate(-45deg);
+}
+.faq-item [type=radio]:checked + .faq-heading + .faq-desc, .faq-item [type=checkbox]:checked + .faq-heading + .faq-desc {
+  transform: translateY(0);
+  max-height: none;
+  opacity: 1;
+  color: #4c4848;
+  font-weight: 500;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
