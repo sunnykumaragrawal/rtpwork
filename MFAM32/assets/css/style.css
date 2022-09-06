@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600,600i,700&display=swap");
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Lato', sans-serif;
-  /*font-family: 'JaapokkiRegular';*/
+  font-family: 'Josefin Sans', sans-serif;
   color: #444444;
 }
 
@@ -125,7 +125,7 @@ a:hover {
   top: 0;
   width: 100%;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
-  background-color: #f81c1c;
+  background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
 }
 
 #header .logo h1 {
@@ -247,7 +247,7 @@ a:hover {
   padding: 0 0 !important;
   width: 100%;
   height: 100vh;
-  background-color: #f81c1c;
+  background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
   position: relative;
   z-index: 9;
 }
@@ -322,27 +322,6 @@ a:hover {
   box-shadow: 0px 10px 30px 0px rgba(193, 34, 10, 0.2);
 }
 
-@media (max-width: 576px) {
-  .template-btn1 {
-    padding: 10px 30px;
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .template-btn1 {
-    padding: 10px 30px;
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .template-btn1 {
-    padding: 10px 30px;
-    margin-top: 30px;
-  }
-}
-
 .template-btn2 {
   display: inline-block;
   padding: 13px 39px;
@@ -366,27 +345,6 @@ a:hover {
   border: 1px solid transparent;
 }
 
-@media (max-width: 576px) {
-  .template-btn2 {
-    padding: 14px 30px;
-    margin-top: 25px;
-  }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .template-btn2 {
-    padding: 14px 30px;
-    margin-top: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .template-btn2 {
-    padding: 14px 30px;
-    margin-top: 30px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Section General
 --------------------------------------------------------------*/
@@ -400,14 +358,57 @@ section{
 }
 
 .section-title{
-  padding: 30px 40px;
-  background-color: #f81c1c;
-  color: #fff;
-  transition: all 0.3s ease 0s;
-  margin-bottom: 70px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-bottom: 15px;
 }
 
-.section-icon{
+.section-title h2{
+  font-weight: 700;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    left: calc(50% - 50px);
+    bottom: 0;
+    background: #f81c1c;
+    border-radius: 100%;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 9px;
+    left: calc(50% - 10px);
+    bottom: -3px;
+    background: #f81c1c;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Strips
+--------------------------------------------------------------*/
+
+
+.strips{
+  padding: 30px 40px;
+  background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
+
+.strip-icon{
   width: 70px;
   height: 70px;
   margin-right: 20px;
@@ -418,11 +419,11 @@ section{
   float: left;
 }
 
-.section-icon img{
+.strip-icon img{
   max-height: 50px;
 }
 
-.section-title h2{
+.strips h3{
   text-transform: uppercase;
   letter-spacing: 1.3px;
   word-spacing: 6px;
@@ -430,12 +431,42 @@ section{
   transition: all 0.3s ease 0s;
  }
 
- .section-title p{
+ .strips p{
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 0;
   font-weight: 400;
   text-transform: capitalize;
+ }
+
+ .strip-right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .strip-btn {
+   display: inline-block;
+   padding: 13px 39px;
+   border-radius: 50px;
+   background-color: #fff;
+   border: 1px solid #0c2e60;
+   color: #0c2e60;
+   font-size: 16px;
+   -o-transition: all .4s ease-in-out;
+   -webkit-transition: all .4s ease-in-out;
+   transition: all .4s ease-in-out;
+   text-transform: capitalize;
+   background-size: 200% auto;
+   font-size: 15px;
+   font-weight: 500;
+ }
+
+ .strip-btn:hover {
+   color: #fff !important;
+   border: 4px solid #fff;
+   background-position: right center;
+   background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
  }
 
 /*--------------------------------------------------------------
@@ -866,5 +897,105 @@ section{
 }
 
 @media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+
+.testimonial-block{
+  padding-top: 30px;
+}
+
+.testimonial-item{
+  border: 3px solid #f81c1c;
+}
+
+.testimonial-icon img{
+  max-height: 40px !important;
+  width: 50px !important;
+  margin-bottom: -20px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.testimonial-content{
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.testimonial-content p{
+  height: 120px !important;
+  overflow-y: scroll;
+}
+
+.testimonial-content p::-webkit-scrollbar{
+  width: 0;
+}
+
+.testimonial-carousel .center .testimonial-content{
+  background-color: #f81c1c;
+  color: #fff;
+}
+
+.testimonial-author{
+  padding: 20px;
+  background-color: #f81c1c;
+  color: #fff;
+}
+
+.testimonial-author img{
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.testimonial-carousel .center .testimonial-author{
+  background-color: #fff;
+  color: #f81c1c;
+}
+
+/*--------------------------------------------------------------
+# Social Media
+--------------------------------------------------------------*/
+.social-block{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  transition: all 0.5s
+}
+
+.social-block:hover{
+  border: 3px solid #ab7636;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
+# Medical Media
+--------------------------------------------------------------*/
+.medical-box{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 105px;
+  transition: all .5s;
+}
+
+.medical-box:hover{
+  border: 3px solid #ab7636;
+}
+
+@media(max-width: 767px){
+  .medical-box{
+    padding: 15px;
+    min-height: auto;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){}
