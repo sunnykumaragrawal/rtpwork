@@ -50,6 +50,10 @@ main{
     margin-top: -40px;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -159,6 +163,10 @@ main{
   }
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -251,13 +259,37 @@ main{
   font-weight: 600;
 }
 
+@media(max-width: 767px){
+  .nav-title{
+    background-color: #ee390f !important;
+    color: #fff !important;
+    font-size: 20px !important;
+  }
+  .nav-menu a {
+    padding: 20px 20px 10px;
+    font-size: 20px;
+    width: 100vw;
+    height: 12.5vh;
+  }
+  .nav-toggle-active {
+    right: 15px;
+    top: 15px;
+  }
+
+  .nav-toggle-active i{
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   padding: 0 0 !important;
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
   position: relative;
   z-index: 9;
@@ -280,21 +312,11 @@ main{
   }
 }
 
-#hero .hero-container {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .hero-carousel{
   overflow: hidden;
 }
 
 .hero-content{
-  min-height: 60vh;
-  margin-top: 20vh;
   padding: 50px 30px 50px 70px;
   overflow: hidden;
 }
@@ -328,8 +350,76 @@ main{
 
 .hero-img{
   padding: 80px;
-  max-height: 100vh;
   overflow: hidden;
+}
+
+@media(min-width: 992px){
+  #hero{
+    height: 100vh;
+  }
+  .hero-content{
+    min-height: 60vh;
+    margin-top: 20vh;
+  }
+  .hero-img{
+    max-height: 100vh;
+  }
+}
+
+@media(max-width: 767px){
+  #hero {
+    animation: none;
+  }
+
+  .hero-content{
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .hero-content p{
+    margin-bottom:10px;
+  }
+
+  .hero-content h1{
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+    font-size: 28px;
+    line-height:40px;
+    margin-bottom: 25px;
+  }
+
+  .hero-btn1{
+    font-size: 13px !important;
+    padding: 8px 10px !important;
+    margin-right: 10px;
+    border: 1px solid #fff !important;
+  }
+
+  .hero-btn2{
+    font-size: 13px !important;
+    padding: 8px 10px !important;
+    border: 1px solid #fff !important;
+  }
+
+  .hero-img{
+    padding: 10px 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  #hero {
+    animation: none;
+  }
+
+  .hero-content{
+    text-align: center;
+    padding: 50px 30px 70px 30px;
+  }
+
+  .hero-img{
+    padding: 40px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -379,6 +469,10 @@ main{
   border: 1px solid transparent;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Section General
 --------------------------------------------------------------*/
@@ -426,11 +520,38 @@ section{
     border-radius: 5px;
 }
 
+@media(max-width: 767px){
+  section{
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  .section-title{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+  }
+
+  .section-title h2{
+    font-size: 28px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section{
+    padding: 50px 0;
+  }
+  .section-title{
+    margin-bottom: 50px;
+    padding-bottom: 12px;
+  }
+
+  .section-title h2{
+    font-size: 36px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Strips
 --------------------------------------------------------------*/
-
-
 .strips{
   padding: 30px 40px;
   background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
@@ -506,6 +627,55 @@ section{
    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
  }
 
+@media(max-width: 767px){
+  .strips{
+    padding: 20px 15px;
+  }
+
+  .strip-left{
+    text-align: center;
+  }
+
+  .strip-icon{
+    margin: 0 auto 20px;
+    float: none;
+  }
+
+  .strips h3{
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    word-spacing: 4px;
+   }
+
+   .strip-right{
+     margin-top: 20px;
+   }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .strips{
+    padding: 20px 20px;
+  }
+
+  .strip-left{
+    text-align: center;
+  }
+
+  .strip-icon{
+    margin: 0 auto 20px;
+    float: none;
+  }
+
+  .strips h3{
+    letter-spacing: 1.2px;
+    word-spacing: 4px;
+   }
+
+   .strip-right{
+     margin-top: 25px;
+   }
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -562,6 +732,51 @@ section{
 
 .about-img img:hover{
   transform: scale(1.25);
+}
+
+@media(max-width: 767px){
+  .about-content{
+    text-align: center;
+    margin-bottom: 30px;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .about-content h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-content p{
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .about-icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0 auto 10px;
+  }
+
+  .about-img{
+    margin-top: 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-content{
+    border-left: none;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .about-img{
+    margin-top: 40px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -655,6 +870,10 @@ section{
   font-weight: 700;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Service Main
 --------------------------------------------------------------*/
@@ -677,12 +896,6 @@ section{
   color: #fff;
 }
 
-.service-main .nav-link img {
-  max-height: 100px;
-  transition: all 0.5s ease-in-out;
-  display: none;
-}
-
 .service-main .nav-link h4 {
   font-size: 22px;
   font-weight: 600;
@@ -694,11 +907,6 @@ section{
   background: #fff;
   color: #ee390f;
   border: 2px dashed #ee390f;
-}
-
-.service-main .nav-link:hover img,
-.service-main .nav-link.active img{
-  max-height: 110px;
 }
 
 .service-main .tab-content {
@@ -729,14 +937,19 @@ section{
 }
 
 @media(max-width: 767px){
+  .service-main .nav-link {
+    padding: 14px 10px 8px;
+  }
   .service-main .nav-link h4 {
-    font-size: 13px;
+    font-size: 15px;
+    text-transform: uppercase;
   }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
   .service-main .nav-link h4 {
-    font-size: 13px;
+    font-size: 15px;
+    text-transform: uppercase;
   }
 }
 
@@ -779,6 +992,10 @@ section{
   }
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Recentblogs
 --------------------------------------------------------------*/
@@ -819,31 +1036,14 @@ section{
   border: 2px dashed #ee390f;
 }
 
-.recentblogs-carousel .owl-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
+@media(max-width: 767px){
+  .recentblogs-item{
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
-.recentblogs-carousel .owl-nav .owl-prev{
-  margin-right: 15px;
-}
-
-.recentblogs-carousel .owl-nav .owl-prev,
-.recentblogs-carousel .owl-nav .owl-next{
-  background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);
-  width: 50px;
-  height: 50px;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Doctors
@@ -916,6 +1116,18 @@ section{
 .instagram-bg{
   background: #bb1500 !important;
   color: #fff;
+}
+
+@media(max-width: 767px){
+  .team-item{
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .team-item{
+    margin-bottom: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1063,6 +1275,10 @@ section{
   color: #ee390f;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Social Media
 --------------------------------------------------------------*/
@@ -1137,16 +1353,6 @@ section{
 
 .footer-cimg img{
   max-height: 45px;
-}
-
-@media(max-width: 991px){
-  .footer-contacts{
-    padding: 20px 30px;
-  }
-
-  .footer-cbox{
-    margin-bottom: 25px;
-  }
 }
 
 #footer .footer-top {
@@ -1251,6 +1457,30 @@ section{
   text-align: center;
   font-size: 15px;
   color: #fff;
+}
+
+@media(max-width: 767px){
+  .footer-contacts{
+    padding: 40px 30px 20px;
+  }
+
+  .footer-cbox{
+    margin-bottom: 40px;
+  }
+
+  #footer .footer-top {
+    padding: 40px 20px 30px 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .footer-contacts{
+    padding: 40px 30px 10px;
+  }
+
+  .footer-cbox{
+    margin-bottom: 40px;
+  }
 }
 
 /*--------------------------------------------------------------

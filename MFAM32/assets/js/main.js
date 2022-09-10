@@ -137,10 +137,9 @@
   $(".recentblogs-carousel").owlCarousel({
     autoplay: true,
     dots: false,
-    nav: true,
+    nav: false,
     loop: true,
     margin:25,
-    center: true,
     responsive: {
       0: {
         items: 1
@@ -149,6 +148,7 @@
         items: 2
       },
       900: {
+        center: true,
         items: 3
       }
     }
@@ -158,10 +158,9 @@
   $(".testimonial-carousel").owlCarousel({
     autoplay: true,
     dots: false,
-    nav: true,
+    nav: false,
     loop: true,
     margin:25,
-    center: true,
     responsive: {
       0: {
         items: 1
@@ -170,6 +169,7 @@
         items: 2
       },
       900: {
+        center: true,
         items: 3
       }
     }
