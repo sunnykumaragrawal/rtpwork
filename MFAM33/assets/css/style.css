@@ -229,8 +229,9 @@ section {
 }
 
 .section-icon{
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
+  border: 1px dashed #F38181;
   margin-right: 20px;
   display: flex;
   justify-content: center;
@@ -261,30 +262,133 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# Strips
 --------------------------------------------------------------*/
-.about h3 {
-  font-weight: 300;
-  font-size: 26px;
+.strips{
+  padding: 0 0;
 }
 
-.about ul {
-  list-style: none;
-  padding: 0;
+.strip-container{}
+
+.strip-content{
+  border: 5px dashed #F38181;
+  padding: 20px;
+  text-align: center;
 }
 
-.about ul li {
-  padding-bottom: 10px;
-}
-
-.about ul i {
-  font-size: 20px;
-  padding-right: 4px;
+.strip-content h3{
+  font-weight: 700;
   color: #F38181;
 }
 
-.about p:last-child {
-  margin-bottom: 0;
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-content h3 {
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about-item{
+  margin-bottom: 25px;
+}
+
+.about-icon{
+  width: 80px;
+  height: 80px;
+  border: 2px solid #F38181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.about-icon img{
+  max-height: 40px;
+}
+
+.about-item h4{
+  font-weight: 700;
+}
+
+.about-item p{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/*--------------------------------------------------------------
+# Resources
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.service-item{
+  position: relative;
+}
+
+.service-img{}
+
+.service-content{
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.service-icon{
+  width: 120px;
+  height: 120px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #F38181;
+  padding: 20px;
+  margin: 0 auto 25px;
+  transition: all 0.5s ease-in;
+}
+
+.service-icon img{
+  max-height: 80px;
+}
+
+.service-content h4{
+  font-weight: 700;
+}
+
+.service-content p{
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.service-item:hover .service-content{
+  padding: 20px;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}
+
+.service-item:hover .service-icon{
+  display: flex;
+}
+
+.service-item:hover .service-content p{
+  display: block;
 }
 
 /*--------------------------------------------------------------
