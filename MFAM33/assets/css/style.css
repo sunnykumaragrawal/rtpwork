@@ -25,6 +25,36 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+.preloader {
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+}
+
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -70px;
+    margin-top: -70px;
+}
+
+.preloader .preloader-img img{
+  max-height: 150px;
+  border-radius: 50%;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -221,7 +251,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff7f2;
+  background-color: #ccc /*#fff7f2*/;
 }
 
 .section-title{
@@ -250,7 +280,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 1.3px;
   word-spacing: 6px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .section-title p{
@@ -271,6 +301,7 @@ section {
 .strip-container{}
 
 .strip-content{
+  background-color: #fff;
   border: 5px dashed #F38181;
   padding: 20px;
   text-align: center;
@@ -327,7 +358,30 @@ section {
 /*--------------------------------------------------------------
 # Resources
 --------------------------------------------------------------*/
+.resource-item{
+  background-color: #fff;
+  margin-bottom: 35px;
+  width: 98%;
+}
 
+.resource-icon{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resource-icon img{
+  max-height: 90px;
+}
+
+.resource-content{
+  padding: 20px;
+}
+
+.resource-content h4{
+  font-weight: 700;
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -391,6 +445,23 @@ section {
 
 .service-item:hover .service-content p{
   display: block;
+}
+
+/*--------------------------------------------------------------
+# Doctors
+--------------------------------------------------------------*/
+.doctor-item{
+  background-color: #fff;
+}
+
+.doctor-icon{}
+
+.doctor-content{
+  padding: 20px;
+}
+
+.doctor-content h4{
+  font-weight: 700;
 }
 
 /*--------------------------------------------------------------
