@@ -67,12 +67,14 @@ main{
   z-index: 10;
   position: relative;
   background-color: #F38181;
+  display: none;
 }
 
 #header.header-scrolled {
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
 }
 
 #header .logo h1 {
@@ -202,7 +204,6 @@ main{
   background: url("../img/services/image1.jpg") center center;
   background-size: cover;
   position: relative;
-  margin-top: -80px;
   z-index: 9;
 }
 
@@ -265,7 +266,7 @@ section {
 .section-icon{
   width: 80px;
   height: 80px;
-  border: 1px dashed #F38181;
+  border: 1px solid #F38181;
   margin-right: 20px;
   display: flex;
   justify-content: center;
@@ -306,13 +307,12 @@ section {
 
 .strip-content{
   background-color: #fff;
-  border: 5px dashed #F38181;
-  padding: 20px;
+  border: 8px solid #F38181;
   text-align: center;
+  padding: 20px 15px 15px;
 }
 
 .strip-content h3{
-  font-weight: 700;
   color: #F38181;
 }
 
@@ -358,6 +358,26 @@ section {
   font-size: 18px;
   line-height: 28px;
 }
+
+/*--------------------------------------------------------------
+# Social Media
+--------------------------------------------------------------*/
+.social-block{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-block:hover{
+  border: 3px dashed #F38181;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Resources
@@ -452,9 +472,7 @@ section {
 --------------------------------------------------------------*/
 .template-btn {
   display: inline-block;
-  font-family: "Rajdhani", sans-serif;
   font-weight: 600;
-  color: #777;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -475,9 +493,10 @@ section {
 }
 
 .template-btn:hover {
-  color: #fff;
+  color: #fff !important;
   background-color: #F38181;
   border-color: #c20e0e;
+  text-decoration: none;
 }
 
 .template-btn::after {
@@ -496,24 +515,35 @@ section {
   transition: all 0.2s ease-in-out;
 }
 
-.template-btn:hover {
-  color: #777;
-  text-decoration: none;
-}
-
 .template-btn:hover::after {
   top: -6px;
   opacity: 1;
 }
 
-.template-btn:focus, .template-btn.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(238, 21, 21, 0.25);
-}
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .nav-tabs {
+  border: 0;
+}
+
+.services .nav-link{
+  border: 2px solid #F38181;
+  background-color: #F38181;
+  color: #fff;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.services .nav-link:hover,
+.services .nav-link.active {
+  border: 2px solid #F38181;
+  background-color: #fff;
+  color: #F38181;
+}
+
+.services .tab-content {}
+
 .service-item{
   position: relative;
   margin-bottom: 30px;
@@ -561,10 +591,15 @@ section {
 
 .service-item:hover .service-content{
   padding: 20px;
-  top: 10%;
-  bottom: 10%;
-  left: 10%;
-  right: 10%;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  border: 5px solid #F38181;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .service-item:hover .service-icon{
@@ -618,6 +653,155 @@ section {
 .doctor-social a img{
   max-height: 25px;
 }
+
+/*--------------------------------------------------------------
+# Faqs
+--------------------------------------------------------------*/
+.accordion {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.faq-item {
+  background-color: #fff;
+  display: block;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.faq-item:not(:last-child) {
+  border-bottom: 1px solid #fafafa;
+}
+
+.faq-heading {
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  padding-right: 30px;
+  font-weight: 700;
+}
+
+.faq-heading img{
+  max-height: 25px;
+  margin-right: 10px;
+}
+
+.faq-heading::after, .faq-heading::before {
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: #21368b;
+  position: absolute;
+  right: 0;
+  top: 8px;
+  transition: all 0.5s ease-in-out;
+}
+.faq-heading::after {
+  transform: rotate(90deg);
+}
+
+.faq-desc {
+  transform: translateY(50%);
+  color: #999;
+  font-size: 16px;
+  line-height: 1.5;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.faq-item [type=checkbox], .faq-item [type=radio] {
+  display: none;
+}
+.faq-item [type=radio]:checked + .faq-heading, .faq-item [type=checkbox]:checked + .faq-heading {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.faq-item [type=radio]:checked + .faq-heading::after, .faq-item [type=checkbox]:checked + .faq-heading::after {
+  transform: rotate(45deg);
+}
+.faq-item [type=radio]:checked + .faq-heading::before, .faq-item [type=checkbox]:checked + .faq-heading::before {
+  transform: rotate(-45deg);
+}
+.faq-item [type=radio]:checked + .faq-heading + .faq-desc, .faq-item [type=checkbox]:checked + .faq-heading + .faq-desc {
+  transform: translateY(0);
+  max-height: none;
+  opacity: 1;
+  color: #4c4848;
+  font-weight: 500;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
+# Testimonial
+--------------------------------------------------------------*/
+.testimonial-block{
+  padding-top: 30px;
+}
+
+.testimonial-item{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
+  border: 2px dashed #F38181;
+}
+
+.testimonial-icon img{
+  max-height: 40px !important;
+  width: 40px !important;
+  margin-bottom: -20px;
+  margin-top: -20px;
+  margin-left: 20px;
+}
+
+.testimonial-content{
+  padding: 40px 20px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.testimonial-content p{
+  height: 120px !important;
+  overflow-y: scroll;
+}
+
+.testimonial-content p::-webkit-scrollbar{
+  width: 0;
+}
+
+.testimonial-carousel .center .testimonial-content{
+  background-color: #F38181;
+  color: #fff;
+}
+
+.testimonial-author{
+  padding: 20px;
+  background-color: #F38181;
+  color: #fff;
+}
+
+.testimonial-author img{
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+}
+
+.testimonial-carousel .center .testimonial-author{
+  background-color: #fff;
+  background-image: none;
+  color: #F38181;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Footer

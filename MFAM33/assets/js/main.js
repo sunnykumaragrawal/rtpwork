@@ -12,7 +12,7 @@
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 400) {
       $('#header').addClass('header-scrolled');
     } else {
       $('#header').removeClass('header-scrolled');
@@ -56,11 +56,51 @@
           $('.nav-menu .active').removeClass('active');
           $(this).closest('li').addClass('active');
           $('body').toggleClass('body-active');
-          $('.nav-menu').removeClass('nav-menu-active');
+          $('.nav-menu').toggleClass('nav-menu-active');
           $('.nav-toggle').removeClass('nav-toggle-active');
           // $('.nav-toggle i').toggleClass('bx-x bx-menu');
         }
         return false;
+      }
+    }
+  });
+
+  // Social Media carousel (uses the Owl Carousel library)
+  $(".socialmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:20,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 5
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".testimonial-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    nav: false,
+    loop: true,
+    margin:25,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        center: true,
+        items: 3
       }
     }
   });
