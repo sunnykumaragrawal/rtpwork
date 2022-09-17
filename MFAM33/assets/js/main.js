@@ -85,24 +85,24 @@
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonial-carousel").owlCarousel({
+  $('.testimonial-carousel').owlCarousel({
     autoplay: true,
-    dots: false,
-    nav: false,
     loop: true,
-    margin:25,
+    margin: 20,
+    dots: false,
+    nav: true,
+    responsiveClass: true,
     responsive: {
       0: {
         items: 1
       },
       768: {
-        items: 2
+        items: 1
       },
       900: {
-        center: true,
-        items: 3
+        items: 1
       }
     }
   });
-
+  
 })(jQuery);
