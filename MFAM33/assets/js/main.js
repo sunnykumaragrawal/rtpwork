@@ -84,6 +84,28 @@
     }
   });
 
+  // Blog carousel (uses the Owl Carousel library)
+  $(".recentblogs-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:20,
+    animateOut: 'slideOutDown',
+    animateIn: 'fadeIn',
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+
   // Testimonials carousel (uses the Owl Carousel library)
   $('.testimonial-carousel').owlCarousel({
     autoplay: true,

@@ -612,6 +612,37 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Recent Blogs
+--------------------------------------------------------------*/
+.recentblogs-item{
+  background-color: #fff;
+}
+
+.recentblogs-img{
+  padding-left: 0;
+}
+
+.recentblogs-content{
+  padding: 25px 20px 20px 10px;
+}
+
+.recentblogs-content h4{
+  font-weight: 700;
+}
+
+.recentblogs-block{
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.recentblogs-right{
+  transition: all 5s;
+}
+
+.recentblogs-right:hover{
+}
+
+/*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
 .doctor-item{
