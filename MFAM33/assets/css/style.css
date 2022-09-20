@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #F38181;
+  color: #535BA0;
 }
 
 a:hover {
@@ -67,14 +67,18 @@ main{
   padding: 20px 0;
   z-index: 10;
   position: relative;
-  background-color: #F38181;
+  background-color: #535BA0;
   display: none;
+  width: calc(100% - 80px);
+}
+
+.header-active{
+  width: calc(100% - 240px) !important;
 }
 
 #header.header-scrolled {
   position: fixed;
   top: 0;
-  width: 100%;
   display: flex;
 }
 
@@ -117,7 +121,7 @@ main{
   overflow-y: scroll;
   left: 0;
   width: 80px;
-  background: rgba(0, 0, 0, 0.8);
+  background: #24252D;
   transition: 0.4s;
 }
 
@@ -137,8 +141,10 @@ main{
 }
 
 .nav-menu a {
-  height: 10vh;
-  display: block;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   color: #ffd2b7;
   padding: 10px 20px;
@@ -147,7 +153,12 @@ main{
   transition: 0.3s;
 }
 
+.nav-menu-active a{
+  justify-content: flex-start;
+}
+
 .nav-menu a span{
+  text-transform: uppercase;
   display: none;
 }
 
@@ -156,7 +167,7 @@ main{
 }
 
 .nav-menu-active a img{
-  display: none;
+  max-height: 30px;
 }
 
 .nav-menu a img{
@@ -165,7 +176,7 @@ main{
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #F38181;
+  color: #535BA0;
   text-decoration: none;
 }
 
@@ -289,7 +300,7 @@ section {
 .section-icon{
   width: 80px;
   height: 80px;
-  border: 1px solid #F38181;
+  border: 1px solid #535BA0;
   margin-right: 20px;
   display: flex;
   justify-content: center;
@@ -326,17 +337,54 @@ section {
   padding: 0 0;
 }
 
-.strip-container{}
-
 .strip-content{
+  position: relative;
   background-color: #fff;
-  border: 8px solid #F38181;
+  border: 8px dashed #535BA0;
   text-align: center;
   padding: 20px 15px 15px;
+  transition: all 0.5s ease-in;
 }
 
 .strip-content h3{
-  color: #F38181;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #535BA0;
+}
+
+.strip-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #535BA0;
+  color: #fff !important;
+  border: none;
+  text-align: center;
+  border-bottom: 8px solid #26264b;
+  opacity: 0;
+}
+
+.strip-btn a{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  word-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.strip-content:hover{
+  border: none;
+}
+
+.strip-content:hover .strip-btn{
+  opacity: 1;
 }
 
 /*--------------------------------------------------------------
@@ -358,7 +406,7 @@ section {
 .about-icon{
   width: 80px;
   height: 80px;
-  border: 2px solid #F38181;
+  border: 2px solid #535BA0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -396,7 +444,7 @@ section {
 }
 
 .social-block:hover{
-  border: 3px dashed #F38181;
+  border: 3px solid #535BA0;
 }
 
 @media(max-width: 767px){}
@@ -452,6 +500,7 @@ section {
 }
 
 .resource-item p {
+  padding: 0 15px;
   color: #ddd;
 }
 
@@ -469,7 +518,7 @@ section {
 }
 
 .resource-item svg path{
-  fill: #F38181;
+  fill: #535BA0;
   fill-rule: evenodd;
 }
 
@@ -513,14 +562,15 @@ section {
   position: relative;
   z-index: 1;
   color: #fff;
-  background-color: #F38181;
-  border-color: #F38181;
+  background-color: #535BA0;
+  border-color: #535BA0;
 }
 
 .template-btn:hover {
   color: #fff !important;
-  background-color: #F38181;
+  background-color: #535BA0;
   border-color: #c20e0e;
+  padding: 0.4875rem 3.5625rem 0.6875rem;
   text-decoration: none;
 }
 
@@ -553,18 +603,19 @@ section {
 }
 
 .services .nav-link{
-  border: 2px solid #F38181;
-  background-color: #F38181;
+  border: 2px solid #535BA0;
+  background-color: #535BA0;
   color: #fff;
-  padding: 10px 15px;
+  font-weight: 600;
+  padding: 10px 16px;
   margin-right: 10px;
 }
 
 .services .nav-link:hover,
 .services .nav-link.active {
-  border: 2px solid #F38181;
+  border: 2px solid #535BA0;
   background-color: #fff;
-  color: #F38181;
+  color: #535BA0;
 }
 
 .services .tab-content {}
@@ -596,7 +647,7 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 3px solid #F38181;
+  border: 5px solid #535BA0;
   padding: 20px;
   margin: 0 auto 25px;
   transition: all 0.5s ease-in;
@@ -621,7 +672,7 @@ section {
   bottom: 0%;
   left: 0%;
   right: 0%;
-  border: 5px solid #F38181;
+  border: 5px solid #535BA0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,6 +688,45 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Insurance
+--------------------------------------------------------------*/
+.insurance-box{
+  box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  background-color: #fff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.insurance-box:hover{
+  border: 3px dashed #ee390f;
+}
+
+.insurance-box img{
+  max-height: 80px;
+}
+
+@media(max-width: 767px){
+  .insurance-box{
+    margin-bottom: 25px;
+  }
+
+  .insurance-bg{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .insurance-bg{
+    margin-bottom: 25px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Recent Blogs
 --------------------------------------------------------------*/
 .recentblogs-item{
@@ -649,24 +739,62 @@ section {
 }
 
 .recentblogs-content{
-  padding: 25px 20px 20px 10px;
+  padding: 20px 20px 20px 10px;
+}
+
+.recentblogs-content span{
+  font-style: italic;
+  color: #535BA0;
 }
 
 .recentblogs-content h4{
+  padding-top: 10px;
   font-weight: 700;
+}
+
+.recentblogs-content p{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.recentblogs-author{
+  margin-top: 15px;
+}
+
+.recentblogs-author img{
+  width: 90px !important;
+  height: 90px !important;
+  border-radius: 50%;
+  float: left;
+  margin-right: 15px;
+  border: 3px solid #535BA0;
+}
+
+.recentblogs-author h5{
+  padding-top: 20px !important;
+  font-weight: 600;
+}
+
+.recentblogs-btn{
+  padding-top: 30px;
+  text-align: center;
 }
 
 .recentblogs-block{
   margin-bottom: 30px;
   margin-left: 15px;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
+  position: relative;
 }
 
-.recentblogs-right{
-  transition: all 5s;
-}
-
-.recentblogs-right:hover{
+.recentblogs-block::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(83, 91, 160, 0.7);
 }
 
 /*--------------------------------------------------------------
@@ -810,7 +938,7 @@ section {
   width: 50%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #F38181;
+  background-color: #535BA0;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
   color: #fff;
 }
@@ -827,21 +955,38 @@ section {
   display: flex;
   padding: 40px 20px 20px;
   text-align: center;
-  background-color: #fff;
+  background-color: #24252D;
+  color: #fff;
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.9);
-  border: 5px solid #F38181;
+  border: 6px solid #535BA0;
 }
 
 .testimonial-content p{
-  font-size: 20px;
+  font-size: 18px;
+  font-style: italic;
   line-height: 30px;
-  height: 120px !important;
+/*  height: 120px !important;
   overflow-y: scroll;
+*/}
+
+.testimonial-content p .quote-left{
+  max-height: 30px !important;
+  width: 30px !important;
+  margin-right: 5px;
+  margin-top: -20px;
+  transform: rotate(180deg);
 }
 
-.testimonial-content p::-webkit-scrollbar{
-  width: 0;
+.testimonial-content p .quote-right{
+  max-height: 30px !important;
+  width: 30px !important;
+  margin-left: 5px;
+  margin-bottom: -20px;
 }
+
+/*.testimonial-content p::-webkit-scrollbar{
+  width: 0;
+}*/
 
 .quote-left,
 .quote-right{
@@ -886,7 +1031,7 @@ section {
 
 .testimonial-carousel .owl-nav .owl-prev,
 .testimonial-carousel .owl-nav .owl-next{
-  background-color: #F38181;
+  background-color: #535BA0;
   width: 50px;
   height: 50px;
   color: #fff;
@@ -900,6 +1045,31 @@ section {
 }
 
 @media (max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
+/*--------------------------------------------------------------
+# Medical Media
+--------------------------------------------------------------*/
+.medical-box{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 105px;
+  transition: all .5s;
+}
+
+.medical-box:hover{
+  border: 3px solid #ab7636;
+}
+
+@media(max-width: 767px){
+  .medical-box{
+    padding: 15px;
+    min-height: auto;
+  }
+}
 
 @media(min-width: 768px) and (max-width: 991px){}
 
