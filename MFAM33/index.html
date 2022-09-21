@@ -12,9 +12,10 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/animate.css" rel="stylesheet">
@@ -65,10 +66,21 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="hero-container">
-      <h1>Welcome to RTP</h1>
-      <h2></h2>
-
+    <div class="tab-content">
+      <div class="tab-pane active show" id="hero-1">
+        <h1 class="animate__animated animate__fadeInLeft" style="animation-delay: 5s;">Welcome to RTP</h1>
+        <h2></h2>
+      </div>
+      <div class="tab-pane" id="hero-2">
+        <h1>Welcome to RTP2</h1>
+        <h2></h2>
+      </div>
+    </div>
+    <div class="hero-nav">
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#hero-1"><img src="assets/img/service/image1.png" class="img-fluid"></a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#hero-2"><img src="assets/img/service/image2.png" class="img-fluid"></a></li>
+      </ul>
     </div>
   </section><!-- #hero -->
 
@@ -79,17 +91,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <div class="about-img" style="background-color: red;">
-              <img src="assets/img/about/about.jpg" class="img-fluid" alt="" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="3000">
+            <div class="about-img">
+              <img src="assets/img/about/about.jpg" class="img-fluid" alt="" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="about-content">
+            <div class="about-content" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="200">
               <h3>Why Choose Us</h3>
               <p>We are a leading medical solutions expert in the United States.</p>
             </div>
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
                 <div class="about-item">
                   <div class="about-icon">
                     <img src="assets/img/about/icon1.png" class="img-fluid">
@@ -98,7 +110,7 @@
                   <p>Our highly trained physicians and front of office carry out only the highest quality medical services that are of the finest standard</p>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="100" data-aos-duration="400">
                 <div class="about-item">
                   <div class="about-icon">
                     <img src="assets/img/about/icon2.png" class="img-fluid">
@@ -107,7 +119,7 @@
                   <p>We pride ourselves on getting to see our patients FAST – taking extra care to ensure you land a same-day appointment with a short waiting time</p>
                 </div>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
                 <div class="about-item">
                   <div class="about-icon">
                     <img src="assets/img/about/icon3.png" class="img-fluid">
@@ -126,7 +138,7 @@
 
     <section class="socialmedia" id="socialmedia">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/social-media.png" class="img-fluid">
           </div>
@@ -156,7 +168,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -171,7 +183,7 @@
 
     <section id="resources" class="resources">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/resource.png" class="img-fluid">
           </div>
@@ -179,7 +191,7 @@
           <p>Get your message to your patients....reduce paperwork</p>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="300">
             <div class="resource-item">
               <span>RTP</span>
               <h3>Request Form</h3>
@@ -191,7 +203,7 @@
               <svg viewBox="0 0 170 193"><path d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" /></svg>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
             <div class="resource-item">
               <span>RTP</span>
               <h3>Update Demo</h3>
@@ -203,7 +215,7 @@
               <svg viewBox="0 0 170 193"><path d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" /></svg>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
             <div class="resource-item">
               <span>RTP</span>
               <h3>Authorization Release</h3>
@@ -212,10 +224,12 @@
               </div>
               <p class="desc">This forms gives us the ability to obtain or release your medical records</p>
               <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank" class="btn template-btn">Start Now</a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank" data-toggle="tooltip" title="Upload Records" id="auth-btn1"><i class="icofont-upload"></i></a>
+              <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank" data-toggle="tooltip" title="Download Records" id="auth-btn2"><i class="icofont-download"></i></a>
               <svg viewBox="0 0 170 193"><path d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" /></svg>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
             <div class="resource-item">
               <span>RTP</span>
               <h3>New Patient Forms</h3>
@@ -227,7 +241,7 @@
               <svg viewBox="0 0 170 193"><path d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" /></svg>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
             <div class="resource-item">
               <span>RTP</span>
               <h3>Book Appointment</h3>
@@ -239,7 +253,7 @@
               <svg viewBox="0 0 170 193"><path d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" /></svg>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
             <div class="resource-item">
               <span>RTP</span>
               <h3>Patient Portal</h3>
@@ -255,7 +269,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -270,7 +284,7 @@
 
     <section id="services" class="services">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/service.png" class="img-fluid">
           </div>
@@ -280,7 +294,7 @@
         <div class="tab-content">
           <div class="tab-pane active show" id="service-1">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300">
                 <div class="service-item">
                   <div class="service-img">
                     <img src="assets/img/services/image1.jpg" class="img-fluid">
@@ -294,7 +308,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="400">
                 <div class="service-item">
                   <div class="service-img">
                     <img src="assets/img/services/image2.jpg" class="img-fluid">
@@ -308,7 +322,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500">
                 <div class="service-item">
                   <div class="service-img">
                     <img src="assets/img/services/image3.jpg" class="img-fluid">
@@ -322,7 +336,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
                 <div class="service-item">
                   <div class="service-img">
                     <img src="assets/img/services/image4.jpg" class="img-fluid">
@@ -401,14 +415,13 @@
         </div>
         
         <ul class="nav nav-tabs row justify-content-center mt-5">
-          <li class="nav-item">
-            <a class="nav-link active show" data-toggle="tab" href="#service-1">1</a></li>
-            <a class="nav-link" data-toggle="tab" href="#service-2">2</a></li>
+          <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#service-1">1</a></li>
+           <li><a class="nav-link" data-toggle="tab" href="#service-2">2</a></li>
         </ul>
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -423,7 +436,7 @@
 
     <section id="insurance" class="insurance">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/insurance.png" class="img-fluid">
           </div>
@@ -495,7 +508,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -510,7 +523,7 @@
 
     <section id="recentblogs" class="recentblogs">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/blog.png" class="img-fluid">
           </div>
@@ -518,7 +531,7 @@
           <p>Get your message to your patients....reduce paperwork</p>
         </div>
         <div class="row">
-          <div class="col-lg-10">
+          <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300">
             <div class="owl-carousel recentblogs-carousel">
               <div class="recentblogs-left">
                 <div class="row recentblogs-item">
@@ -583,13 +596,13 @@
             </div>
           </div>
           <div class="col-lg-2 recentblogs-right">
-            <div class="recentblogs-block">
+            <div class="recentblogs-block" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
               <a href=""><img src="assets/img/blog/blog-1.jpg" class="img-fluid"></a>
             </div>
-            <div class="recentblogs-block">
+            <div class="recentblogs-block" data-aos="fade-left" data-aos-delay="100" data-aos-duration="400">
               <a href=""><img src="assets/img/blog/blog-2.jpg" class="img-fluid"></a>
             </div>
-            <div class="recentblogs-block">
+            <div class="recentblogs-block" data-aos="fade-left" data-aos-delay="100" data-aos-duration="500">
               <a href=""><img src="assets/img/blog/blog-3.jpg" class="img-fluid"></a>
             </div>
           </div>
@@ -597,7 +610,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -612,7 +625,7 @@
 
     <section id="doctors" class="doctors">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/doctor.png" class="img-fluid">
           </div>
@@ -620,66 +633,74 @@
           <p>Get your message to your patients....reduce paperwork</p>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="doctor-item row">
-              <div class="col-lg-4 doctor-icon">
-                <img src="assets/img/doctor/image1.jpg" class="img-fluid">
-              </div>
-              <div class="col-lg-8 doctor-content">
-                <h4>Andrew Tye</h4>
-                <span>EKG Specialist</span>
-                <div class="doctor-social">
-                  <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
-                  <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
-                  <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300">
+            <div class="doctor-item">
+              <div class="row">
+                <div class="col-lg-4 doctor-icon">
+                  <img src="assets/img/doctor/image1.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-8 doctor-content">
+                  <h4>Andrew Tye</h4>
+                  <span>EKG Specialist</span>
+                  <div class="doctor-social">
+                    <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
+                    <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
+                    <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="doctor-item row">
-              <div class="col-lg-4 doctor-icon">
-                <img src="assets/img/doctor/image2.jpg" class="img-fluid">
-              </div>
-              <div class="col-lg-8 doctor-content">
-                <h4>Thomas Henry</h4>
-                <span>Physician</span>
-                <div class="doctor-social">
-                  <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
-                  <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
-                  <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="400">
+            <div class="doctor-item">
+              <div class="row">
+                <div class="col-lg-4 doctor-icon">
+                  <img src="assets/img/doctor/image2.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-8 doctor-content">
+                  <h4>Thomas Henry</h4>
+                  <span>Physician</span>
+                  <div class="doctor-social">
+                    <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
+                    <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
+                    <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="doctor-item row">
-              <div class="col-lg-4 doctor-icon">
-                <img src="assets/img/doctor/image3.jpg" class="img-fluid">
-              </div>
-              <div class="col-lg-8 doctor-content">
-                <h4>James Alexander</h4>
-                <span>Gyn Specialist</span>
-                <div class="doctor-social">
-                  <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
-                  <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
-                  <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500">
+            <div class="doctor-item">
+              <div class="row">
+                <div class="col-lg-4 doctor-icon">
+                  <img src="assets/img/doctor/image3.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-8 doctor-content">
+                  <h4>James Alexander</h4>
+                  <span>Gyn Specialist</span>
+                  <div class="doctor-social">
+                    <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
+                    <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
+                    <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="doctor-item row">
-              <div class="col-lg-4 doctor-icon">
-                <img src="assets/img/doctor/image4.jpg" class="img-fluid">
-              </div>
-              <div class="col-lg-8 doctor-content">
-                <h4>Harrison Samuel</h4>
-                <span>Child Specialist</span>
-                <div class="doctor-social">
-                  <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
-                  <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
-                  <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+          <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
+            <div class="doctor-item">
+              <div class="row">
+                <div class="col-lg-4 doctor-icon">
+                  <img src="assets/img/doctor/image4.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-8 doctor-content">
+                  <h4>Harrison Samuel</h4>
+                  <span>Child Specialist</span>
+                  <div class="doctor-social">
+                    <a href="https://www.facebook.com/RTPMedSol" target="_blank"><img src="assets/img/doctor/facebook.png" class="img-fluid"></a>
+                    <a href="https://twitter.com/MedRtp" target="_blank"><img src="assets/img/doctor/twitter.png" class="img-fluid"></a>
+                    <a href="https://www.instagram.com/rtpmedsol/" target="_blank"><img src="assets/img/doctor/instagram.png" class="img-fluid"></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -688,7 +709,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -703,7 +724,7 @@
 
     <section id="faq">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/faq.png" class="img-fluid">
           </div>
@@ -711,7 +732,7 @@
           <p>Get your message to your patients....reduce paperwork</p>
         </div>
         <div class="row accordion">
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="300">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> What is an internist?</div>
@@ -721,7 +742,7 @@
               illness in adults.</p></div>
             </label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="400">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> What does an internist do?</div>
@@ -729,7 +750,7 @@
               may also work in outpatient clinics, providing primary care to adults.</p></div>
             </label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="500">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> When to see an internal medicine doctor?</div>
@@ -738,7 +759,7 @@
               frequently.</p></div>
             </label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="600">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> Is an internist a family doctor?</div>
@@ -747,7 +768,7 @@
               of all ages.</p></div>
             </label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="700">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> Should I see an internal medicine doctor or family practice?</div>
@@ -759,7 +780,7 @@
               vaccinations and basic blood tests.</p></div>
             </label>
           </div>
-          <div class="col-lg-12">
+          <div class="col-lg-12" data-aos="fade-right" data-aos-delay="100" data-aos-duration="800">
             <label class="faq-item">
               <input type="checkbox" name="accordion">
               <div class="faq-heading"><img src="assets/img/faq.png" class="img-fluid"> Do I need an appointment to see the Internal Doctor?</div>
@@ -773,7 +794,7 @@
       </div>
     </section>
 
-    <section class="strips">
+    <section class="strips" data-aos="fade-down" data-aos-delay="100" data-aos-duration="200">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 strip-content">
@@ -788,14 +809,14 @@
 
     <section id="testimonials" class="testimonials">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/review.png" class="img-fluid">
           </div>
           <h2>What Are Patient's Saying....</h2>
           <p>Get your message to your patients....reduce paperwork</p>
         </div>
-        <div class="testimonial-carousel owl-theme">
+        <div class="testimonial-carousel owl-theme" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="300">
 
           <div class="testimonial-item">
             <div class="testimonial-author">
@@ -833,7 +854,7 @@
 
     <section class="medicalmedia">
       <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-right" data-aos-delay="100" data-aos-duration="200">
           <div class="section-icon">
             <img src="assets/img/nav/follow.png" class="img-fluid">
           </div>

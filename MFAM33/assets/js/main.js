@@ -125,6 +125,7 @@
     margin: 20,
     dots: false,
     nav: true,
+    smartSpeed: 1000,
     responsiveClass: true,
     responsive: {
       0: {
