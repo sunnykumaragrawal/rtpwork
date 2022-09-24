@@ -16,6 +16,26 @@ body {
   margin-left: 240px;
 }
 
+@media(max-width: 767px){
+  body {
+    margin-left: 0;
+  }
+
+  .body-active{
+    margin-left: 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  body {
+    margin-left: 0;
+  }
+
+  .body-active{
+    margin-left: 80px;
+  }
+}
+
 a {
   color: #535BA0;
 }
@@ -25,7 +45,7 @@ a:hover {
   text-decoration: none;
 }
 
-main{
+.main-active{
   padding: 0 15px;
 }
 
@@ -159,16 +179,28 @@ main{
   text-decoration: none;
 }
 
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
+@media(max-width: 767px){
+  #header {
+    width: 100% !important;
+  }
+
+  .header-active{
+    width: 100% !important;
+  }
+
+  #header .logo h1 {
+    font-size: 24px;
+    padding: 8px 0;
+  }
 }
 
-@media (max-width: 768px) {
-  #header .logo h1 {
-    font-size: 28px;
-    padding: 8px 0;
+@media(min-width: 768px) and (max-width: 991px){
+  #header {
+    width: 100%;
+  }
+
+  .header-active{
+    width: calc(100% - 80px) !important;
   }
 }
 
@@ -273,7 +305,6 @@ main{
   top: 15px;
   z-index: 9998;*/
   border: 0;
-  /*background: rgba(34, 34, 34, 0.5);*/
   background: transparent;
   transition: all 0.5s ease-in;
   outline: none !important;
@@ -291,14 +322,44 @@ main{
 .nav-toggle-active {
 }
 
+@media(max-width: 767px){
+  .nav-menu {
+    left: -100%;
+    width: 100%;
+  }
+
+  .nav-menu-active {
+    left: 0;
+    width: 100% !important;
+  }
+
+  .nav-menu-active a{
+    justify-content: center;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .nav-menu {
+    left: -80px;
+    width: 80px;
+  }
+
+  .nav-menu-active {
+    left: 0;
+    width: 80px !important;
+  }
+
+  .nav-menu-active a span{
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  /*background-image: linear-gradient(to left, #535BA0 0%, #6f7ace 51%, #535BA0 100%);
-  */
   background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.45)), url("../img/services/image2.jpg") center center;
   background-size: cover;
   position: relative;
@@ -372,13 +433,6 @@ main{
   animation-delay: 1s;
 }
 
-#hero h2 {
-  display: none;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
 .hero-btn{
 }
 
@@ -424,17 +478,23 @@ main{
   max-height: 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
+
+  .hero-btn{
+  }
+
+  .hero-btn .template-btn{
+    display: flex !important;
+    width: 60%;
+    margin: 0 auto;
   }
 }
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -479,13 +539,23 @@ section {
   font-weight: 700;
 }
 
-.section-title p{
-  display: none;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-transform: uppercase;
+@media(max-width: 767px){
+  section {
+    padding: 40px 0;
+  }
+
+  .section-title h2{
+    padding-top: 10px;
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section {
+    padding: 60px 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -573,6 +643,32 @@ section {
   height: 100%;
 }
 
+@media(max-width: 767px){
+  .strip-content{
+    border: 4px dashed #535BA0;
+    padding: 15px 10px 10px;
+  }
+
+  .strip-content h3{
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .strip-content{
+    border: 6px dashed #535BA0;
+    padding: 15px 10px 10px;
+  }
+
+  .strip-content h3{
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -635,6 +731,24 @@ section {
 .about-item p{
   font-size: 18px;
   line-height: 28px;
+}
+
+@media(max-width: 767px){
+  .about-content {
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .about-content h3 {
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-content {
+    text-align: center;
+    padding: 30px 10px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -780,6 +894,10 @@ section {
 .resource-item:hover #auth-btn2 {
   opacity: 1;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Template Btn
@@ -940,13 +1058,17 @@ section {
   display: block;
 }
 
+@media(max-width: 767px){
+  .service-item:hover .service-icon{
+    display: none;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
-#insurance .col-lg-3{
-  padding: 0 0;
-}
-
 .insurance-box{
   box-shadow: 0px 10px 23px -8px rgba(0, 0, 0, 0.35);
   background-color: #fff;
@@ -979,6 +1101,12 @@ section {
 @media(min-width: 768px) and (max-width: 991px){
   .insurance-bg{
     margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 992px){
+  #insurance .col-lg-3{
+    padding: 0 0;
   }
 }
 
@@ -1061,6 +1189,42 @@ section {
   height: 0;
 }
 
+@media(max-width: 767px){
+  .recentblogs-content{
+    margin-left: 25px;
+  }
+
+  .recentblogs-right{
+    display: flex;
+    justify-content: center;
+  }
+
+  .recentblogs-block{
+    width: 60px;
+    height: 45px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .recentblogs-content{
+    margin-left: 40px;
+  }
+
+  .recentblogs-right{
+    display: flex;
+    justify-content: center;
+  }
+
+  .recentblogs-block{
+    width: 100px;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-left: 15px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Doctors
 --------------------------------------------------------------*/
@@ -1109,6 +1273,46 @@ section {
 
 .doctor-social a img{
   max-height: 30px;
+}
+
+@media(max-width: 767px){
+  .doctor-icon {
+    text-align: center;
+  }
+
+  .doctor-icon img{
+    margin: 0 auto;
+  }
+
+  .doctor-content{
+    text-align: center;
+  }
+
+  .doctor-social{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .doctor-icon {
+    text-align: center;
+  }
+
+  .doctor-icon img{
+    margin: 0 auto;
+  }
+
+  .doctor-content{
+    text-align: center;
+  }
+
+  .doctor-social{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1236,9 +1440,7 @@ section {
   font-size: 18px;
   font-style: italic;
   line-height: 30px;
-/*  height: 120px !important;
-  overflow-y: scroll;
-*/}
+}
 
 .testimonial-content p .quote-left{
   max-height: 30px !important;
@@ -1254,10 +1456,6 @@ section {
   margin-left: 5px;
   margin-bottom: -20px;
 }
-
-/*.testimonial-content p::-webkit-scrollbar{
-  width: 0;
-}*/
 
 .quote-left,
 .quote-right{
@@ -1288,7 +1486,6 @@ section {
 }
 
 .testimonial-carousel .owl-nav .owl-prev{
-  margin-right: 15px;
   position: absolute;
   left: 40px;
   bottom: 50%;
@@ -1315,9 +1512,45 @@ section {
   align-items: center;
 }
 
-@media (max-width: 767px){}
+@media (max-width: 767px){
+  .testimonial-item{
+    width: 100%;
+  }
 
-@media(min-width: 768px) and (max-width: 991px){}
+  .testimonial-author{
+    width: 85%;
+    padding: 15px;
+  }
+
+  .testimonial-content{
+    padding: 20px 15px 20px;
+    border: 4px solid #535BA0;
+  }
+
+  .testimonial-carousel .owl-nav .owl-prev{
+    left: 0;
+    bottom: 0;
+  }
+
+  .testimonial-carousel .owl-nav .owl-next{
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .testimonial-item{
+    width: calc(100% - 140px);
+  }
+
+  .testimonial-carousel .owl-nav .owl-prev{
+    left: 0;
+  }
+
+  .testimonial-carousel .owl-nav .owl-next{
+    right: 0;
+  }
+}
 
 /*--------------------------------------------------------------
 # Medical Media
@@ -1386,6 +1619,7 @@ section {
 
 @media(max-width: 767px){
   .contact-item{
+    height: auto;
     padding: 30px;
     margin-bottom: 25px;
   }
@@ -1393,6 +1627,7 @@ section {
 
 @media(min-width: 768px) and (max-width: 991px){
   .contact-item{
+    height: auto;
     margin-bottom: 30px;
   }
 }
