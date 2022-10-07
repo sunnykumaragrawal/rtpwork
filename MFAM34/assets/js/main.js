@@ -13,7 +13,7 @@
   // AOS animation
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 1500,
       easing: 'ease-in-out',
       once: true,
       mirror: false
@@ -96,6 +96,7 @@
     loop: true,
     margin:20,
     nav: false,
+    smartSpeed: 1200,
     responsive: {
       0: {
         items: 1
@@ -116,6 +117,7 @@
     loop: true,
     margin:20,
     nav: false,
+    smartSpeed: 1200,
     animateOut: 'slideOutRight',
     animateIn: 'fadeIn',
     responsive: {
@@ -135,6 +137,7 @@
   $(".socialmedia-carousel").owlCarousel({
     autoplay: true,
     dots: false,
+    nav: false,
     loop: true,
     margin:20,
     smartSpeed: 1200,
@@ -143,10 +146,52 @@
         items: 3
       },
       768: {
-        items: 5
+        items: 3
       },
       900: {
-        items: 6
+        items: 4
+      }
+    }
+  });
+
+  // Resources carousel (uses the Owl Carousel library)
+  $(".resource-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    nav: false,
+    loop: true,
+    margin:20,
+    center:true,
+    smartSpeed: 1200,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
+      }
+    }
+  });
+
+  // Insurance carousel (uses the Owl Carousel library)
+  $(".insurance-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:20,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2
+      },
+      900: {
+        items: 3
       }
     }
   });
