@@ -146,7 +146,7 @@
         items: 3
       },
       768: {
-        items: 3
+        items: 4
       },
       900: {
         items: 4
@@ -161,7 +161,6 @@
     nav: false,
     loop: true,
     margin:20,
-    center:true,
     smartSpeed: 1200,
     responsive: {
       0: {
