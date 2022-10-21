@@ -239,6 +239,14 @@ a:hover {
   color: #85b0be;
 }
 
+.nav-menu .drop-down ul .active > a img{
+  display: none;
+}
+
+.nav-menu .drop-down ul .active > a span{
+  display: flex;
+}
+
 .nav-menu .drop-down > a:after {
   content: "\ea99";
   font-family: IcoFont;
@@ -296,7 +304,7 @@ a:hover {
 }
 
 .mobile-nav-toggle i {
-  color: #fff;
+  color: #4994FD;
 }
 
 .mobile-nav {
@@ -325,9 +333,15 @@ a:hover {
   display: block;
   position: relative;
   color: #052c3f;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-weight: 500;
   outline: none;
+  text-align: center;
+}
+
+.mobile-nav a img{
+  max-height: 30px;
+  margin-right: 10px;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
@@ -383,7 +397,7 @@ a:hover {
 }
 
 .mobile-nav-active .mobile-nav-toggle i {
-  color: #fff;
+  color: #fff !important;
 }
 
 /*--------------------------------------------------------------
@@ -393,8 +407,6 @@ a:hover {
   padding: 0 0;
   width: 100%;
   position: relative;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
   overflow: hidden;
 }
 
