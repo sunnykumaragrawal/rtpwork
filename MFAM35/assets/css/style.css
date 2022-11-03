@@ -227,7 +227,7 @@ animation-delay: .8s;
   float: right;
   border: 0;
   background: transparent;
-  transition: all 0.4s;
+  transition: all 0.5s ease-in-out;
   outline: none !important;
   line-height: 1;
   cursor: pointer;
@@ -270,7 +270,7 @@ animation-delay: .8s;
   height: 100vh;
   width: 100vw;
   background-color: #fff;
-  transition: 0.4s;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-menu-active {
@@ -294,7 +294,7 @@ animation-delay: .8s;
   height: calc(100vh / 3);
   background-color: #4FB5E6;
   padding: 15px;
-  transition: 0.3s;
+  transition: all 0.5s ease-in-out;
 }
 
 .nav-menu a img{
@@ -333,6 +333,7 @@ animation-delay: .8s;
   position: relative;
   z-index: 1;
   overflow: hidden; 
+  background-color: #f2f3f5;
 }
 
 .hero-carousel .owl-prev,
@@ -464,6 +465,7 @@ section{
 .about-item{
   border: 5px solid #32609E;
   text-align: center;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .about-head{
@@ -584,6 +586,7 @@ section{
   text-align: left; /*#32609E*/
   overflow: hidden;
   animation: striprotate 3s linear infinite;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .strip-content::after {
@@ -595,7 +598,7 @@ section{
   top: -25px;
   left: -1px;
   z-index: -1;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-top-right-radius: 200px;
   border-bottom-left-radius: 200px;
   animation: striprotate 3s linear infinite;
@@ -659,7 +662,9 @@ section{
   word-spacing: 5px;
   border-top-right-radius: 1.5625rem;
   border-bottom-left-radius: 1.5625rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, 
+  background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, 
+  box-shadow 0.15s ease-in-out;
   text-transform: uppercase;
   position: relative;
   z-index: 1;
@@ -710,6 +715,7 @@ section{
   border: 5px solid #32609E;
   padding: 20px 35px 25px 25px;
   text-align: right;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 #resource2 .resource-item{
@@ -762,7 +768,8 @@ section{
   height: 400px;
   padding: 60px 60px;
   overflow: hidden;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .services .service-item:hover{
@@ -772,7 +779,7 @@ section{
 .services .service-item .service-head {
   background-color: #fff;
   height: 280px;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .service-item:hover .service-head {
@@ -787,7 +794,7 @@ section{
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .service-item:hover .service-head .service-icon {
@@ -798,7 +805,7 @@ section{
 
 .services .service-item .service-head .service-icon img{
   max-height: 140px;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .service-item:hover .service-head .service-icon img{
@@ -809,13 +816,13 @@ section{
   font-weight: 700;
   font-size: 24px;
   margin-top: 10px;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .services .service-item p{
   background-color: #fff;
-  transition: all .4s ease-in-out;
-  transition-delay: 0.3s;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.4s;
   opacity: 0;
   transform: translate3D(0,180px,0);
 }
@@ -833,8 +840,8 @@ section{
 # Insurance
 --------------------------------------------------------------*/
 .insurance-item{
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
   background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .insurance-box{
@@ -854,12 +861,13 @@ section{
 --------------------------------------------------------------*/
 .recentblog-item{
   background-color: #fff;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .recentblog-img{
   position: relative;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   padding: 0 0;
 }
 
@@ -877,20 +885,20 @@ section{
   padding: 15px;
   text-align: center;
   position: relative;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .recentblog-content h4{
   font-weight: bold;
   font-size: 20px;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .recentblog-content p{
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 0;
-  transition: all .4s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .recentblog-author{
@@ -932,7 +940,7 @@ section{
 --------------------------------------------------------------*/
 .doctor-item{
   background-color: transparent;
-  box-shadow: none;text-align: center;
+  text-align: center;
   transition: all 0.5s ease-in-out;
 }
 
@@ -945,6 +953,7 @@ section{
   padding-top: 15px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .doctor-item:hover .doctor-img{
@@ -957,6 +966,7 @@ section{
   border-radius: 20px;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .doctor-content h4{
@@ -998,7 +1008,6 @@ section{
 }
 
 .faq-item {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
   background-color: #fff;
   display: block;
   padding: 20px;
@@ -1006,7 +1015,9 @@ section{
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
+
 .faq-item:not(:last-child) {
   border-bottom: 1px solid #fafafa;
 }
@@ -1086,6 +1097,7 @@ section{
   justify-content: center;
   align-items: center;
   background-color: #4FB5E6;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
 }
 
 .testimonial-author img{
