@@ -15,6 +15,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,32 +34,34 @@
   <a href="#" class="back-to-top"><i class="icofont-arrow-up"></i><span>Back To Top</span></a>
 
   <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container-fluid">
+  <header id="header" class="d-flex align-items-center header-transparent">
+    <div class="container-fluid d-flex align-items-center">
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>RTP</span></a></h1>
+      <div class="logo mr-auto d-none">
+        <h1 class="text-light"><a href="index.html"><span class="span1">R</span><span class="span2">T</span><span class="span3">P</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <button type="button" class="nav-toggle"><i class="bx bx-menu-alt-right"></i></button>
-      <nav class="row nav-menu">
-        <div class="col-lg-6">
-          <ul class="row">
-            <li class="col-lg-4 active"><a href="#"><img src="assets/img/nav/home.png" class="img-fluid"> <span>Home</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/about.png" class="img-fluid"> <span>Why Us</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/resource.png" class="img-fluid"> <span>Resources</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/service.png" class="img-fluid"> <span>Services</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/insurance.png" class="img-fluid"> <span>Insurance</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/blog.png" class="img-fluid"> <span>Blogs</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/doctor.png" class="img-fluid"> <span>Doctors</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/faq.png" class="img-fluid"> <span>Faqs</span></a></li>
-            <li class="col-lg-4"><a href="#"><img src="assets/img/nav/review.png" class="img-fluid"> <span>Reviews</span></a></li>
-          </ul>
-        </div>
-        <div class="col-lg-6"></div>
-        
+      <nav class="nav-menu d-none d-lg-block">
+        <ul class="mx-auto">
+          <li class="active"><a href="#hero"><img src="assets/img/nav/home.png" class="img-fluid"> <span>Home</span></a></li>
+          <li><a href="#aboutus"><img src="assets/img/nav/about.png" class="img-fluid"> <span>About</span></a></li>
+          <li><a href="#resources"><img src="assets/img/nav/resource.png" class="img-fluid"> <span>Resources</span></a></li>
+          <li class="drop-down"><a href=""><img src="assets/img/nav/compliance.png" class="img-fluid"><span>Compliance</span></a>
+            <ul>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/baa/" target="_blank"><img src="assets/img/nav/b.png" class="img-fluid"> <span>BAA</span></a></li>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/hipaa/" target="_blank"><img src="assets/img/nav/h.png" class="img-fluid"> <span>HIPAA</span></a></li>
+              <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/nondisclosure/" target="_blank"><img src="assets/img/nav/n.png" class="img-fluid"> <span>Nondisclosure</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#services"><img src="assets/img/nav/service.png" class="img-fluid"> <span>Services</span></a></li>
+          <li><a href="#insurance"><img src="assets/img/nav/insurance.png" class="img-fluid"> <span>Insurance</span></a></li>
+          <li><a href="#recentblogs"><img src="assets/img/nav/blog.png" class="img-fluid"> <span>Latest News</span></a></li>
+          <li><a href="#doctors"><img src="assets/img/nav/doctor.png" class="img-fluid"> <span>Doctors</span></a></li>
+          <li><a href="#faq"><img src="assets/img/nav/faq.png" class="img-fluid"> <span>Faqs</span></a></li>
+          <li><a href="#testimonials"><img src="assets/img/nav/review.png" class="img-fluid"> <span>Reviews</span></a></li>
+        </ul>
       </nav><!-- .nav-menu -->
 
     </div>
@@ -224,7 +227,7 @@
           </div>
         </div>
         <div class="row justify-content-center mt-5">
-          <a onclick="document.getElementById('social-btn').style.display='flex';document.getElementById('medicalmedia').style.display='none'" class="btn btn-success btn-lg">Show Less</a>
+          <a onclick="document.getElementById('social-btn').style.display='flex';document.getElementById('medicalmedia').style.display='none'" class="btn btn-success btn-lg">Show Less << </a>
         </div>
       </div>
     </section>
@@ -276,6 +279,8 @@
               <h4>Authorization Release</h4>
               <p>This forms gives us the ability to obtain or release your medical records</p>
               <div class="resource-btn">
+                <a class="auth-btns" href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank" data-toggle="tooltip" title="Upload Records"><i class="icofont-upload-alt"></i></a>
+                <a class="auth-btns" href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank" data-toggle="tooltip" title="Download Records"><i class="icofont-download"></i></a>
                 <a href="https://rtpmedsol.rtpdemo.com/demoforms/authorizationrelease/" target="_blank">Click Here >></a>
               </div>
             </div>
@@ -523,7 +528,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <img src="assets/img/insurance/insurance.jpg" class="img-fluid">
+            <img src="assets/img/insurance/insurance.png" class="img-fluid">
           </div>
         </div>
       </div>
@@ -563,7 +568,7 @@
               <div class="recentblog-author">
                 <img src="assets/img/blog/author1.jpg" class="img-fluid">
                 <h5>Saul Goodman</h5>
-                <a href="" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
+                <a href="blog-single1.html" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -580,7 +585,7 @@
               <div class="recentblog-author">
                 <img src="assets/img/blog/author2.jpg" class="img-fluid">
                 <h5>Saul Goodman</h5>
-                <a href="" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
+                <a href="blog-single2.html" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -597,7 +602,7 @@
               <div class="recentblog-author">
                 <img src="assets/img/blog/author3.jpg" class="img-fluid">
                 <h5>Saul Goodman</h5>
-                <a href="" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
+                <a href="blog-single3.html" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -700,7 +705,7 @@
         </div>
         <div class="row">
           <div class="col-lg-5">
-            <img src="assets/img/faq-bg.jpg" class="img-fluid">
+            <img src="assets/img/faq-bg.png" class="img-fluid">
           </div>
           <div class="col-lg-7">
             <div class="row accordion">
