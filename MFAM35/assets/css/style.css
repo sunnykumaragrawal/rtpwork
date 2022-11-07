@@ -186,7 +186,7 @@ animation-delay: .8s;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 #header .logo h1 {
@@ -622,7 +622,7 @@ section{
   border: 5px solid #32609E;
   text-align: center;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .about-item:hover{
@@ -743,7 +743,7 @@ section{
   text-align: left; /*#32609E*/
   overflow: hidden;
   animation: striprotate 3s linear infinite;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .strip-content::after {
@@ -917,7 +917,7 @@ section{
   border: 5px solid #32609E;
   padding: 20px 35px 30px 25px;
   text-align: right;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 #resource2 .resource-item{
@@ -980,7 +980,7 @@ section{
   padding: 60px 60px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .services .service-item:hover{
@@ -1052,7 +1052,7 @@ section{
 --------------------------------------------------------------*/
 .insurance-item{
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .insurance-box{
@@ -1073,7 +1073,7 @@ section{
 .recentblog-item{
   background-color: #fff;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .recentblog-img{
@@ -1164,7 +1164,7 @@ section{
   padding-top: 15px;
   border-radius: 50%;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .doctor-item:hover .doctor-img{
@@ -1177,7 +1177,7 @@ section{
   border-radius: 20px;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .doctor-content h4{
@@ -1233,7 +1233,7 @@ section{
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .faq-item:not(:last-child) {
@@ -1332,7 +1332,7 @@ section{
   justify-content: center;
   align-items: center;
   background-color: #4FB5E6;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .testimonial-author img{
@@ -1510,7 +1510,7 @@ section{
 # All Blogs
 --------------------------------------------------------------*/
 .myblog-img{
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
   position: relative;
 }
 
@@ -1566,7 +1566,7 @@ section{
   margin-bottom: 60px;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .blog .entry .entry-img {
@@ -1662,7 +1662,7 @@ section{
   position: relative;
   background-color: #fff;
   padding: 10px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .blog .blog-comments h4{
@@ -1711,7 +1711,7 @@ section{
   margin-top: 30px;
   padding: 30px;
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .blog .blog-comments .reply-form h4 {
@@ -1807,7 +1807,7 @@ section{
 
 .blog .blog-author {
   padding: 20px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
   text-align: center;
 }
 
@@ -1841,7 +1841,7 @@ section{
   text-align: center;
   letter-spacing: 1.4px;
   position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .blog .sidebar .sidebar-title i{
@@ -1852,7 +1852,7 @@ section{
   margin-bottom: 30px;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
 .blog .sidebar .categories ul {
