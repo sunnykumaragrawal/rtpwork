@@ -43,8 +43,8 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <nav class="nav-menu d-none d-lg-block">
-        <ul class="mx-auto">
+      <nav class="nav-menu d-none d-lg-block mx-auto">
+        <ul>
           <li class="active"><a href="#hero"><img src="assets/img/nav/home.png" class="img-fluid"> <span>Home</span></a></li>
           <li><a href="#aboutus"><img src="assets/img/nav/about.png" class="img-fluid"> <span>About</span></a></li>
           <li><a href="#resources"><img src="assets/img/nav/resource.png" class="img-fluid"> <span>Resources</span></a></li>
@@ -61,7 +61,7 @@
           <li><a href="#doctors"><img src="assets/img/nav/doctor.png" class="img-fluid"> <span>Doctors</span></a></li>
           <li><a href="#faq"><img src="assets/img/nav/faq.png" class="img-fluid"> <span>Faqs</span></a></li>
           <li><a href="#testimonials"><img src="assets/img/nav/review.png" class="img-fluid"> <span>Reviews</span></a></li>
-          <li><a href="#footer"><img src="assets/img/nav/contact.png" class="img-fluid"> <span>Contact</span></a></li>
+          <li><a href="#contactus"><img src="assets/img/nav/contact.png" class="img-fluid"> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -253,7 +253,7 @@
           <span>Have you visit our</span>
           <h2>Patient Resource Center</h2>
         </div>
-        <div class="row" id="resource1">
+        <div class="row" id="resource1" style="display: none;">
           <div class="col-lg-4 mt-200" data-aos="flip-down" data-aos-delay="300">
             <div class="resource-item">
               <div class="resource-icon"><img src="assets/img/resource/icon1.png" class="img-fluid"></div>
@@ -287,7 +287,7 @@
             </div>
           </div>
         </div>
-        <div class="row" id="resource2" style="display: none;">
+        <div class="row" id="resource2">
           <div class="col-lg-4" data-aos="flip-down" data-aos-delay="300">
             <div class="resource-item">
               <div class="resource-icon"><img src="assets/img/resource/icon4.png" class="img-fluid"></div>
@@ -321,10 +321,10 @@
         </div>
         <div class="row mt-5">
           <div class="col-lg-6 text-right" data-aos="flip-right" data-aos-delay="100">
-            <a onclick="document.getElementById('resource2').style.display='none';document.getElementById('resource1').style.display='flex'"><img src="assets/img/arrow.png" height="50" style="transform: rotate(-90deg);"></a>
+            <a onclick="document.getElementById('resource2').style.display='none';document.getElementById('resource1').style.display='flex'"><img src="assets/img/arrow.png" height="50" style="transform: rotate(-90deg);cursor: pointer;"></a>
           </div>
           <div class="col-lg-6" data-aos="flip-left" data-aos-delay="100">
-            <a onclick="document.getElementById('resource1').style.display='none';document.getElementById('resource2').style.display='flex'"><img src="assets/img/arrow.png" height="50" style="transform: rotate(90deg);"></a>
+            <a onclick="document.getElementById('resource1').style.display='none';document.getElementById('resource2').style.display='flex'"><img src="assets/img/arrow.png" height="50" style="transform: rotate(90deg);cursor: pointer;"></a>
           </div>
         </div>
       </div>
@@ -528,7 +528,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" data-aos="flip-left" data-aos-delay="300">
             <img src="assets/img/insurance/insurance.png" class="img-fluid">
           </div>
         </div>
@@ -568,7 +568,7 @@
               </div>
               <div class="recentblog-author">
                 <img src="assets/img/blog/author1.jpg" class="img-fluid">
-                <h5>Saul Goodman</h5>
+                <h5>Sara Wilsson</h5>
                 <a href="blog-single1.html" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
               </div>
             </div>
@@ -585,7 +585,7 @@
               </div>
               <div class="recentblog-author">
                 <img src="assets/img/blog/author2.jpg" class="img-fluid">
-                <h5>Saul Goodman</h5>
+                <h5>Jena Karlis</h5>
                 <a href="blog-single2.html" class="recentblog-btn"><i class="icofont-arrow-right"></i></a>
               </div>
             </div>
@@ -688,11 +688,11 @@
         <div class="container-fluid">
             <div class="strip-content">
                 <div class="strip-left">
-                    <h2>Save Money?</h2>
-                    <p>Get your message to your patients....reduce paperwork</p>
+                    <h2>Have A Question?</h2>
+                    <p>Let's read our below faqs that people generally ask!</p>
                 </div>
                 <div class="strip-btn">
-                    <a href="#" class="template-btn">Let's Start</a>
+                    <a href="#faq" class="template-btn">Let's Start</a>
                 </div>
             </div>
         </div>
@@ -705,7 +705,7 @@
           <h2>Frequently Asked Questions</h2>
         </div>
         <div class="row">
-          <div class="col-lg-5 d-flex justify-content-center align-items-center">
+          <div class="col-lg-5 d-flex justify-content-center align-items-center" data-aos="flip-right" data-aos-delay="300">
             <img src="assets/img/faq-bg.png" class="img-fluid">
           </div>
           <div class="col-lg-7">
@@ -842,82 +842,44 @@
       </div>
     </section>
 
+    <section id="contactus" class="contactus">
+      <div class="container-fluid">
+       <div class="row">
+        <div class="col-lg-4">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="assets/img/contact/icon3.png" class="img-fluid">
+            </div>
+            <h5>Say Hello</h5>
+            <span>+888-503-1636</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="assets/img/contact/icon2.png" class="img-fluid">
+            </div>
+            <h5>Email Us</h5>
+            <span>support@reviewthatplace.com</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="assets/img/contact/icon1.png" class="img-fluid">
+            </div>
+            <h5>Our Address</h5>
+            <span>7037 Rose Ave Suite B Orlando FL 32810</span>
+          </div>
+        </div>
+       </div>
+      </div>
+    </section>
+
 
   </main>
 
   <footer id="footer">
-    <div class="container-fluid footer-contacts">
-     <div class="row">
-      <div class="col-lg-4">
-        <div class="footer-cbox">
-          <div class="footer-cimg">
-            <img src="assets/img/contact/icon3.png" class="img-fluid">
-          </div>
-          <h5>Say Hello</h5>
-          <span>+888-503-1636</span>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="footer-cbox">
-          <div class="footer-cimg">
-            <img src="assets/img/contact/icon2.png" class="img-fluid">
-          </div>
-          <h5>Mail Us</h5>
-          <span>support@reviewthatplace.com</span>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="footer-cbox">
-          <div class="footer-cimg">
-            <img src="assets/img/contact/icon1.png" class="img-fluid">
-          </div>
-          <h5>Our Address</h5>
-          <span>7037 Rose Ave Suite B Orlando FL 32810</span>
-        </div>
-      </div>
-     </div>
-    </div>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-5 col-md-6">
-            <img src="assets/img/services/image4.jpg" class="img-fluid">
-            <p>We are a leading medical solutions expert in the United States.</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <h4>Recent News</h4>
-            <div class="footer-blogs">
-              <img src="assets/img/blog/blog-1.jpg" class="img-fluid">
-              <span>11 April, 2022</span>
-              <h5>Less Than 15% of Medical Sites Meet CORE WEB VITALS Scores</h5>
-            </div>
-            <div class="footer-blogs">
-              <img src="assets/img/blog/blog-2.jpg" class="img-fluid">
-              <span>11 April, 2022</span>
-              <h5>8 Silly But Harmful SEO Mistakes Medical Sites Make</h5>
-            </div>
-            <div class="footer-blogs">
-              <img src="assets/img/blog/blog-3.jpg" class="img-fluid">
-              <span>11 April, 2022</span>
-              <h5>Don't Let Your Medical Web Site Listings be Sabotaged</h5>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Compliance</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://rtpmedsol.rtpdemo.com/demoforms/baa/" target="_blank">BAA</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://rtpmedsol.rtpdemo.com/demoforms/hipaa/" target="_blank">HIPAA</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://rtpmedsol.rtpdemo.com/demoforms/nondisclosure/" target="_blank">Nondisclosure</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <div class="container">
       <div class="copyright">
         &copy; 2022 Copyright <strong><span><a href="https://rtpmedicalsolution.com/" target="_blank">RTPMedicalSolution.com</a></span></strong>
