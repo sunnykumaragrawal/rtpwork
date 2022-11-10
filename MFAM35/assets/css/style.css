@@ -237,12 +237,13 @@ animation-delay: .8s;
 }
 
 .nav-menu a {
+  width: 8.5vw;
   display: block;
   text-align: center;
   position: relative;
   color: #32609E;
   letter-spacing: 1.1px;
-  padding: 15px 20px 10px;
+  padding: 15px 22px 10px;
   transition: all 0.5s ease-in-out;
   font-size: 13px;
   font-weight: 600;
@@ -251,7 +252,7 @@ animation-delay: .8s;
 
 .nav-menu a img{
   display: block;
-  max-height: 45px;
+  max-height: 70px;
   margin: 0 auto 5px;
 }
 
