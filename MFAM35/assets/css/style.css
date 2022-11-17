@@ -172,6 +172,10 @@ animation-delay: .8s;
     100% {height:5px;transform:translateY(0px);background:#ee2438;}
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -189,36 +193,11 @@ animation-delay: .8s;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
-#header .logo h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
+@media (max-width: 768px) {}
 
-#header .logo h1 a, #header .logo h1 a:hover {
-  color: ##32609E;
-  text-decoration: none;
-}
+@media(max-width: 767px){}
 
-.span1{color: red;}
-
-.span3{color: orange;}
-
-#header .logo img {
-  padding: 0;
-  margin: 0;
-  max-height: 40px;
-}
-
-@media (max-width: 768px) {
-  #header .logo h1 {
-    font-size: 28px;
-  }
-}
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -361,7 +340,7 @@ animation-delay: .8s;
   top: 15px;
   z-index: 9998;
   border: 0;
-  background: none;
+  background: #fff;
   font-size: 24px;
   transition: all 0.5s ease-in-out;
   outline: none !important;
@@ -553,13 +532,35 @@ animation-delay: .8s;
   word-spacing: 5px; 
 }
 
-.hero-content h2{
-  display: none;
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 10px;
-  font-weight: 400;
+@media(max-width: 767px){
+  .hero-carousel .owl-prev,
+  .hero-carousel .owl-next {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 30px;
+    margin-top: -40px;
+  }
+
+  .hero-carousel .owl-next {
+    right: 30px; 
+  }
+
+  .hero-content{
+    left: 5%;
+    right: 5%;
+    padding: 15px;
+  }
+
+  .hero-content h1{
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px; 
+  }
 }
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Section
@@ -616,6 +617,62 @@ section{
   text-transform: uppercase;
 }
 
+@media(max-width: 767px){
+  section{
+    padding: 35px 0;
+  }
+
+  .section-title{
+    margin-bottom: 30px;
+  }
+
+  .section-title span{
+    font-size: 18px;
+  }
+
+  .section-title span::before{
+    width: 40px;
+    left: -60px;
+  }
+
+  .section-title span::after{
+    width: 40px;
+    right: -60px;
+  }
+
+  .section-title h2{
+    font-size: 32px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section{
+    padding: 50px 0;
+  }
+
+  .section-title{
+    margin-bottom: 40px;
+  }
+
+  .section-title span::before{
+    width: 60px;
+    left: -80px;
+  }
+
+  .section-title span::after{
+    width: 60px;
+    right: -80px;
+  }
+
+  .section-title h2{
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    word-spacing: 4.5px;
+  }
+}
+
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
@@ -624,9 +681,6 @@ section{
   text-align: center;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
-}
-
-.about-item:hover{
 }
 
 .about-head{
@@ -673,6 +727,14 @@ section{
   font-size: 18px;
   line-height: 28px;
 }
+
+@media(max-width: 767px){
+  .about-item{
+    margin-bottom: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Social Media
@@ -740,8 +802,8 @@ section{
   border-bottom-left-radius: 200px;
   display: flex;
   justify-content: space-around;
-  align-items: center; /*#4FB5E6*/
-  text-align: left; /*#32609E*/
+  align-items: center;
+  text-align: left;
   overflow: hidden;
   animation: striprotate 3s linear infinite;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
@@ -798,9 +860,37 @@ section{
 .strip-content .strip-btn {
   align-self: flex-end;
   margin-right: 30px;
-  align-self: flex-end;
-  margin-right: 30px;
 }
+
+@media(max-width: 767px){
+  .strip-content {
+    padding: 30px 0 70px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    animation: none;
+  }
+
+  .strip-content::after {
+    width: 100%;
+    height: 100%;
+    top: -25px;
+    left: -1px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    animation: none;
+  }
+
+  .strip-content .strip-btn {
+    align-self: center;
+    margin-right: 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Template Btn
@@ -870,6 +960,10 @@ section{
     z-index: 3;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Template Btn
 --------------------------------------------------------------*/
@@ -905,11 +999,17 @@ section{
   font-weight: 600;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Resources
 --------------------------------------------------------------*/
-.mt-200{
-  margin-top: 200px;
+@media(min-width: 992px){
+  .mt-200{
+    margin-top: 200px;
+  }
 }
 
 .resource-item{
@@ -969,6 +1069,29 @@ section{
   opacity: 1;
 }
 
+@media(max-width: 767px){
+  .resource-item{
+    margin-top: 60px;
+    padding: 20px 15px 20px 15px;
+    text-align: center;
+  }
+
+  #resource2 .resource-item{
+    padding: 20px 15px 20px 15px;
+    text-align: center;
+  }
+
+  .resource-icon{
+    margin: -50px auto 15px;
+  }
+
+  #resource2 .resource-icon{
+    margin: -50px auto 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -977,7 +1100,6 @@ section{
   background-color: #4FB5E6;
   text-align: center;
   margin-bottom: 30px;
-  height: 400px;
   padding: 60px 60px;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
@@ -1036,17 +1158,23 @@ section{
   transition: all 0.5s ease-in-out;
   transition-delay: 0.4s;
   opacity: 0;
+  display: none;
   transform: translate3D(0,180px,0);
 }
 
 .services .service-item:hover p {
   opacity: 1;
+  display: flex;
   transform: translate3D(0,0,0);
   height: 180px;
   font-size: 18px;
   line-height: 28px;
   padding: 10px;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Insurance
@@ -1145,7 +1273,13 @@ section{
   color: #fff;
 }
 
+@media(max-width: 767px){
+  .recentblog-item{
+    margin-bottom: 25px;
+  }
+}
 
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Doctors
@@ -1154,9 +1288,6 @@ section{
   background-color: transparent;
   text-align: center;
   transition: all 0.5s ease-in-out;
-}
-
-.doctor-item:hover{
 }
 
 .doctor-img{
@@ -1190,10 +1321,6 @@ section{
   font-weight: 300;
 }
 
-.doctor-item:hover .doctor-content{
-  
-}
-
 .doctor-social{
   margin-top: 30px;
   opacity: 1;
@@ -1217,6 +1344,14 @@ section{
 .doctor-social a:last-child img{
   margin-right: 0;
 }
+
+@media(max-width: 767px){
+  .doctor-item{
+    margin-bottom: 40px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Faqs
@@ -1420,43 +1555,30 @@ section{
 }
 
 @media (max-width: 767px){
-  .testimonial-item{
-    width: 100%;
-  }
-
   .testimonial-author{
-    width: 85%;
-    padding: 15px;
+    padding: 25px;
   }
 
   .testimonial-content{
-    padding: 20px 15px 20px;
-    border: 4px solid #4FB5E6;
+    padding: 20px;
   }
 
-  .testimonial-carousel .owl-nav .owl-prev{
-    left: 0;
-    bottom: 0;
+  .testimonial-content p{
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 20px;
+    height: 250px;
   }
 
-  .testimonial-carousel .owl-nav .owl-next{
-    right: 0;
-    bottom: 0;
+  .quote-down{
+    max-height: 50px;
+    margin-top: -15px;
+    margin-right: 5px;
   }
 }
 
 @media(min-width: 768px) and (max-width: 991px){
-  .testimonial-item{
-    width: calc(100% - 140px);
-  }
-
-  .testimonial-carousel .owl-nav .owl-prev{
-    left: 0;
-  }
-
-  .testimonial-carousel .owl-nav .owl-next{
-    right: 0;
-  }
+  
 }
 
 /*--------------------------------------------------------------
@@ -1483,6 +1605,33 @@ section{
   max-height: 45px;
 }
 
+@media(max-width: 767px){
+  .contactus{
+    padding: 20px 20px;
+  }
+
+  .contact-item{
+    margin-bottom: 30px;
+  }
+
+  .contact-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .contact-icon img{
+    max-height: 45px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1506,6 +1655,10 @@ section{
   font-size: 15px;
   color: #fff;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # All Blogs
@@ -1539,6 +1692,10 @@ section{
   height: 100%;
   opacity: 1;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Blog Detail
