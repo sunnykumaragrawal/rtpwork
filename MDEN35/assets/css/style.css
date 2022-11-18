@@ -1292,6 +1292,7 @@ section{
   transition: all 0.5s ease-in-out;
   transition-delay: 0.4s;
   opacity: 0;
+  margin-bottom: 0;
   display: none;
   transform: translate3D(0,180px,0);
 }
@@ -1300,7 +1301,7 @@ section{
   opacity: 1;
   display: flex;
   transform: translate3D(0,0,0);
-  height: 180px;
+  min-height: 180px;
   font-size: 18px;
   line-height: 28px;
   padding: 10px;
@@ -1313,106 +1314,92 @@ section{
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
-.pricing-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+.pricing .pricing-item {
+  padding: 0 0 30px;
+  background: #fff;
   text-align: center;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
   border: 5px solid #32609E;
-}
-
-.pricing-feature-list {
-  text-align: left;
-}
-
-.pricing-palden .pricing-deco {
-  border-radius: 5px 5px 0 0;
-  background: #0594a9;
-  padding: 4em 0 9em;
+  border-radius: 5px;
   position: relative;
+  margin-bottom: 35px;
 }
-.pricing-palden .pricing-deco-img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 160px;
-}
-.pricing-palden .pricing-title {
-  font-size: 18px;
-  margin: 0;
-  margin-top: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
+
+.pricing-top{
+  background-color: #4FB5E6;
   color: #fff;
+  padding: 20px 15px;
 }
-.pricing-palden .deco-layer {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
+
+.pricing h4 {
+  font-weight: 700;
+  font-size: 20px;
 }
-.pricing-palden .pricing-item:hover .deco-layer--1 {
-  -webkit-transform: translate3d(15px, 0, 0);
-  transform: translate3d(15px, 0, 0);
+
+.pricing h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
-.pricing-palden .pricing-item:hover .deco-layer--2 {
-  -webkit-transform: translate3d(-15px, 0, 0);
-  transform: translate3d(-15px, 0, 0);
+
+.pricing h3 sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
 }
-.pricing-palden .icon {
-  font-size: 2.5em;
-}
-.pricing-palden .pricing-price {
-  font-size: 4em;
-  font-weight: bold;
+
+.pricing ul {
   padding: 0;
-  color: #fff;
-  margin: 0;
-  line-height: 1;
-}
-.pricing-palden .pricing-currency {
-  font-size: 0.5em;
-  vertical-align: top;
-}
-.pricing-palden .pricing-period {
-  font-size: 0.15em;
-  padding: 0 0 0 0.5em;
-  font-style: italic;
-}
-.pricing-palden .pricing__sentence {
-  font-weight: bold;
-  margin: 0 0 1em 0;
-  padding: 0 0 0.5em;
-}
-.pricing-palden .pricing-feature-list {
-  margin: 0;
-  padding: 0.25em 0 2.5em;
   list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.pricing ul li {
+  padding-bottom: 16px;
+  font-size: 20px;
+}
+
+.pricing ul i {
+  color: #4994FD;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.pricing .btn-wrap {
+  position: relative;
+  bottom: -45px;
+  padding: 20px 15px;
   text-align: center;
 }
-.pricing-palden .pricing-feature {
-  padding: 1em 0;
-  color: #000;
-}
-.pricing-palden .pricing-action {
-  font-weight: bold;
-  margin: auto 3em 2em 3em;
-  padding: 1em 2em;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 30px;
-  background: #0594a9;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-}
-.pricing-palden .pricing-action:hover, .pricing-palden .pricing-action:focus {
-  background-color: #100A13;
+
+/*--------------------------------------------------------------
+# Insurance
+--------------------------------------------------------------*/
+.insurance-item{
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
 }
 
-.pricing-palden .pricing-item--featured .pricing-deco {
-  padding: 5em 0 8.885em 0;
+.insurance-box{
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Insurance

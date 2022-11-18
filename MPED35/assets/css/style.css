@@ -1292,6 +1292,7 @@ section{
   transition: all 0.5s ease-in-out;
   transition-delay: 0.4s;
   opacity: 0;
+  margin-bottom: 0;
   display: none;
   transform: translate3D(0,180px,0);
 }
@@ -1301,8 +1302,8 @@ section{
   display: flex;
   transform: translate3D(0,0,0);
   min-height: 180px;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 18px;
+  line-height: 28px;
   padding: 10px;
 }
 
