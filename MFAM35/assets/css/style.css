@@ -502,7 +502,7 @@ animation-delay: .8s;
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(100vh - 95px);
+  height: calc(100vh - 105px);
   background-size: cover;
 }
 
@@ -545,7 +545,8 @@ animation-delay: .8s;
   }
 
   .hero-carousel .owl-next {
-    right: 30px; 
+    right: 30px !important;
+    left: auto; 
   }
 
   .hero-content{
@@ -555,8 +556,8 @@ animation-delay: .8s;
   }
 
   .hero-content h1{
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 36px;
     letter-spacing: 1.1px;
     word-spacing: 4px; 
   }
@@ -573,7 +574,8 @@ animation-delay: .8s;
   }
 
   .hero-carousel .owl-next {
-    right: 30px; 
+    right: 30px !important;
+    left: auto; 
   }
 
   .hero-content{
@@ -1435,10 +1437,6 @@ section{
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
 }
 
-.doctor-item:hover .doctor-img{
-  
-}
-
 .doctor-content{
   padding: 20px;
   border: 5px solid #32609E;
@@ -1446,6 +1444,10 @@ section{
   background-color: #fff;
   transition: all 0.5s ease-in-out;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.45);
+}
+
+.doctor-content:hover{
+  transform: rotateY(360deg);
 }
 
 .doctor-content h4{
