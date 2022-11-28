@@ -209,6 +209,26 @@
     }
   });
 
+  // Medical Media carousel (uses the Owl Carousel library)
+  $(".medicalmedia-carousel").owlCarousel({
+    autoplay: true,
+    dots: false,
+    loop: true,
+    margin:30,
+    smartSpeed: 1200,
+    responsive: {
+      0: {
+        items: 3
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 5
+      }
+    }
+  });
+
   // Resource carousel (uses the Owl Carousel library)
   $(".resource-carousel").owlCarousel({
     autoplay: true,
