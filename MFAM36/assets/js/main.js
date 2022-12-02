@@ -149,45 +149,21 @@
     });
   });
 
-  // Hero carousel (uses the Owl Carousel library)
-  $(".hero-carousel").owlCarousel({
-    autoplay: true,
-    dots: false,
-    loop: true,
-    margin:30,
-    smartSpeed: 1200,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 1
-      }
-    }
-  });
-
-  // Hero Img carousel (uses the Owl Carousel library)
-  $(".heroimg-carousel").owlCarousel({
-    autoplay: true,
-    dots: false,
-    loop: true,
-    margin:30,
-    smartSpeed: 1200,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 1
-      }
-    }
-  });
+  //hero carousel
+  if( $(".customer-hero").length ){
+      $(".customer-hero").on("slid.bs.carousel", function() {
+          var to_slide;
+          to_slide = $(".carousel-item.active").attr("data-slide-no");
+          $(".myCarousel-target.active").removeClass("active");
+          $(".carousel-indicators.dotv [data-slide-to=" + to_slide + "]").addClass("active")
+      })
+      $(".myCarousel-target").on("click", function(e) {
+          e.preventDefault();
+          $(".customer-hero").carousel(parseInt($(this).attr("data-slide-to")));
+          $(".myCarousel-target.active").removeClass("active");
+          $(this).addClass("active")
+      })
+  }
 
   // Social Media carousel (uses the Owl Carousel library)
   $(".socialmedia-carousel").owlCarousel({

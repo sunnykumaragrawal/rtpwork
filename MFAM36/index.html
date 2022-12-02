@@ -31,34 +31,32 @@
   <a href="#" class="back-to-top"><i class="icofont-arrow-up"></i><span>Back To Top</span></a>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex align-items-center header-transparent">
-    <div class="container-fluid d-flex align-items-center">
+  <header id="header">
+    <div class="container-fluid">
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span class="span1">M</span><span class="span2">F</span><span class="span3">A</span><span class="span1">M</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span class="span1">M</span><span class="span2">F</span><span class="span3">A</span><span class="span4">M</span></a></h1>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#hero"><img src="assets/img/nav/home.png" class="img-fluid"> <span>Home</span></a></li>
-          <li><a href="#aboutus"><img src="assets/img/nav/about.png" class="img-fluid"> <span>About</span></a></li>
-          <li><a href="#resources"><img src="assets/img/nav/resource.png" class="img-fluid"> <span>Resources</span></a></li>
-          <li class="drop-down"><a href=""><img src="assets/img/nav/compliance.png" class="img-fluid"> <span>Compliance</span></a>
+          <li class="active"><a href="#hero"><div class="rect"></div><div class="circle"></div><div>Home</div></a></li>
+          <li><a href="#aboutus"><div class="rect"></div><div class="circle"></div><div>About</div></a></li>
+          <li><a href="#resources"><div class="rect"></div><div class="circle"></div><div>Resource</div></a></li>
+          <li><a href="#services"><div class="rect"></div><div class="circle"></div><div>Service</div></a></li>
+          <li><a href="#insurance"><div class="rect"></div><div class="circle"></div><div>Insurance</div></a></li>
+          <li><a href="#recentblogs"><div class="rect"></div><div class="circle"></div><div>Blogs</div></a></li>
+          <li><a href="#doctors"><div class="rect"></div><div class="circle"></div><div>Doctors</div></a></li>
+          <li><a href="#faq"><div class="rect"></div><div class="circle"></div><div>Faqs</div></a></li>
+          <li><a href="#testimonials"><div class="rect"></div><div class="circle"></div><div>Review</div></a></li>
+          <li><a href="#contactus"><div class="rect"></div><div class="circle"></div><div>Contact</div></a></li>
+          <li class="drop-down d-none"><a href=""><div class="rect"></div><div class="circle"></div><div>Compliance</div></a>
             <ul>
               <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/baa/" target="_blank">BAA</a></li>
               <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/hipaa/" target="_blank">HIPAA</a></li>
               <li><a href="https://rtpmedsol.rtpdemo.com/demoforms/nondisclosure/" target="_blank">Nondisclosure</a></li>
             </ul>
           </li>
-          <li><a href="#services"><img src="assets/img/nav/service.png" class="img-fluid"> <span>Services</span></a></li>
-          <li><a href="#insurance"><img src="assets/img/nav/insurance.png" class="img-fluid"> <span>Insurance</span></a></li>
-          <li><a href="#recentblogs"><img src="assets/img/nav/blog.png" class="img-fluid"> <span>Blogs</span></a></li>
-          <li><a href="#doctors"><img src="assets/img/nav/doctor.png" class="img-fluid"> <span>Doctors</span></a></li>
-          <li><a href="#faq"><img src="assets/img/nav/faq.png" class="img-fluid"> <span>Faqs</span></a></li>
-          <li><a href="#testimonials"><img src="assets/img/nav/review.png" class="img-fluid"> <span>Reviews</span></a></li>
-          <li><a href="#contactus"><img src="assets/img/nav/contact.png" class="img-fluid"> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -66,53 +64,37 @@
   </header><!-- End #header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="hero-carousel owl-carousel">
-            <div class="hero-content">
-              <h1>Welcome to RTP</h1>
-              <h2>We are a leading medical solutions expert in the United States.</h2>
-              <div class="hero-btns">
-                <a href="#aboutus" class="hero-btn"><span>Get Started</span></a>
-              </div>
-            </div>
-            <div class="hero-content">
-              <h1>Need An Emergency?</h1>
-              <h2>Get the healthcare you need in just seconds! Skip the waiting room, the unending telephone calls, and the cascade of protocols regular medical visits require.</h2>
-              <div class="hero-btns">
-                <a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank" class="hero-btn"><span>Schedule Now</span></a>
-              </div>
-            </div>
-            <div class="hero-content">
-              <h1>Most Popular Services</h1>
-              <h2>We check for your current health issues and decide your treatment. Our specialists will take care of your health with dedication.</h2>
-              <div class="hero-btns">
-                <a href="#services" class="hero-btn"><span>Learn More</span></a>
-              </div>
-            </div>
+  <section id="hero" class="hero">
+    <div class="container">
+      <div id="customer-hero" class="customer-hero carousel slide" data-ride="carousel">
+        
+        <ol class="carousel-indicators ct-indicator imgv"> 
+          <li data-target="#customer-hero" data-slide-to="0"><img src="assets/img/services/image1.jpg" alt="Customer Image"></li>
+          <li data-target="#customer-hero" data-slide-to="1" class="active"><img src="assets/img/services/image2.jpg" alt="Customer Image"></li>
+          <li data-target="#customer-hero" data-slide-to="2"><img src="assets/img/services/image3.jpg" alt="Customer Image"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item carousel-item" data-slide-no="0">
+            <h3>Best Physician In Orlando</h3>
+            <div class="hero-btn"><a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank">Schedule An Appointment</a></div>
           </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="heroimg-carousel owl-carousel">
-            <div class="hero-img">
-              <img src="assets/img/hero/hero1.png" class="img-fluid">
-            </div>
-            <div class="hero-img">
-              <img src="assets/img/hero/hero2.png" class="img-fluid">
-            </div>
-            <div class="hero-img">
-              <img src="assets/img/hero/hero3.png" class="img-fluid">
-            </div>
+          <div class="item carousel-item active" data-slide-no="1">
+            <h3>Awesome Gynecologist In Orlando</h3>
+            <div class="hero-btn"><a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank">Schedule An Appointment</a></div>
+          </div>
+          <div class="item carousel-item" data-slide-no="2">
+            <h3>Top Physicals In Orlando</h3>
+            <div class="hero-btn"><a href="https://rtpmedsol.rtpdemo.com/demoforms/bookappointment/" target="_blank">Schedule An Appointment</a></div>
           </div>
         </div>
       </div>
+      <ul class="carousel-indicators ct-indicator dotv">
+        <li data-target="#customer-hero" data-slide-to="0" class="myCarousel-target"></li>
+        <li data-target="#customer-hero" data-slide-to="1" class="myCarousel-target active"></li>
+        <li data-target="#customer-hero" data-slide-to="2" class="myCarousel-target"></li>
+      </ul>
     </div>
-    <svg id="svg" viewBox="-300 0 950 270">
-      <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="#f2f3f5" stroke-width="120" stroke-linecap="round"/>
-    </svg>
-  </section><!-- #hero -->
+  </section>
 
   <main id="main" class="section-bg">
 
@@ -327,7 +309,7 @@
           <h2>Most Popular Services</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4 service-left" data-aos="flip-left" data-aos-delay="200">
+          <div class="col-lg-5 service-left" data-aos="flip-left" data-aos-delay="200">
             <ul class="nav nav-tabs row">
               <li class="nav-item col-12">
                 <a class="nav-link active show" data-toggle="tab" href="#service-1">
@@ -387,7 +369,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-lg-8 service-right" data-aos="flip-up" data-aos-delay="200">
+          <div class="col-lg-7 service-right" data-aos="flip-up" data-aos-delay="200">
             <div class="tab-content">
               <div class="tab-pane active show" id="service-1">
                 <img src="assets/img/services/image1.jpg" class="img-fluid">
@@ -803,7 +785,7 @@
           <img src="assets/img/nav/contact.png" class="img-fluid">
           <h2>Get In Touch</h2>
         </div>
-        <div class="row">
+        <div class="row justify-content-center">
          <ul>
           <li data-aos="flip-up" data-aos-delay="200">
           <div class="contact-item">
