@@ -72,9 +72,9 @@
         if ($(this).parents('.nav-menu').length) {
           $('.nav-menu .active').removeClass('active');
           $(this).closest('li').addClass('active');
-          // $('.nav-menu').removeClass('nav-menu-active');
-         // $('.nav-toggle').removeClass('nav-toggle-active');
-         // $('.nav-toggle i').toggleClass('bx-x bx-menu');
+          $('.nav-menu').removeClass('nav-menu-active');
+          $('.nav-toggle').removeClass('nav-toggle-active');
+          $('.nav-toggle i').toggleClass('bx-x bx-menu');
         }
         return false;
       }
