@@ -38,9 +38,10 @@
 
   // Toggle nav menu
   $(document).on('click', '.nav-toggle', function(e) {
-   // $('.nav-menu').toggleClass('nav-menu-active');
-   // $('.nav-toggle').toggleClass('nav-toggle-active');
-   // $('.nav-toggle i').toggleClass('bx-x bx-menu');
+   $('#header').toggleClass('header-active');
+   $('.nav-menu').toggleClass('nav-menu-active');
+   $('.nav-toggle').toggleClass('nav-toggle-active');
+   $('.nav-toggle i').toggleClass('bx-x bx-menu');
 
   });
 
@@ -171,7 +172,7 @@
         items: 1
       },
       768: {
-        items: 2
+        items: 3
       },
       900: {
         items: 4
