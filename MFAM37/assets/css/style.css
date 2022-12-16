@@ -406,6 +406,9 @@ section {
   transition: all 0.5s ease-in-out;
 }
 
+.strips:hover{
+}
+
 .strips:hover .strip-content{
   margin: 0 0;
   justify-content: flex-start;
@@ -432,9 +435,8 @@ section {
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before, 
 .bs-tooltip-top .arrow::before {
-    border-width: 16px 12px 0;
-    border-top-color: #D515E0;
-    right: 10%;
+  border-width: 16px 12px 0;
+  border-top-color: #D515E0;
 }
 
 @media(max-width: 767px){}
@@ -665,7 +667,9 @@ section {
     top: 100%;
     left: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     text-align: center;
     background: rgba(213, 21, 224, .8);
     transition: all 0.5s ease-in-out;
@@ -674,6 +678,14 @@ section {
 .resource-item .resource-desc p{
   color: #fff;
   margin-bottom: 0;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.resource-item .resource-desc .auth-btns a i{
+  color: #fff;
+  font-size: 28px;
+  margin: 15px 5px 0;
 }
 
 .resource-item:hover .resource-desc {
@@ -1066,6 +1078,38 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+/*--------------------------------------------------------------
+# Compliance
+--------------------------------------------------------------*/
+.c-box{
+  text-align: center;
+}
+
+.c-box img{
+  max-height: 70px;
+}
+
+.c-box sup{
+  font-size: 24px;
+  font-weight: bold;
+  color: #D515E0;
+}
+
+.c-box a{
+  float: right;
+  width: 60px;
+  height: 60px;
+  background-color: #D515E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-box a i{
+  color: #fff;
+  font-size: 24px;
 }
 
 /*--------------------------------------------------------------
