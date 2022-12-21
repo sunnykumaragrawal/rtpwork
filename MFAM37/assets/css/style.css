@@ -274,27 +274,16 @@ a:hover {
 
 .hero-content{
   position: relative;
-  background-color: #D515E0;
-}
-
-.hero-content::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(213, 21, 224, 0.6);
+  background-color: #fff;
+  height: calc(100vh - 70px);
 }
 
 .hero-content h1{
   position: absolute;
-  left: 10%;
-  top: 55%;
-  background-color: #D515E0;
-  color: #fff;
+  /*background-color: #D515E0;
+  */color: #000;
+  font-size: 56px;
   font-weight: 700;
-  padding: 15px;
 }
 
 /*--------------------------------------------------------------
