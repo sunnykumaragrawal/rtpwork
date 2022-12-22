@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap');
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  /*font-family: 'Baloo Bhaijaan 2', cursive;*/
   font-family: 'Rajdhani', sans-serif;
-  /*font-family: 'Poppins', sans-serif;*/
-  /*font-family: 'Baloo Chettan', cursive;*/
   color: #444444;
   margin-left: 130px;
   border-left: 1px solid #D515E0;
@@ -19,6 +13,18 @@ body {
 
 .body-active{
 }
+
+@media(max-width: 767px){
+  body {
+    margin-left: 0;
+    border-left: 0;
+  }
+
+  .body-active{
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 a {
 }
@@ -77,7 +83,6 @@ a:hover {
 }
 
 #header.header-active{
-  width: 130px;
 }
 
 #header .logo h1 {
@@ -96,12 +101,24 @@ a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  #header {
+    height: 70px;
+    width: 130px;
+    left: -130px;
+  }
+
+  #header.header-active{
+    left: 0;
+  }
+
   #header .logo h1 {
     font-size: 28px;
     padding: 8px 0;
   }
 }
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -119,7 +136,6 @@ a:hover {
 }
 
 .nav-menu-active {
-  width: 130px;
 }
 
 .nav-menu::-webkit-scrollbar-track {
@@ -203,19 +219,10 @@ a:hover {
 }
 
 .nav-toggle {
-  border: 0;
-  background: transparent;
-  transition: all 0.5s ease-in-out;
-  outline: none !important;
-  line-height: 1;
-  cursor: pointer;
-  border-radius: none;
   display: none;
 }
 
 .nav-toggle i {
-  color: #fff;
-  font-size: 48px;
 }
 
 .nav-toggle-active {
@@ -224,11 +231,45 @@ a:hover {
 .nav-toggle-active i{
 }
 
+@media(max-width: 767px){
+  .nav-menu {
+    left: -130px;
+  }
+
+  .nav-menu-active {
+    left: 0;
+  }
+
+  .nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    display: flex;
+    border: 0;
+    padding: 7px 5px;
+    background: #D515E0;
+    transition: all 0.5s ease-in-out;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: none;
+  }
+
+  .nav-toggle i {
+    color: #fff;
+    font-size: 28px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   padding: 0 0;
+  overflow: hidden;
 }
 
 .hero-top{
@@ -272,18 +313,82 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
+.hero-btn i{
+  display: none;
+}
+
 .hero-content{
   position: relative;
   background-color: #fff;
   height: calc(100vh - 70px);
+  overflow: hidden;
 }
 
 .hero-content h1{
   position: absolute;
-  /*background-color: #D515E0;
-  */color: #000;
   font-size: 56px;
   font-weight: 700;
+}
+
+@media(min-width: 992px){
+  #hero1 h1{
+    left: 30%;
+    bottom: 5%;
+  }
+
+  #hero2 h1{
+    left: 10%;
+    top: 25%;
+  }
+
+  #hero3 h1{
+    left: 10%;
+    bottom: 10%;
+  }
+}
+
+@media(max-width: 767px){
+  .hero-btn{
+    right: 70px;
+    padding: 10px 10px;
+    background-color: red;
+  }
+
+  .hero-btn span{
+    display: none;
+  }
+
+  .hero-btn i{
+    display: block;
+    color: #fff;
+    font-size: 28px;
+  }
+
+  .hero-content{
+    height: auto;
+  }
+
+  .hero-content h1{
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .hero-content{
+    height: auto;
+  }
+
+  .hero-content h1{
+    bottom: 10%;
+    left: 15%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    font-size: 36px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -319,6 +424,18 @@ section {
 .section-title img{
   max-height: 50px;
   margin-bottom: 15px;
+}
+
+@media(max-width: 767px){
+  section {
+    padding: 40px 0;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  section {
+    padding: 50px 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -407,6 +524,75 @@ section {
   display: flex;
 }
 
+@media(max-width: 767px){
+  .strips{
+    padding: 15px;
+  }
+
+  .strip-content{
+    margin: 0 auto;
+  }
+
+  .strip-content h3{
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+  }
+
+  @keyframes strip-head {
+    0% {
+      transform: scaleX(1.0);
+      letter-spacing: 1.2px; }
+    25% {
+      transform: scaleX(1.1);
+      letter-spacing: 1.4px; }  
+    50% {
+      transform: scaleX(1.2);
+      letter-spacing: 1.6px; }    
+    75% {
+      transform: scaleX(1.1);
+      letter-spacing: 1.4px; }    
+    100% {
+      transform: scaleX(1.0);
+      letter-spacing: 1.2px; }  
+  }
+
+  .strips:hover .strip-content{
+    margin: 0 0 10px;
+    justify-content: center;
+  }
+
+  .strip-btn a{
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  @keyframes strip-head {
+    0% {
+      transform: scaleX(1.0);
+      letter-spacing: 1.2px; }
+    25% {
+      transform: scaleX(1.1);
+      letter-spacing: 1.6px; }  
+    50% {
+      transform: scaleX(1.2);
+      letter-spacing: 2px; }    
+    75% {
+      transform: scaleX(1.1);
+      letter-spacing: 1.6px; }    
+    100% {
+      transform: scaleX(1.0);
+      letter-spacing: 1.2px; }  
+  }
+
+  .strips:hover .strip-content{
+    margin: 0 0 10px;
+    justify-content: center;
+  }
+}
+
 /*--------------------------------------------------------------
 # Tooltip
 --------------------------------------------------------------*/
@@ -435,14 +621,27 @@ section {
   border-bottom-color: #D515E0;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .tooltip-inner {
+    max-width: 90%;
+    padding: 7px 12px;
+    border: 2px solid #D515E0;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+}
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .tooltip-inner {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.aboutus .col-lg-6{
+.aboutus .col-md-6{
   padding: 0 0;
 }
 
@@ -538,6 +737,38 @@ section {
   height: 100%;
 }
 
+@media(max-width: 767px){
+  .about-left{
+    text-align: center;
+    padding: 0 15px 40px;
+  }
+
+  .about-left h2{
+    font-size: 28px;
+    letter-spacing: 1.1px;
+    word-spacing: 4px;
+    line-height: 36px;
+  }
+
+  .about-left p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-item{
+    width: 94%;
+    margin: 0 auto 15px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .about-left{
+    text-align: center;
+    padding: 0 20px 40px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Counters
 --------------------------------------------------------------*/
@@ -561,6 +792,10 @@ section {
   font-size: 18px;
   line-height: 28px;
 }
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Social Media
@@ -729,6 +964,10 @@ section {
     background: #D515E0;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -826,6 +1065,10 @@ section {
     color: #FFFFFF;
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Insurance
 --------------------------------------------------------------*/
@@ -918,9 +1161,19 @@ section {
   transition: all 0.5s ease-in-out;
 }
 
-@media(max-width: 767px){}
+@media(max-width: 767px){
+  .recentblog-item{
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+}
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .recentblog-item{
+    width: 90%;
+    margin: 0 auto 25px;
+  } 
+}
 
 /*--------------------------------------------------------------
 # Doctors
@@ -993,6 +1246,18 @@ section {
 
 .team-item:hover .team-social {
     left: 0;
+}
+
+@media(max-width: 767px){
+  .team-item{
+    margin-bottom: 20px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  .team-item{
+    margin-bottom: 25px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1076,6 +1341,10 @@ section {
   }
 }
 
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
+
 /*--------------------------------------------------------------
 # Compliance
 --------------------------------------------------------------*/
@@ -1107,6 +1376,14 @@ section {
   color: #fff;
   font-size: 24px;
 }
+
+@media(max-width: 767px){
+  .c-box{
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Contact Us
