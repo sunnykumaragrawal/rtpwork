@@ -343,14 +343,14 @@ a:hover {
 
   #hero3 h1{
     left: 10%;
-    bottom: 10%;
+    top: 25%;
   }
 }
 
 @media(max-width: 767px){
   .hero-btn{
     right: 70px;
-    padding: 10px 10px;
+    padding: 7px 5px;
     background-color: red;
   }
 
@@ -537,24 +537,7 @@ section {
     font-size: 24px;
     letter-spacing: 1.1px;
     word-spacing: 4px;
-  }
-
-  @keyframes strip-head {
-    0% {
-      transform: scaleX(1.0);
-      letter-spacing: 1.2px; }
-    25% {
-      transform: scaleX(1.1);
-      letter-spacing: 1.4px; }  
-    50% {
-      transform: scaleX(1.2);
-      letter-spacing: 1.6px; }    
-    75% {
-      transform: scaleX(1.1);
-      letter-spacing: 1.4px; }    
-    100% {
-      transform: scaleX(1.0);
-      letter-spacing: 1.2px; }  
+    animation: none;
   }
 
   .strips:hover .strip-content{
@@ -633,8 +616,10 @@ section {
 
 @media(min-width: 768px) and (max-width: 991px){
   .tooltip-inner {
-    max-width: 90%;
-    margin: 0 auto;
+  }
+
+  .tooltip{
+    width: 70%;
   }
 }
 
@@ -966,7 +951,16 @@ section {
 
 @media(max-width: 767px){}
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .resource-item .resource-desc {
+      padding: 65px 10px 20px 10px;
+  }
+
+  .resource-item .resource-desc p{
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -1383,7 +1377,24 @@ section {
   }
 }
 
-@media(min-width: 768px) and (max-width: 991px){}
+@media(min-width: 768px) and (max-width: 991px){
+  .c-box img{
+    max-height: 40px;
+  }
+
+  .c-box sup{
+    font-size: 22px;
+  }
+
+  .c-box a{
+    width: 30px;
+    height: 30px;
+  }
+
+  .c-box a i{
+    font-size: 20px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Contact Us
@@ -1537,15 +1548,7 @@ section {
 }
 
 @media(max-width: 767px){
-  .testimonial-author{
-    text-align: center;
-  }
-
-  .testimonial-author img{
-    width: 100px !important;
-    height: 100px !important;
-    margin: 15px auto;
-  }
+  
 }
 
 @media(min-width: 768px) and (max-width: 991px){}
