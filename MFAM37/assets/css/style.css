@@ -11,9 +11,6 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.body-active{
-}
-
 @media(max-width: 767px){
   body {
     margin-left: 0;
@@ -26,13 +23,71 @@ body {
 
 @media(min-width: 768px) and (max-width: 991px){}
 
-a {
-}
-
 a:hover {
   color: #ff8f4c;
   text-decoration: none;
 }
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D515E0;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+  z-index: 11;
+  animation: backtop 2s linear infinite;
+}
+
+.back-to-top.showbacktop{
+  opacity: 1;
+}
+
+@keyframes backtop {
+  0% {
+    transform: scale(1.1) translateY(0);
+  }
+  20% {
+    transform: scale(1.1) translateY(-10px);
+  }
+  30% {
+    transform: scale(1.1) translateY(10px);
+  }
+  50% {
+    transform: scale(1.1) translateY(-10px);
+  }
+  60% {
+    transform: scale(1.1) translateY(10px);
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+  }
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background-color: #D515E0;
+  transition: all 0.5s ease-in-out;
+}
+
+@media(max-width: 767px){}
+
+@media(min-width: 768px) and (max-width: 991px){}
 
 /*--------------------------------------------------------------
 # Preloader
@@ -60,10 +115,6 @@ a:hover {
   border-radius: 50%;
 }
 
-@media(max-width: 767px){}
-
-@media(min-width: 768px) and (max-width: 991px){}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -82,18 +133,12 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-#header.header-active{
-}
-
 #header .logo h1 {
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: 3px;
   transition: all 0.5s ease-in-out;
-}
-
-.header-active h1 a{
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -135,25 +180,8 @@ a:hover {
   transition: all 0.5s ease-in-out;
 }
 
-.nav-menu-active {
-}
-
-.nav-menu::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-color: #01bfff;
-  border-radius: 10px;
-}
-
 .nav-menu::-webkit-scrollbar {
   width: 0px;
-  margin-left: 0;
-  background-color: #01bfff;
-}
-
-.nav-menu::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #01bfff;
-  background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#353275), to(#353275), color-stop(0.6, #353275));
 }
 
 .nav-menu * {
@@ -220,15 +248,6 @@ a:hover {
 
 .nav-toggle {
   display: none;
-}
-
-.nav-toggle i {
-}
-
-.nav-toggle-active {
-}
-
-.nav-toggle-active i{
 }
 
 @media(max-width: 767px){
@@ -615,9 +634,6 @@ section {
 }
 
 @media(min-width: 768px) and (max-width: 991px){
-  .tooltip-inner {
-  }
-
   .tooltip{
     width: 70%;
   }
@@ -679,6 +695,7 @@ section {
 .about-item .about-icon{
   width: 90px;
   height: 90px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -936,7 +953,7 @@ section {
     justify-content: center;
     color: #fff;
     background: #D515E0;
-    border: none;
+    border: 1px solid #fff;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1122,6 +1139,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 
 .recentblog-btn a{
@@ -1134,6 +1152,7 @@ section {
 .recentblog-img:hover .recentblog-btn{
   height: 100%;
   bottom: 0;
+  opacity: 1;
 }
 
 .recentblog-content{
@@ -1193,18 +1212,17 @@ section {
 
 .team-share i{
   color: #fff;
-  font-size: 24px;
+  font-size: 48px;
 }
 
 .team-content{
    position: relative;
    overflow: hidden;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   padding: 15px 25px;
+   text-align: left;
+   padding: 15px 25px 15px 50px;
    background-color: #fff;
    height: 90px;
+   width: 100%;
 }
 
 .team-content h4{
@@ -1218,6 +1236,7 @@ section {
     top: 0;
     bottom: 0;
     left: -100%;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1227,13 +1246,15 @@ section {
 }
 
 .team-social a{
-  width: 40px;
-  height: 40px;
-  padding: 10px;
+  width: 45px;
+  height: 45px;
+  
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
+  padding: 10px 12px;
+  margin: 0 8px;
   background-color: #D515E0;
   color: #fff;
 }

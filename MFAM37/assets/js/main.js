@@ -20,6 +20,22 @@
     })
   });
 
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').addClass('showbacktop');
+    } else {
+      $('.back-to-top').removeClass('showbacktop');
+    }
+  });
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
   // Toggle nav menu
   $(document).on('click', '.nav-toggle', function(e) {
     $('body').toggleClass('body-active');
