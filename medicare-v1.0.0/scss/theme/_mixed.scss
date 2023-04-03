@@ -1,0 +1,159 @@
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover{ object-fit: cover; }
+.z-index-1{ z-index: 1; }
+
+/*-----------------------------------------------
+|   Zanimation
+-----------------------------------------------*/
+*[data-zanim-trigger]{ opacity: 0; }
+
+/*-----------------------------------------------
+|   Sidebar
+-----------------------------------------------*/
+.sticky-sidebar{ top: 85px; }
+
+/*-----------------------------------------------
+|   Custom circle
+-----------------------------------------------*/
+.circle-dashed{
+  border: 1px dashed $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+/*-----------------------------------------------
+|   Miscellaneous
+-----------------------------------------------*/
+@include hover-focus{
+  .hover-text-decoration-none{
+    text-decoration: none;
+  }
+}
+.resize-none{ resize: none; }
+
+
+.bg-holder.overlay.overlay-primary-80:before{ background-color: rgba($primary, 0.80); }
+.bg-holder.overlay.overlay-success-1:before{ background-color: rgba($success, 0.97); }
+.bg-holder.overlay.overlay-info-1:before{ background-color: rgba($info, 0.97); }
+.bg-holder.overlay.overlay-white-gradient:before { background-image: linear-gradient(to right, $white, rgba($white, 0.6), transparent); }
+
+
+/*-----------------------------------------------
+|   Funfact temp
+-----------------------------------------------*/
+.fun-fact {
+  position: relative;
+  text-align: center;
+  padding: map_get($spacers, 4);
+  &:before, &:after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50% , -50%, 0);
+    border: solid rgba($white, 0.25);
+  }
+  &:before {
+    width: 100%;
+    height: 80%;
+    border-width: 0 1px;
+  }
+
+  &:after {
+    height: 100%;
+    width: 80%;
+    border-width: 1px 0;
+  }
+}
+
+/*-----------------------------------------------
+|   Flexslider
+-----------------------------------------------*/
+.flex-direction-nav a.flex-prev, .flex-direction-nav a.flex-next {
+  //background: #130092b3;
+  height: 100%;
+  top: 20px;
+  
+}
+.indicator-arrow {
+  border-color: $dark !important;
+}
+
+/*-----------------------------------------------
+|   Input with icon
+-----------------------------------------------*/
+.input-iconic{
+  position: relative;
+  button{
+    outline: 0;
+    background-color: transparent;
+    color: $gray-600;
+    border: 0;
+  }
+  .input-icon{
+    position: absolute;
+    z-index: 99;
+    right: map_get($spacers, 2);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .form-control{
+    padding-right: map_get($spacers, 4);
+    border-color: $gray-300;
+  }
+}
+
+/*-----------------------------------------------
+|   Hover Effect
+-----------------------------------------------*/
+.hvr-shadow {
+  transition: $transition-base;
+  @include hover-focus{
+    box-shadow: $box-shadow;
+    transform: translateY(-0.125rem);
+  }
+}
+
+.link-card{
+  padding: map_get($spacers, 3);
+  border-radius: $border-radius;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  transition: $transition-base;
+  cursor: pointer;
+  .link-card-arrow { transition: $transition-base; }
+  @include hover-focus{
+    background-color: $info !important;
+    .link-card-arrow { transform: translateX(0.125rem); }
+  }
+}
+
+.transition-base { transition: $transition-base; }
+
+/*-----------------------------------------------
+|   Hover effect of nav menu
+-----------------------------------------------*/
+
+@include media-breakpoint-up(xl) {
+  .dropdown-menu{
+    top: 92%;
+  }
+  .dropdown-menu-on-hover{
+    &.dropdown {
+      @include hover-focus {
+        .dropdown-menu { display: block; }
+      }
+    }
+  }
+   
+  }
+
+

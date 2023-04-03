@@ -1,0 +1,36 @@
+@include media-breakpoint-up(md) {
+  .navbar-dropdown-col-4 {
+    min-width: 35rem;
+  }
+}
+.navbar {
+  .dropdown-item {
+    font-weight: $font-weight-medium;
+  }
+}
+
+.navbar-split {
+  overflow: hidden;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+  
+  &:before{
+    left: 0;
+    width: calc(70% - 100px);
+    height: 100%;
+    background-color: $white;
+  }
+  
+  &:after{
+    left: calc(70% - 100px);
+    border: 100px solid;
+    border-color: transparent transparent $white $white;
+  }
+  @include media-breakpoint-up(lg) {
+    &:before{ width: calc(50% - 100px); }
+    &:after{ left: calc(50% - 100px); }
+  }
+}

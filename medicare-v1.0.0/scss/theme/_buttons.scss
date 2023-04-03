@@ -1,0 +1,6 @@
+/*-----------------------------------------------
+|   Social Outline Buttons
+-----------------------------------------------*/
+.btn-outline-facebook{ @include button-outline-variant($facebook) }
+.btn-outline-twitter { @include button-outline-variant($twitter) }
+.btn-outline-google-plus { @include button-outline-variant($google-plus) }
