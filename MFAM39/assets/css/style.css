@@ -900,6 +900,25 @@ section{
 .resource-right{
   background-color: #fff;
   padding: 40px 20px 40px 50px;
+  position: relative;
+}
+
+.auth-btns{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.auth-btns a{
+  width: 40px !important;
+  height: 40px !important;
+  background-color: #691999;
+  color: #fff;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .resource-item:hover .resource-right{
