@@ -154,7 +154,7 @@
     loop: true,
     margin: 40,
     dots: false,
-    nav: true,
+    nav: false,
     smartSpeed: 1000,
     responsiveClass: true,
     responsive: {
@@ -164,7 +164,7 @@
       768: {
         items: 4
       },
-      900: {
+      992: {
         items: 6
       }
     }
@@ -184,9 +184,9 @@
         items: 1
       },
       768: {
-        items: 1
+        items: 2
       },
-      900: {
+      992: {
         center: true,
         items: 2
       }
@@ -207,7 +207,7 @@
       768: {
         items: 1
       },
-      900: {
+      992: {
         items: 1
       }
     }
@@ -227,9 +227,9 @@
         items: 1
       },
       768: {
-        items: 1
+        items: 2
       },
-      900: {
+      992: {
         center: true,
         items: 3
       }
@@ -250,7 +250,7 @@
       768: {
         items: 4
       },
-      900: {
+      992: {
         items: 5
       }
     }
@@ -270,7 +270,7 @@
       768: {
         items: 4
       },
-      900: {
+      992: {
         items: 5
       }
     }
